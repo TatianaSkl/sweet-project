@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0px auto;
+
+  @include tel {
+    width: 480px;
+  }
+  @include tablet {
+    width: 768px;
+    padding: 0 32px;
+  }
+  @include desktop {
+    width: 1200px;
+    padding: 0 16px;
+  }
+}
