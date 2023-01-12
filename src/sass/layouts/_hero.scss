@@ -5,7 +5,6 @@
   height: 665px;
   margin: 0 auto;
   background: var(--primary-color);
-  
 }
 
 .hero-wrapper {
@@ -18,7 +17,6 @@
   background-image: url(./../images/Desctop/points-desctop.png);
   background-repeat: no-repeat;
   background-position: bottom 0 right 0;
-
 }
 
 .hero-container {
@@ -86,13 +84,13 @@
   text-align: center;
   text-decoration-line: underline;
   &:hover {
-    color: #0A8817;
+    color: #0a8817;
   }
   &:focus {
     color: var(--second-color);
   }
   &:disabled {
-    color: #ABABAB;
+    color: #ababab;
   }
 }
 
@@ -158,10 +156,13 @@
 
 .hero-readmore {
   position: absolute;
-  bottom: 250px;
+  top: 445px;
   left: 250px;
-  width: 400px;
-  
+  width: 210px;
+  color: var(--additional-color);
+  z-index: 5;
+
+
   .hero-readmore-input {
     opacity: 0;
 
@@ -171,66 +172,36 @@
 
     pointer-events: none;
   }
-  
+
   .hero-readmore-text {
-    display: block; 
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.4;
+    
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  
+
   .hero-readmore-input:focus ~ .hero-readmore-label {
     outline: -webkit-focus-ring-color auto 5px;
   }
-  
+
   .hero-readmore-input:checked + .hero-readmore-text {
     -webkit-line-clamp: unset;
   }
-  
+
   .hero-readmore-input:checked ~ .hero-readmore-label {
     display: none;
   }
-  
 }
 
-
-/* From here on presentation styles */
-// body {
-//   align-items: center;
-//   background: 
-//     radial-gradient(
-//       farthest-side at bottom left,
-//       rgba(255, 0, 255, 0.5), 
-//       #246756
-//     ),
-//     radial-gradient(
-//       farthest-corner at bottom right,
-//       rgba(255, 50, 50, 0.5), 
-//       #246756 400px
-//     );
-//   display: flex;
-//   flex-direction: column;
-//   height: 100vh;
-//   justify-content: center;
-//   line-height: 1.5;
-// }
-
-.box {
-  background-color: #fff;
-  box-shadow: 2px 2px 10px #246756;
-  padding: 2em;
-  width: 200px;
-  
-  p {
-    margin: 0;
-  }
-  
-  label {
-    border-radius: 4px;
-    padding: 0.2em 0.6em;
-    border: 1px solid #009ce2;
-    background-color: #00acff;
-    color: #fff;
-    font-size: 0.8em;
-  }
+.hero-readmore-label {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 35px;
   
 }
 

@@ -1,4 +1,7 @@
 const langArr = {
+
+    // ----- Header!-----
+
     "site-nav-1" :  {        
         "en": "Home",
         "ua": "Головна",
@@ -15,10 +18,13 @@ const langArr = {
         "en": "Contact",
         "ua": "Контакти",
     },
-       "btn-header": {        
+    "btn-header": {        
         "en": "Buy now &#707",
         "ua": "Купити зараз &#707",
     }, 
+       
+    // ----- Hero!-----
+       
      "hero" :  {        
         "en": "Ice cream made with passion",
         "ua": "Морозиво, зроблене з пристрастю",
@@ -38,5 +44,9 @@ const langArr = {
     "hero-link" :  {        
         "en": "How it’s made?",
         "ua": "Як це зроблено?",
+    }, 
+    "hero-readmore" :  {        
+        "en": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo, atque totam libero alias fuga quibusdam autem maxime quidem provident cum aut accusantium similique perferendis? Praesentium error aliquam ipsum quod quae. Velit fugit facere adipisci, dolorem cumque porro tempora?",
+        "ua": "Еней був парубок моторний і хлопець хоть куди козак, удавсь на всеє зле проворний, завзятіший од всіх бурлак. Но греки, як спаливши Трою, зробили з неї скирту гною, він, взявши торбу, тягу дав; забравши деяких троянців, осмалених, як гиря, ланців, п'ятами з Трої накивав.",
     }, 
 }

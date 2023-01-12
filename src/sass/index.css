@@ -286,13 +286,13 @@ img {
   text-decoration-line: underline;
 }
 .hero-container-link:hover {
-  color: #0A8817;
+  color: #0a8817;
 }
 .hero-container-link:focus {
   color: var(--second-color);
 }
 .hero-container-link:disabled {
-  color: #ABABAB;
+  color: #ababab;
 }
 
 .hero-bubbles-wrapper {
@@ -350,9 +350,11 @@ img {
 }
 .hero-readmore {
   position: absolute;
-  bottom: 250px;
+  top: 445px;
   left: 250px;
-  width: 400px;
+  width: 210px;
+  color: var(--additional-color);
+  z-index: 5;
 }
 .hero-readmore .hero-readmore-input {
   opacity: 0;
@@ -362,7 +364,12 @@ img {
   pointer-events: none;
 }
 .hero-readmore .hero-readmore-text {
-  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 .hero-readmore .hero-readmore-input:focus ~ .hero-readmore-label {
@@ -375,23 +382,10 @@ img {
   display: none;
 }
 
-/* From here on presentation styles */
-.box {
-  background-color: #fff;
-  box-shadow: 2px 2px 10px #246756;
-  padding: 2em;
-  width: 200px;
-}
-.box p {
-  margin: 0;
-}
-.box label {
-  border-radius: 4px;
-  padding: 0.2em 0.6em;
-  border: 1px solid #009ce2;
-  background-color: #00acff;
-  color: #fff;
-  font-size: 0.8em;
+.hero-readmore-label {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 35px;
 }
 
 .hero-ice-creams {
