@@ -2,17 +2,24 @@
     height: 1053px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url('../images/Desctop/Bg_desctop.jpg');
+    background-image: url('../images/480/bg-480.jpg');
         
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @include tel {
+        background-image: url('../images/Mobile/Bg_mobile.jpg');
+    }
+    @include tablet {
+        background-image: url('../images/Tablet/Bg_tablet.jpg');
+    };
+    @include desktop {
+        background-image: url('../images/Desctop/Bg_desctop.jpg');
+    };
 }
 
-.reviews__wall {
-    margin-bottom: 140px;
-}
-.reviews__person{
+
+.reviews__person{ 
    width: 85px;
    height: 85px;
    margin-right: auto;
@@ -23,35 +30,58 @@
 
 .reviews__description {
     font-family: var(--main-font);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.86;
-    letter-spacing: 0.04em;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(31/12);
     text-align: center;
     color: var(--second-color);
-    padding: 43px 109px;
-    width: 968px;
-    height: 138px;
+    width: 280px;
+    height: 256px;
+    padding: 35px 39px;
     background-color:var(--primary-color) ;
-    border-radius: 24px;
+    border-radius: 10px;
     border-color:  #fff;
     margin-bottom: 32px;
     margin-left: auto;
     margin-right: auto;
-       
+
+    @include tablet{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+        width: 968px;
+        height: 138px;
+        padding: 42px 73px;
+        border-radius: 24px;
+    };
+    @include desktop{             
+        padding: 43px 109px;
+    }   
 }
 
 .reviews__after--title {
     font-family: var(--main-font);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.87;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.86;
     text-align: center;
     color: var(--additional-color);
-    width: 968px;
-    margin-bottom: 32px;
+    margin-bottom: 12px;
     margin-left: auto;
     margin-right: auto;
+
+    @include tablet {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.87;
+        margin-bottom: 32px;
+        };
+    
+    @include desktop {
+        width: 968px;
+        
+        };
 }
 .slick-dots li.slick-active button:before {
     opacity: .75;

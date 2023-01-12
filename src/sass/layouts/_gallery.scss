@@ -1,0 +1,11 @@
+.reviews__wall {
+    margin-bottom: 80px;
+    
+    @include tablet{
+       margin-bottom: 100px;
+    };
+    @include desktop{
+    margin-bottom: 140px;
+    };
+    
+}
