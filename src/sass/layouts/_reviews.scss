@@ -8,17 +8,7 @@
         
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;}
-
-.container {}
-
-.one-time {}
-
-.reviews__wrapper {
-
-   display: block;
-   margin-left: auto;  
-   margin-right: auto;      
+    background-size: cover;
 }
 
 .reviews__wall {
@@ -84,4 +74,13 @@ slick-slide img{
     margin-left: auto;
     margin-right: auto;
 }
-
+.slick-slide img{
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    & .reviews__description{
+        margin-left: auto;
+        margin-right: auto;
+    };
+}
