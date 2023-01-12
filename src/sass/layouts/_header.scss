@@ -23,7 +23,7 @@
   position: absolute;
   bottom: 0;
   left: 300px;
-  
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -38,6 +38,8 @@
 .header-site-nav-text {
   color: var(--second-color);
   text-decoration: none;
+
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:not(:last-child) {
     margin-right: 28px;
@@ -63,10 +65,11 @@
   text-align: center;
   color: #000000;
   background: var(--accent-link-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 10px;
   border: 0px;
   font-family: inherit;
-  cursor: pointer;  
+  cursor: auto;
 }
 
 .change-lang-link {
@@ -76,7 +79,7 @@
   line-height: 1.21;
   text-align: center;
   color: #000000;
-  cursor:  pointer;  
+  cursor: pointer;
 }
 
 .change-lang-text {
@@ -86,7 +89,7 @@
   line-height: 1.21;
   text-align: center;
   color: #000000;
-  cursor:  pointer;
+  cursor: pointer;
 }
 
 .btn-header {
@@ -105,15 +108,18 @@
   line-height: 1.16;
   text-align: center;
   justify-content: center;
-  cursor:  pointer;
+
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  cursor: url(./../images/Cursor.png), pointer;
   &:hover {
-    background-color: #0A8817;
+    background-color: #0a8817;
   }
   &:focus {
     color: var(--second-color);
-    background-color: #0A8817;
+    background-color: #0a8817;
   }
   &:disabled {
-    background-color: #ABABAB;
+    background-color: #ababab;
   }
 }

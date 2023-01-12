@@ -16,7 +16,7 @@
   height: 100%;
   background-image: url(./../images/Desctop/points-desctop.png);
   background-repeat: no-repeat;
-  background-position: bottom 0 right 0;
+  background-position: bottom 5px right 0;
 }
 
 .hero-container {
@@ -60,6 +60,7 @@
   justify-content: center;
   border: 2px solid #f8d24e;
   background: transparent;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   &:hover {
     border: 2px solid #0a8817;
@@ -83,6 +84,7 @@
   align-items: center;
   text-align: center;
   text-decoration-line: underline;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     color: #0a8817;
   }
