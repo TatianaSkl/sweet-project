@@ -2,9 +2,7 @@
     height: 1053px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to left top,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4));
+    background-image: url('../images/Desctop/Bg_desctop.jpg');
         
     background-repeat: no-repeat;
     background-position: center;
@@ -38,6 +36,8 @@
     border-radius: 24px;
     border-color:  #fff;
     margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
        
 }
 
@@ -50,10 +50,12 @@
     color: var(--additional-color);
     width: 968px;
     margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .slick-dots li.slick-active button:before {
     opacity: .75;
-    color: var(--primary-color);
+    color: rgba(132, 161, 120, 1);
     width: 12px;
     height: 12px;
     
@@ -77,10 +79,4 @@ slick-slide img{
 .slick-slide img{
     margin-left: auto;
     margin-right: auto;
-}
-p{
-    & .reviews__description{
-        margin-left: auto;
-        margin-right: auto;
-    };
 }
