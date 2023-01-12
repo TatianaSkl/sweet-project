@@ -1,0 +1,120 @@
+.page-header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0px;
+  padding-top: 8px;
+  padding-left: 16px;
+
+  display: flex;
+
+  justify-content: start;
+
+  background: transparent;
+  z-index: 5;
+}
+
+.container-header {
+  position: relative;
+  display: flex;
+}
+
+.header-site-nav {
+  position: absolute;
+  bottom: 0;
+  left: 300px;
+  
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+@media screen and (max-width: 1199.99px) {
+  .header-site-nav {
+    display: none;
+  }
+}
+
+.header-site-nav-text {
+  color: var(--second-color);
+  text-decoration: none;
+
+  &:not(:last-child) {
+    margin-right: 28px;
+  }
+  &:hover,
+  &:focus {
+    color: var(--accent-link-color);
+  }
+  cursor: url(./../images/Cursor.png), pointer;
+}
+
+.lang-select {
+  position: absolute;
+  right: 180px;
+  bottom: 0;
+}
+
+.change-lang {
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  color: #000000;
+  background: var(--accent-link-color);
+  border-radius: 10px;
+  border: 0px;
+  font-family: inherit;
+  cursor: pointer;  
+}
+
+.change-lang-link {
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  color: #000000;
+  cursor:  pointer;  
+}
+
+.change-lang-text {
+  margin: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  color: #000000;
+  cursor:  pointer;
+}
+
+.btn-header {
+  position: absolute;
+  bottom: 0;
+  right: 16px;
+  display: block;
+  height: 42px;
+  width: 152px;
+  justify-content: end;
+
+  padding: 10px 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.16;
+  text-align: center;
+  justify-content: center;
+  cursor:  pointer;
+  &:hover {
+    background-color: #0A8817;
+  }
+  &:focus {
+    color: var(--second-color);
+    background-color: #0A8817;
+  }
+  &:disabled {
+    background-color: #ABABAB;
+  }
+}

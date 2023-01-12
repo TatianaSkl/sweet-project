@@ -1,0 +1,159 @@
+.container-hero {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 665px;
+  margin: 0 auto;
+  background: var(--primary-color);
+}
+
+.hero-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-container {
+  position: absolute;
+  top: 115px;
+  left: 16px;
+  background: current;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px;
+
+  z-index: 5;
+}
+
+.hero-title {
+  color: var(--second-color);
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.26;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  justify-content: start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.hero-container button {
+  margin-right: 20px;
+}
+
+.hero-bubbles-wrapper {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 665px;
+  overflow: hidden;
+}
+
+.bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  z-index: 3;
+}
+
+.bubbles .point {
+  position: relative;
+
+  width: 12px;
+  height: 12px;
+  background: #f8d24e;
+  margin: 0 2px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #f8d24e44, 0 0 50px #f8d24e77, 0 0 100px #f8d24e;
+  animation: animate-bubbles 5000s ease-in-out infinite reverse;
+  animation-duration: calc(50s / var(--i));
+
+  &:nth-child(even) {
+    background: #324db8;
+    box-shadow: 0 0 0 4px #324db844, 0 0 50px #324db877, 0 0 100px #324db8;
+  }
+}
+
+.hero-snowflake {
+  width: 12px;
+  height: 12px;
+  fill: #324db8;
+}
+
+.hero-snowflake-even {
+  width: 12px;
+  height: 12px;
+  fill: #f8d24e;
+}
+
+@keyframes animate-bubbles {
+  0% {
+    transform: translateY(665px) scale(1);
+  }
+  //   50% {
+  //     transform: translateY(50vh) scale(0,8);
+  //   }
+  100% {
+    transform: translateY(25vh) scale(0);
+  }
+}
+
+.hero-ice-creams {
+  position: absolute;
+  left: 16px;
+  bottom: 65px;
+
+  z-index: 5;
+}
+
+.hero-ice-cream {
+  position: absolute;
+  right: 95px;
+  bottom: 0;
+
+  z-index: 5;
+}
+
+.hero-franchise {
+  position: absolute;
+  top: 125px;
+  right: 0;
+
+  display: block;
+
+  z-index: 5;
+}
+
+.hero-description {
+  margin: 0;
+}
+
+.hero-description-term {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 1.22;
+  letter-spacing: 0.04em;
+  text-align: right;
+
+  color: var(--additional-color);
+}
+
+.hero-description-detail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: right;
+}
