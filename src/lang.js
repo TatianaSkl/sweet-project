@@ -30,5 +30,13 @@ const langArr = {
      "hero-franchise-2" :  {        
         "en": "food trucks",
         "ua": "фудтраків",
-    },     
+    }, 
+     "hero-btn" :  {        
+        "en": "Products",
+        "ua": "Продукти",
+    },
+    "hero-link" :  {        
+        "en": "How it’s made?",
+        "ua": "Як це зроблено?",
+    }, 
 }

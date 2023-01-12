@@ -5,6 +5,7 @@
   height: 665px;
   margin: 0 auto;
   background: var(--primary-color);
+  
 }
 
 .hero-wrapper {
@@ -14,6 +15,10 @@
   margin-top: 0px;
   width: 100%;
   height: 100%;
+  background-image: url(./../images/Desctop/points-desctop.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0 right 0;
+
 }
 
 .hero-container {
@@ -30,6 +35,8 @@
 }
 
 .hero-title {
+  margin-bottom: 28px;
+
   color: var(--second-color);
   font-family: 'Seymour One';
   font-style: normal;
@@ -43,8 +50,50 @@
   text-align: left;
 }
 
-.hero-container button {
+.btn-hero {
   margin-right: 20px;
+  padding: 12px 34px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.16;
+  text-align: center;
+  justify-content: center;
+  border: 2px solid #f8d24e;
+  background: transparent;
+  cursor: pointer;
+  &:hover {
+    border: 2px solid #0a8817;
+  }
+  &:focus {
+    color: var(--second-color);
+    border: 2px solid #0a8817;
+  }
+  &:disabled {
+    border: 2px solid #ababab;
+  }
+}
+
+.hero-container-link {
+  color: var(--accent-link-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+  &:hover {
+    color: #0A8817;
+  }
+  &:focus {
+    color: var(--second-color);
+  }
+  &:disabled {
+    color: #ABABAB;
+  }
 }
 
 .hero-bubbles-wrapper {
