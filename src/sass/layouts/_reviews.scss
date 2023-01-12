@@ -1,0 +1,87 @@
+.reviews {max-width: 1600px;
+    height: 1053px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to left top,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4));
+        
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
+
+.container {}
+
+.one-time {}
+
+.reviews__wrapper {
+
+   display: block;
+   margin-left: auto;  
+   margin-right: auto;      
+}
+
+.reviews__wall {
+    margin-bottom: 140px;
+}
+.reviews__person{
+   width: 85px;
+   height: 85px;
+   margin-right: auto;
+   margin-left: auto;
+   border-radius: 50%;   
+    margin-bottom: 30px;
+}
+
+.reviews__description {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--second-color);
+    padding: 43px 109px;
+    width: 968px;
+    height: 138px;
+    background-color:var(--primary-color) ;
+    border-radius: 24px;
+    border-color:  #fff;
+    margin-bottom: 32px;
+       
+}
+
+.reviews__after--title {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    color: var(--additional-color);
+    width: 968px;
+    margin-bottom: 32px;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: var(--primary-color);
+    width: 12px;
+    height: 12px;
+    
+}
+.slick-dots  button:before {
+    opacity: .75;
+    color: #D9D9D9;
+    width: 12px;
+    height: 12px;
+}
+.slick-dots {
+    
+    width: 968px;
+    
+}
+
+slick-slide img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
