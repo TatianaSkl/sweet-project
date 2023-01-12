@@ -164,7 +164,6 @@
   color: var(--additional-color);
   z-index: 5;
 
-
   .hero-readmore-input {
     opacity: 0;
 
@@ -179,7 +178,6 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 1.4;
-    
 
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -204,7 +202,6 @@
   margin-top: 10px;
   font-weight: 400;
   font-size: 35px;
-  
 }
 
 .hero-ice-creams {
@@ -222,6 +219,44 @@
   bottom: 0;
 
   z-index: 5;
+}
+
+.hero-ice-cream-eyes {
+  position: absolute;
+  opacity: 0;
+
+  bottom: 290px;
+  right: 357px;
+
+  z-index: 5;
+  animation: animate-eyes 10s 5s ease-in-out infinite reverse;
+}
+
+@keyframes animate-eyes {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  81% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  91% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .hero-franchise {

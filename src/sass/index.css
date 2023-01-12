@@ -408,6 +408,41 @@ img {
   z-index: 5;
 }
 
+.hero-ice-cream-eyes {
+  position: absolute;
+  opacity: 0;
+  bottom: 290px;
+  right: 357px;
+  z-index: 5;
+  animation: animate-eyes 10s 5s ease-in-out infinite reverse;
+}
+
+@keyframes animate-eyes {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  81% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  91% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .hero-franchise {
   position: absolute;
   top: 125px;
