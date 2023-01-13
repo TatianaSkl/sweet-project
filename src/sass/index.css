@@ -210,11 +210,42 @@ img {
   position: relative;
   top: 0;
   left: 0;
-  height: 665px;
+  height: 502px;
   margin: 0 auto;
   background: var(--primary-color);
 }
 
+@media screen and (min-width: 480px) {
+  .container-hero {
+    height: 415px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-hero {
+    height: 665px;
+  }
+}
+.container-hero .container {
+  background-image: url("./../images/Mobile/Points-mobile.png");
+  background-repeat: no-repeat;
+  background-position: bottom 5px right 0;
+}
+
+@media screen and (min-width: 480px) {
+  .container-hero .container {
+    background-image: url("./../images/480/Points-480.png");
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-hero .container {
+    background-image: url("./../images/Tablet/points-tablet.png");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-hero .container {
+    background-image: url("./../images/Desctop/points-desctop.png");
+  }
+}
 .hero-wrapper {
   position: relative;
   top: 0;
@@ -222,44 +253,36 @@ img {
   margin-top: 0px;
   width: 100%;
   height: 100%;
-  background-image: url("./../images/Mobile/Points-mobile.png");
-  background-repeat: no-repeat;
-  background-position: bottom 5px right 0;
 }
 
-@media screen and (min-width: 480px) {
-  .hero-wrapper {
-    background-image: url("./../images/480/Points-480.png");
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero-wrapper {
-    background-image: url("./../images/Tablet/points-tablet.png");
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero-wrapper {
-    background-image: url("./../images/Desctop/points-desctop.png");
-  }
-}
 .hero-container {
   position: absolute;
-  top: 115px;
-  left: 16px;
+  top: 100px;
+  width: 280px;
   background: current;
   display: flex;
   flex-wrap: wrap;
-  width: 370px;
   z-index: 5;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-container {
+    top: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    width: 370px;
+    top: 115px;
+  }
+}
 .hero-title {
-  margin-bottom: 28px;
+  margin-bottom: 32px;
   color: var(--second-color);
   font-family: "Seymour One";
   font-style: normal;
   font-weight: 400;
-  font-size: 38px;
+  font-size: 26px;
   line-height: 1.26;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -268,16 +291,28 @@ img {
   text-align: left;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-title {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    margin-bottom: 28px;
+    font-size: 38px;
+    line-height: 1.26;
+  }
+}
 .btn-hero {
-  margin-right: 20px;
-  padding: 12px 34px;
+  margin-right: 12px;
+  padding: 11px 26px;
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 1.16;
+  font-size: 12px;
+  line-height: 1.25;
   text-align: center;
   justify-content: center;
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--accent-link-color);
   background: transparent;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
@@ -293,12 +328,25 @@ img {
   border: 2px solid #ababab;
 }
 
+@media screen and (min-width: 768px) {
+  .btn-hero {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn-hero {
+    margin-right: 34px;
+    padding: 12px 34px;
+    font-size: 14px;
+    line-height: 1.16;
+  }
+}
 .hero-container-link {
   color: var(--accent-link-color);
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
+  font-size: 12px;
+  line-height: 1.25;
   display: flex;
   align-items: center;
   text-align: center;
@@ -315,15 +363,31 @@ img {
   color: #ababab;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-container-link {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
 .hero-bubbles-wrapper {
   position: relative;
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 665px;
+  height: 502px;
   overflow: hidden;
 }
 
+@media screen and (min-width: 480px) {
+  .hero-bubbles-wrapper {
+    height: 415px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-bubbles-wrapper {
+    height: 665px;
+  }
+}
 .bubbles {
   position: absolute;
   top: 0;
@@ -368,40 +432,53 @@ img {
     transform: translateY(25vh) scale(0);
   }
 }
-.hero-readmore {
-  position: absolute;
-  top: 445px;
-  left: 250px;
-  width: 210px;
-  color: var(--additional-color);
-  z-index: 5;
+@media screen and (max-width: 767px) {
+  .hero-readmore {
+    display: none;
+  }
 }
-.hero-readmore .hero-readmore-input {
-  opacity: 0;
-  position: absolute;
-  bottom: 0;
-  left: 250px;
-  pointer-events: none;
+@media screen and (min-width: 768px) {
+  .hero-readmore {
+    position: absolute;
+    top: 250px;
+    left: 210px;
+    width: 210px;
+    color: var(--additional-color);
+    z-index: 5;
+  }
+  .hero-readmore .hero-readmore-input {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 250px;
+    pointer-events: none;
+  }
+  .hero-readmore .hero-readmore-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .hero-readmore .hero-readmore-input:focus ~ .hero-readmore-label {
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+  .hero-readmore .hero-readmore-input:checked + .hero-readmore-text {
+    -webkit-line-clamp: unset;
+  }
+  .hero-readmore .hero-readmore-input:checked ~ .hero-readmore-label {
+    display: none;
+  }
 }
-.hero-readmore .hero-readmore-text {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 1.4;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+@media screen and (min-width: 1200px) {
+  .hero-readmore {
+    top: 440px;
+    left: 250px;
+    width: 210px;
+  }
 }
-.hero-readmore .hero-readmore-input:focus ~ .hero-readmore-label {
-  outline: -webkit-focus-ring-color auto 5px;
-}
-.hero-readmore .hero-readmore-input:checked + .hero-readmore-text {
-  -webkit-line-clamp: unset;
-}
-.hero-readmore .hero-readmore-input:checked ~ .hero-readmore-label {
-  display: none;
-}
-
 .hero-readmore-label {
   margin-top: 10px;
   font-weight: 400;
@@ -416,7 +493,6 @@ img {
 @media screen and (min-width: 768px) {
   .hero-ice-creams {
     position: absolute;
-    left: 32px;
     bottom: 12px;
     display: block;
     z-index: 5;
@@ -426,7 +502,6 @@ img {
 @media screen and (min-width: 1200px) {
   .hero-ice-creams {
     position: absolute;
-    left: 16px;
     bottom: 65px;
     display: block;
     z-index: 5;
@@ -446,7 +521,7 @@ img {
 }
 .hero-ice-cream {
   position: absolute;
-  right: 95px;
+  right: 90px;
   bottom: 0;
   z-index: 5;
 }
