@@ -312,7 +312,17 @@
             </div>
 
             <div class="hero-ice-cream-eyes">
-                <img src="./images/Desctop/Eyes.png" alt="Ice cream eyes">
+                <picture>
+                    <source srcset="./images/Mobile/Eyes-mobile.png 37w" media="(max-width: 479.99px)" 
+                        sizes="(max-width: 479.99px) 37px, 100vw">
+                    <source srcset="./images/480/Eyes-480.png 42w" media="(max-width: 767.99px)"
+                        sizes="(max-width: 767.99px) 42px, 100vw">
+                    <source srcset="./images/Tablet/Eyes-tablet.png 56w" media="(max-width: 1199px)"
+                        sizes="(max-width: 1199px) 56px, 100vw">
+                    <source srcset="./images/Desctop/Eyes.png 91w" media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 91px, 100vw">
+                    <img src="./images/Desctop/Eyes.png" alt="Ice cream eyes">
+                </picture>
             </div>
 
             <div class="hero-franchise">
