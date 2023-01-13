@@ -2,7 +2,9 @@
   <div class="container">
     <address>
       <ul class="contacts__list list">
-        <h2 class="contacts__title visually-hidden">Our contacts</h2>
+        <h2 class="contacts__title visually-hidden" id="contact">
+          Our contacts
+        </h2>
         <li class="contacts__item">
           <span class="contacts__item-title">CAFE</span>
           <ul class="contacts__cards list">
@@ -12,8 +14,7 @@
                 href="https://goo.gl/maps/9Ze7EkK1HeeVNBnd8"
                 class="contacts__cards-address link"
               >
-                10340 Ridgeland Ave,<br />
-                Chicago Ridge, IL 60415, USA
+                10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
               </a>
             </li>
             <li class="contacts__cards">
@@ -97,10 +98,24 @@
       </ul>
       <ul class="contacts__button-list list">
         <li class="contacts-button">
-          <button class="contacts__button-location btn">Our Locations</button>
+          <button class="contacts__button btn">
+            Our Locations
+            <svg class="contacts__icon" width="12px" height="12px">
+              <use href="./images/icons.svg#icon-buy_now"></use>
+            </svg>
+          </button>
         </li>
         <li class="contacts-button">
-          <button class="contacts__button-franchise btn">Franchise</button>
+          <button class="contacts__button contacts__button--bcgcolor btn">
+            Franchise
+            <svg
+              class="contacts__icon contacts__icon--position"
+              width="12px"
+              height="12px"
+            >
+              <use href="./images/icons.svg#icon-buy_now"></use>
+            </svg>
+          </button>
         </li>
       </ul>
     </address>
