@@ -222,11 +222,26 @@ img {
   margin-top: 0px;
   width: 100%;
   height: 100%;
-  background-image: url(./../images/Desctop/points-desctop.png);
+  background-image: url("./../images/Mobile/Points-mobile.png");
   background-repeat: no-repeat;
   background-position: bottom 5px right 0;
 }
 
+@media screen and (min-width: 480px) {
+  .hero-wrapper {
+    background-image: url("./../images/480/Points-480.png");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-wrapper {
+    background-image: url("./../images/Tablet/points-tablet.png");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-wrapper {
+    background-image: url("./../images/Desctop/points-desctop.png");
+  }
+}
 .hero-container {
   position: absolute;
   top: 115px;
