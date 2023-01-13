@@ -1,0 +1,23 @@
+.about {
+  &-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.about-pretitle {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.26;
+  letter-spacing: 0.04em;
+
+  text-align: center;
+  text-transform: uppercase;
+}
