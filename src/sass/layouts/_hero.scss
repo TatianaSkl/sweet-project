@@ -108,6 +108,15 @@
   text-align: left;
 }
 
+@media screen and (max-width: 335px) {
+  .hero-title {
+    margin-bottom: 28px;
+
+    font-size: 22px;
+    line-height: 1.26;
+  }
+}
+
 @include tablet {
   .hero-title {
     margin-bottom: 20px;
@@ -240,8 +249,9 @@
       background: var(--accent-link-color);
       margin: 0 1px;
       border-radius: 50%;
-      box-shadow: 0 0 0 2px #f8d24e44, 0 0 15px #f8d24e77, 0 0 40px var(--accent-link-color);
-      animation: animate-bubbles 5000s ease-in-out infinite reverse;
+      box-shadow: 0 0 0 2px #f8d24e44, 0 0 15px #f8d24e77,
+        0 0 40px var(--accent-link-color);
+      animation: animate-bubbles 5000s cubic-bezier(0.4, 0, 0.2, 1) infinite reverse;
       animation-duration: calc(50s / var(--i));
 
       &:nth-child(even) {
@@ -257,7 +267,8 @@
     .point {
       width: 6px;
       height: 6px;
-      box-shadow: 0 0 0 4px #f8d24e44, 0 0 20px #f8d24e77, 0 0 50px var(--accent-link-color);
+      box-shadow: 0 0 0 4px #f8d24e44, 0 0 20px #f8d24e77,
+        0 0 50px var(--accent-link-color);
     }
   }
 }
@@ -267,7 +278,8 @@
     .point {
       width: 8px;
       height: 8px;
-      box-shadow: 0 0 0 5px #f8d24e44, 0 0 25px #f8d24e77, 0 0 60px var(--accent-link-color);
+      box-shadow: 0 0 0 5px #f8d24e44, 0 0 25px #f8d24e77,
+        0 0 60px var(--accent-link-color);
     }
   }
 }
@@ -279,7 +291,8 @@
       height: 12px;
 
       margin: 0 2px;
-      box-shadow: 0 0 0 5px #f8d24e44, 0 0 50px #f8d24e77, 0 0 100px var(--accent-link-color);
+      box-shadow: 0 0 0 5px #f8d24e44, 0 0 50px #f8d24e77,
+        0 0 100px var(--accent-link-color);
     }
   }
 }
@@ -452,7 +465,7 @@
     display: block;
 
     z-index: 5;
-    animation: animate-icecreams 50s ease-in-out infinite;
+    animation: animate-icecreams 50s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   }
 }
 
@@ -496,7 +509,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 319px) {
   .hero-ice-cream-eyes {
     display: none;
   }
@@ -505,13 +518,13 @@
 @media screen and (min-width: 320px) {
   .hero-ice-cream-eyes {
     position: absolute;
-    opacity: 1;
+    opacity: 0;
 
     bottom: 111px;
     right: 142px;
 
     z-index: 5;
-    animation: animate-eyes 10s 1s ease-in-out infinite reverse;
+    animation: animate-eyes 10s 1s cubic-bezier(0.4, 0, 0.2, 1) infinite reverse;
   }
 }
 
