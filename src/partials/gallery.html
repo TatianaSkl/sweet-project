@@ -2,18 +2,25 @@
     <div class="container">
         <h2 class="visually-hidden">Gallary</h2>
         <div class="one-time">
-            <div class="reviews__wrapper">
-                <img src="./images/Desctop/many_cornouts-desctop.png" alt="ice cream in waffle cups with blueberries"
-                    width="1013" class="reviews__wall">
-        
+            <div class="gallary__wrapper">
+                <img srcset="./images/Desctop/many_cornouts-desctop.png 1x, ./images/Desctop/many-cornouts-desctop-2x.png 2x"
+                src="./images/Desctop/many_cornouts-desctop.png" alt="ice cream in waffle cups with blueberries"
+                    width="1013" class="gallary__wall">
+                <picture>
+                    <source srcset="./images/Desctop/many_cornouts-desctop.png 1x, ./images/Desctop/many-cornouts-desctop-2x.png 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/Tablet/Many_cornouts-tablet.png 1x, ./images/Tablet/many-cornouts-tablet-2x.png 2x" media="(min-width: 768px)">
+                    <source srcset="./images/Mobile/Many_cornouts-mobile.png 1x, ./images/Mobile/many-cornouts-mobile-2x.png 2x" media="(min-width: 480px)">
+                    <source srcset="./images/480/Many_cornouts-480.png 1x, ./images/480/many-cornouts-480-2x.png 2x" media="(min-width: 320px)">
+                </picture>
             </div>
-            <div class="reviews__wrapper">
-                <img src="./images/slider-courtney-cook.png" alt="ice cream in waffle cups" width="1013" class="reviews__wall">
-        
-        
+            <div class="gallary__wrapper">
+                <img srcset="./images/slider-courtney-cook.png 1x, ./images/slider-courtney-cook-2x.png 2x"
+                src="./images/slider-courtney-cook.png" alt="ice cream in waffle cups" width="1013" class="gallary__wall">
+                
             </div>
-            <div class="reviews__wrapper">
-                <img src="./images/slider-unsplash.png" alt="ice cream on a stick" width="1013" class="reviews__wall">
+            <div class="gallary__wrapper">
+                <img srcset="./images/slider-unsplash.png 1x, ./images/slider-unsplash-2x.png 2x "
+                src="./images/slider-unsplash.png" alt="ice cream on a stick" width="1013" class="gallary__wall">
         
             </div>
         </div>
