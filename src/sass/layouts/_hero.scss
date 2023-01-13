@@ -9,13 +9,13 @@
   background: var(--primary-color);
 }
 
-@media screen and (min-width: 480px) {
+@include tel {
   .container-hero {
     height: 415px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .container-hero {
     height: 665px;
   }
@@ -31,7 +31,7 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@include tel {
   .container-hero {
     .container {
       background-image: url('./../images/480/Points-480.png');
@@ -39,7 +39,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@include tablet {
   .container-hero {
     .container {
       background-image: url('./../images/Tablet/points-tablet.png');
@@ -47,7 +47,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .container-hero {
     .container {
       background-image: url('./../images/Desctop/points-desctop.png');
@@ -77,13 +77,13 @@
   z-index: 5;
 }
 
-@media screen and (min-width: 768px) {
+@include tablet {
   .hero-container {
     top: 80px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .hero-container {
     width: 370px;
     top: 115px;
@@ -108,13 +108,13 @@
   text-align: left;
 }
 
-@media screen and (min-width: 768px) {
+@include tablet {
   .hero-title {
     margin-bottom: 20px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .hero-title {
     margin-bottom: 28px;
 
@@ -140,24 +140,24 @@
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   &:hover {
-    border: 2px solid #0a8817;
+    border: 2px solid var(--focus-color);
   }
   &:focus {
     color: var(--second-color);
-    border: 2px solid #0a8817;
+    border: 2px solid var(--focus-color);
   }
   &:disabled {
-    border: 2px solid #ababab;
+    border: 2px solid var(--disabled-color);
   }
 }
 
-@media screen and (min-width: 768px) {
+@include tablet {
   .btn-hero {
     margin-right: 20px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .btn-hero {
     margin-right: 34px;
     padding: 12px 34px;
@@ -166,6 +166,8 @@
     line-height: 1.16;
   }
 }
+
+// ----- Link! -----
 
 .hero-container-link {
   color: var(--accent-link-color);
@@ -179,22 +181,24 @@
   text-decoration-line: underline;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    color: #0a8817;
+    color: var(--focus-color);
   }
   &:focus {
     color: var(--second-color);
   }
   &:disabled {
-    color: #ababab;
+    color: var(--disabled-color);
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .hero-container-link {
     font-size: 14px;
     line-height: 1.21;
   }
 }
+
+// ----- Bubbles! -----
 
 .hero-bubbles-wrapper {
   position: relative;
@@ -205,13 +209,13 @@
   overflow: hidden;
 }
 
-@media screen and (min-width: 480px) {
+@include tel {
   .hero-bubbles-wrapper {
     height: 415px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .hero-bubbles-wrapper {
     height: 665px;
   }
@@ -233,10 +237,10 @@
 
       width: 5px;
       height: 5px;
-      background: #f8d24e;
+      background: var(--accent-link-color);
       margin: 0 1px;
       border-radius: 50%;
-      box-shadow: 0 0 0 2px #f8d24e44, 0 0 15px #f8d24e77, 0 0 40px #f8d24e;
+      box-shadow: 0 0 0 2px #f8d24e44, 0 0 15px #f8d24e77, 0 0 40px var(--accent-link-color);
       animation: animate-bubbles 5000s ease-in-out infinite reverse;
       animation-duration: calc(50s / var(--i));
 
@@ -248,34 +252,34 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@include tel {
   .bubbles {
     .point {
       width: 6px;
       height: 6px;
-      box-shadow: 0 0 0 4px #f8d24e44, 0 0 20px #f8d24e77, 0 0 50px #f8d24e;
+      box-shadow: 0 0 0 4px #f8d24e44, 0 0 20px #f8d24e77, 0 0 50px var(--accent-link-color);
     }
   }
 }
 
-@media screen and (min-width: 768px) {
+@include tablet {
   .bubbles {
     .point {
       width: 8px;
       height: 8px;
-      box-shadow: 0 0 0 5px #f8d24e44, 0 0 25px #f8d24e77, 0 0 60px #f8d24e;
+      box-shadow: 0 0 0 5px #f8d24e44, 0 0 25px #f8d24e77, 0 0 60px var(--accent-link-color);
     }
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .bubbles {
     .point {
       width: 12px;
       height: 12px;
 
       margin: 0 2px;
-      box-shadow: 0 0 0 5px #f8d24e44, 0 0 50px #f8d24e77, 0 0 100px #f8d24e;
+      box-shadow: 0 0 0 5px #f8d24e44, 0 0 50px #f8d24e77, 0 0 100px var(--accent-link-color);
     }
   }
 }
@@ -299,7 +303,7 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@include tel {
   .hero-snowflake,
   .hero-snowflake-even {
     width: 6px;
@@ -308,7 +312,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@include tablet {
   .hero-snowflake,
   .hero-snowflake-even {
     width: 8px;
@@ -317,7 +321,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .hero-snowflake,
   .hero-snowflake-even {
     width: 12px;
@@ -337,7 +341,7 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@include tel {
   @keyframes animate-bubbles {
     0% {
       transform: translateY(415px) scale(1);
@@ -348,7 +352,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   @keyframes animate-bubbles {
     0% {
       transform: translateY(665px) scale(1);
@@ -359,13 +363,15 @@
   }
 }
 
+// ----- Read more! -----
+
 @media screen and (max-width: 767px) {
   .hero-readmore {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) {
+@include tablet {
   .hero-readmore {
     position: absolute;
     top: 250px;
@@ -408,7 +414,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .hero-readmore {
     top: 440px;
     left: 250px;
@@ -431,13 +437,15 @@
   font-size: 35px;
 }
 
+// ----- Dish ice creams! -----
+
 @media screen and (max-width: 767px) {
   .hero-ice-creams {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) {
+@include tablet {
   .hero-ice-creams {
     position: absolute;
     bottom: 12px;
@@ -448,7 +456,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .hero-ice-creams {
     bottom: 65px;
   }
@@ -466,6 +474,8 @@
   }
 }
 
+// ----- Big ice cream! -----
+
 .hero-ice-cream {
   position: absolute;
   right: 40px;
@@ -474,13 +484,13 @@
   z-index: 5;
 }
 
-@media screen and (min-width: 480px) {
+@include tel {
   .hero-ice-cream {
     right: 0;
   }
 }
 
-@media screen and (min-width: 768px) {
+@include tablet {
   .hero-ice-cream {
     right: 75px;
   }
@@ -505,21 +515,21 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@include tel {
   .hero-ice-cream-eyes {
     bottom: 138px;
     right: 126px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@include tablet {
   .hero-ice-cream-eyes {
     bottom: 170px;
     right: 230px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .hero-ice-cream-eyes {
     bottom: 290px;
     right: 337px;
@@ -553,13 +563,15 @@
   }
 }
 
+// ----- Franchise! -----
+
 @media screen and (max-width: 767px) {
   .hero-franchise {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) {
+@include tablet {
   .hero-franchise {
     position: absolute;
     top: 95px;
@@ -571,13 +583,13 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .hero-franchise {
     top: 125px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@include tablet {
   .hero-description {
     margin: 0;
   }
@@ -604,7 +616,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .hero-description-term {
     font-size: 46px;
   }

@@ -1,3 +1,5 @@
+// ----- Containers! -----
+
 .page-header {
   position: absolute;
   width: 100%;
@@ -19,6 +21,8 @@
   display: flex;
 }
 
+// ----- Site-nav! -----
+
 .header-site-nav {
   position: absolute;
   bottom: 0;
@@ -29,7 +33,7 @@
   line-height: 1.25;
 }
 
-@media screen and (max-width: 1199.99px) {
+@media screen and (max-width: 1199px) {
   .header-site-nav {
     display: none;
   }
@@ -51,6 +55,8 @@
   cursor: url(./../images/Cursor.png), pointer;
 }
 
+// ----- Language selector! -----
+
 .lang-select {
   position: absolute;
   right: 180px;
@@ -63,7 +69,7 @@
   font-size: 14px;
   line-height: 1.21;
   text-align: center;
-  color: #000000;
+  color: var(--additional-color);
   background: var(--accent-link-color);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 10px;
@@ -92,6 +98,8 @@
   cursor: pointer;
 }
 
+// ----- Button Buy now! -----
+
 .btn-header {
   position: absolute;
   bottom: 0;
@@ -113,13 +121,13 @@
 
   cursor: url(./../images/Cursor.png), pointer;
   &:hover {
-    background-color: #0a8817;
+    background-color: var(--focus-color);
   }
   &:focus {
     color: var(--second-color);
-    background-color: #0a8817;
+    background-color: var(--focus-color);
   }
   &:disabled {
-    background-color: #ababab;
+    background-color: var(--disabled-color);
   }
 }
