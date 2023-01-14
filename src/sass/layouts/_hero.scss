@@ -147,7 +147,7 @@
   border: 2px solid var(--accent-link-color);
   background: transparent;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
+  cursor: url(./../images/Cursor.png), pointer;
   &:hover {
     border: 2px solid var(--focus-color);
   }
@@ -189,6 +189,8 @@
   text-align: center;
   text-decoration-line: underline;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: url(./../images/Cursor.png), pointer;
+
   &:hover {
     color: var(--focus-color);
   }
@@ -251,7 +253,8 @@
       border-radius: 50%;
       box-shadow: 0 0 0 2px #f8d24e44, 0 0 15px #f8d24e77,
         0 0 40px var(--accent-link-color);
-      animation: animate-bubbles 5000s cubic-bezier(0.4, 0, 0.2, 1) infinite reverse;
+      animation: animate-bubbles 5000s cubic-bezier(0.4, 0, 0.2, 1) infinite
+        reverse;
       animation-duration: calc(50s / var(--i));
 
       &:nth-child(even) {
