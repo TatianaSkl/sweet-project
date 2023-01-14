@@ -35,9 +35,9 @@
   overflow: auto;
   max-width: 280px;
   width: 100%;
-  //   height: 991px;
-  min-height: 100%;
-  max-height: 100vw;
+  height: 991px;
+  //   min-height: 100%;
+  max-height: 100%;
   padding: 28px;
 
   background-color: var(--second-color);
@@ -50,7 +50,7 @@
   @include tablet {
     padding: 32px;
     max-width: 568px;
-    // height: 644px;
+    height: 644px;
   }
 
   &__title {
