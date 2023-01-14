@@ -1,0 +1,50 @@
+.advantages {
+    background-color: var(--primary-color);
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+.advantages-list {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    @include tablet{
+        gap: 80px;
+        flex-wrap: nowrap;
+    }
+   
+}
+.advantages-item-1::before {
+    content: url(../images/cow.svg);
+}
+.advantages-item-2::before {
+    content: url(../images/icecrema.svg);
+}
+.advantages-item-3::before {
+    content: url(../images/weight.svg);
+}
+.advantages-item_title {
+    text-align: center;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    @include tablet{
+        margin-top: 32px;
+        margin-bottom: 12px;
+        font-size: 48px;
+        line-height: 59px;
+    }
+    @include desktop{
+        margin-top: 40px;
+        font-size: 58px;
+        line-height: 71px;
+    }
+}
+.advantages-item_text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+}

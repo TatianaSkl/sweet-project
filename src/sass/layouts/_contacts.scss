@@ -1,0 +1,187 @@
+address {
+  font-style: normal;
+}
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include tablet {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  @include desktop {
+    margin-bottom: 60px;
+  }
+}
+.contacts__item {
+  width: 280px;
+  height: 412px;
+  padding: 40px 32px 24px;
+  background: var(--second-color);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  margin-bottom: 16px;
+  @include tablet {
+    margin-right: 16px;
+    width: 224px;
+    height: 100%;
+    padding: 40px 24px;
+  }
+  @include desktop {
+    margin-right: 32px;
+    width: 368px;
+    height: 100%;
+    padding: 40px;
+  }
+  &:last-child {
+    margin-bottom: 20px;
+    @include tel {
+      margin-bottom: 24px;
+      margin-right: 0;
+    }
+  }
+  &-title {
+    display: inline-block;
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    color: var(--additional-color);
+    background: var(--accent-link-color);
+    border-radius: 4px;
+    padding: 4px 22px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    @include tablet {
+      font-size: 16px;
+      line-height: 140%;
+    }
+    @include desktop {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.contacts__cards {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 12px;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+  @include desktop {
+    padding-bottom: 32px;
+  }
+
+  &:last-child {
+    border-bottom: none;
+    @include tablet {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  &-city {
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: var(--additional-color);
+    margin-bottom: 8px;
+    @include tablet {
+      font-size: 14px;
+    }
+    @include desktop {
+      font-size: 16px;
+    }
+  }
+  &-address {
+    line-height: 183%;
+    letter-spacing: 0.04em;
+    color: #d6936d;
+    @include tablet {
+      font-size: 14px;
+    }
+    @include desktop {
+      font-size: 16px;
+    }
+  }
+  &-link {
+    line-height: 160%;
+    color: var(--additional-color);
+    margin-bottom: 6px;
+    @include tablet {
+      font-size: 14px;
+      line-height: 150%;
+    }
+    @include desktop {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+.week-day {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: var(--additional-color);
+  @include tablet {
+    font-size: 14px;
+    line-height: 186%;
+  }
+  @include desktop {
+    font-size: 16px;
+  }
+}
+.week-time {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: #ababab;
+  @include tablet {
+    font-size: 14px;
+    line-height: 186%;
+  }
+  @include desktop {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+}
+.contacts__button-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contacts__button {
+  position: relative;
+  min-width: 196px;
+  padding: 12px 55px 12px 40px;
+  border: 2px solid #f8d24e;
+  margin-bottom: 16px;
+  &--bcgcolor {
+    background: none;
+  }
+  @include tablet {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+  @include desktop {
+    line-height: 18px;
+  }
+}
+
+.contacts__icon {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translate(-50%, -50%);
+  &--position {
+    right: 23%;
+  }
+}

@@ -1,0 +1,641 @@
+// ----- Containers! -----
+
+.container-hero {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 502px;
+  margin: 0 auto;
+  background: var(--primary-color);
+}
+
+@include tel {
+  .container-hero {
+    height: 415px;
+  }
+}
+
+@include desktop {
+  .container-hero {
+    height: 665px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .container-hero {
+    .container {
+      background-image: url('./../images/Mobile/points-mobile.png');
+      background-repeat: no-repeat;
+      background-position: bottom 5px right 0;
+    }
+  }
+}
+
+@include tel {
+  .container-hero {
+    .container {
+      background-image: url('./../images/480/points-480.png');
+    }
+  }
+}
+
+@include tablet {
+  .container-hero {
+    .container {
+      background-image: url('./../images/Tablet/points-tablet.png');
+    }
+  }
+}
+
+@include desktop {
+  .container-hero {
+    .container {
+      background-image: url('./../images/desktop/points-desktop.png');
+    }
+  }
+}
+
+.hero-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-container {
+  position: absolute;
+  top: 100px;
+
+  width: 280px;
+  background: current;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  z-index: 5;
+}
+
+@include tablet {
+  .hero-container {
+    top: 80px;
+  }
+}
+
+@include desktop {
+  .hero-container {
+    width: 370px;
+    top: 115px;
+  }
+}
+
+// ----- Title! -----
+
+.hero-title {
+  margin-bottom: 32px;
+
+  color: var(--second-color);
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.26;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  justify-content: start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+@media screen and (max-width: 335px) {
+  .hero-title {
+    margin-bottom: 28px;
+
+    font-size: 22px;
+    line-height: 1.26;
+  }
+}
+
+@include tablet {
+  .hero-title {
+    margin-bottom: 20px;
+  }
+}
+
+@include desktop {
+  .hero-title {
+    margin-bottom: 28px;
+
+    font-size: 38px;
+    line-height: 1.26;
+  }
+}
+
+// ----- Button! -----
+
+.btn-hero {
+  margin-right: 12px;
+  padding: 11px 26px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  justify-content: center;
+  border: 2px solid var(--accent-link-color);
+  background: transparent;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  &:hover {
+    border: 2px solid var(--focus-color);
+  }
+  &:focus {
+    color: var(--second-color);
+    border: 2px solid var(--focus-color);
+  }
+  &:disabled {
+    border: 2px solid var(--disabled-color);
+  }
+}
+
+@include tablet {
+  .btn-hero {
+    margin-right: 20px;
+  }
+}
+
+@include desktop {
+  .btn-hero {
+    margin-right: 34px;
+    padding: 12px 34px;
+
+    font-size: 14px;
+    line-height: 1.16;
+  }
+}
+
+// ----- Link! -----
+
+.hero-container-link {
+  color: var(--accent-link-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: var(--focus-color);
+  }
+  &:focus {
+    color: var(--second-color);
+  }
+  &:disabled {
+    color: var(--disabled-color);
+  }
+}
+
+@include desktop {
+  .hero-container-link {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+
+// ----- Bubbles! -----
+
+.hero-bubbles-wrapper {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 502px;
+  overflow: hidden;
+}
+
+@include tel {
+  .hero-bubbles-wrapper {
+    height: 415px;
+  }
+}
+
+@include desktop {
+  .hero-bubbles-wrapper {
+    height: 665px;
+  }
+}
+
+.bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  z-index: 3;
+}
+
+@media screen and (min-width: 320px) {
+  .bubbles {
+    .point {
+      position: relative;
+
+      width: 5px;
+      height: 5px;
+      background: var(--accent-link-color);
+      margin: 0 1px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px #f8d24e44, 0 0 15px #f8d24e77,
+        0 0 40px var(--accent-link-color);
+      animation: animate-bubbles 5000s cubic-bezier(0.4, 0, 0.2, 1) infinite reverse;
+      animation-duration: calc(50s / var(--i));
+
+      &:nth-child(even) {
+        background: #324db8;
+        box-shadow: 0 0 0 4px #324db844, 0 0 50px #324db877, 0 0 100px #324db8;
+      }
+    }
+  }
+}
+
+@include tel {
+  .bubbles {
+    .point {
+      width: 6px;
+      height: 6px;
+      box-shadow: 0 0 0 4px #f8d24e44, 0 0 20px #f8d24e77,
+        0 0 50px var(--accent-link-color);
+    }
+  }
+}
+
+@include tablet {
+  .bubbles {
+    .point {
+      width: 8px;
+      height: 8px;
+      box-shadow: 0 0 0 5px #f8d24e44, 0 0 25px #f8d24e77,
+        0 0 60px var(--accent-link-color);
+    }
+  }
+}
+
+@include desktop {
+  .bubbles {
+    .point {
+      width: 12px;
+      height: 12px;
+
+      margin: 0 2px;
+      box-shadow: 0 0 0 5px #f8d24e44, 0 0 50px #f8d24e77,
+        0 0 100px var(--accent-link-color);
+    }
+  }
+}
+
+.hero-snowflake,
+.hero-snowflake-even {
+  width: 5px;
+  height: 5px;
+  transform: translateY(-175%);
+  fill: #324db8;
+}
+
+.hero-snowflake-even {
+  fill: var(--accent-link-color);
+}
+
+@media screen and (max-width: 320px) {
+  .hero-snowflake,
+  .hero-snowflake-even {
+    display: none;
+  }
+}
+
+@include tel {
+  .hero-snowflake,
+  .hero-snowflake-even {
+    width: 6px;
+    height: 6px;
+    transform: translateY(-130%);
+  }
+}
+
+@include tablet {
+  .hero-snowflake,
+  .hero-snowflake-even {
+    width: 8px;
+    height: 8px;
+    transform: translateY(-75%);
+  }
+}
+
+@include desktop {
+  .hero-snowflake,
+  .hero-snowflake-even {
+    width: 12px;
+    height: 12px;
+    transform: translateY(-15%);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  @keyframes animate-bubbles {
+    0% {
+      transform: translateY(502px) scale(1);
+    }
+    100% {
+      transform: translateY(10vh) scale(0);
+    }
+  }
+}
+
+@include tel {
+  @keyframes animate-bubbles {
+    0% {
+      transform: translateY(415px) scale(1);
+    }
+    100% {
+      transform: translateY(15vh) scale(0);
+    }
+  }
+}
+
+@include desktop {
+  @keyframes animate-bubbles {
+    0% {
+      transform: translateY(665px) scale(1);
+    }
+    100% {
+      transform: translateY(20vh) scale(0);
+    }
+  }
+}
+
+// ----- Read more! -----
+
+@media screen and (max-width: 767px) {
+  .hero-readmore {
+    display: none;
+  }
+}
+
+@include tablet {
+  .hero-readmore {
+    position: absolute;
+    top: 250px;
+    left: 170px;
+    width: 195px;
+    color: var(--second-color);
+    z-index: 5;
+
+    .hero-readmore-input {
+      opacity: 0;
+
+      position: absolute;
+      bottom: 0;
+      left: 250px;
+
+      pointer-events: none;
+    }
+
+    .hero-readmore-text {
+      font-size: 11px;
+      line-height: 1.4;
+
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .hero-readmore-input:focus ~ .hero-readmore-label {
+      outline: -webkit-focus-ring-color auto 5px;
+    }
+
+    .hero-readmore-input:checked + .hero-readmore-text {
+      -webkit-line-clamp: unset;
+    }
+
+    .hero-readmore-input:checked ~ .hero-readmore-label {
+      display: none;
+    }
+  }
+}
+
+@include desktop {
+  .hero-readmore {
+    top: 440px;
+    left: 250px;
+    width: 210px;
+
+    .hero-readmore-input {
+      left: 250px;
+    }
+
+    .hero-readmore-text {
+      font-size: 13px;
+      line-height: 1.4;
+    }
+  }
+}
+
+.hero-readmore-label {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+// ----- Dish ice creams! -----
+
+@media screen and (max-width: 767px) {
+  .hero-ice-creams {
+    display: none;
+  }
+}
+
+@include tablet {
+  .hero-ice-creams {
+    position: absolute;
+    bottom: 12px;
+    display: block;
+
+    z-index: 5;
+    animation: animate-icecreams 50s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+}
+
+@include desktop {
+  .hero-ice-creams {
+    bottom: 65px;
+  }
+}
+
+@keyframes animate-icecreams {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-2.5turn);
+  }
+  100% {
+    transform: rotate(2.5turn);
+  }
+}
+
+// ----- Big ice cream! -----
+
+.hero-ice-cream {
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+
+  z-index: 5;
+}
+
+@include tel {
+  .hero-ice-cream {
+    right: 0;
+  }
+}
+
+@include tablet {
+  .hero-ice-cream {
+    right: 75px;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .hero-ice-cream-eyes {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .hero-ice-cream-eyes {
+    position: absolute;
+    opacity: 0;
+
+    bottom: 111px;
+    right: 142px;
+
+    z-index: 5;
+    animation: animate-eyes 10s 1s cubic-bezier(0.4, 0, 0.2, 1) infinite reverse;
+  }
+}
+
+@include tel {
+  .hero-ice-cream-eyes {
+    bottom: 138px;
+    right: 126px;
+  }
+}
+
+@include tablet {
+  .hero-ice-cream-eyes {
+    bottom: 170px;
+    right: 230px;
+  }
+}
+
+@include desktop {
+  .hero-ice-cream-eyes {
+    bottom: 290px;
+    right: 337px;
+  }
+}
+
+@keyframes animate-eyes {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  81% {
+    opacity: 0;
+  }
+  87% {
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 1;
+  }
+  91% {
+    opacity: 0;
+  }
+  97% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// ----- Franchise! -----
+
+@media screen and (max-width: 767px) {
+  .hero-franchise {
+    display: none;
+  }
+}
+
+@include tablet {
+  .hero-franchise {
+    position: absolute;
+    top: 95px;
+    right: 0;
+
+    display: block;
+
+    z-index: 5;
+  }
+}
+
+@include desktop {
+  .hero-franchise {
+    top: 125px;
+  }
+}
+
+@include tablet {
+  .hero-description {
+    margin: 0;
+  }
+
+  .hero-description-term {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.22;
+    letter-spacing: 0.04em;
+    text-align: right;
+
+    color: var(--additional-color);
+  }
+
+  .hero-description-detail {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.25;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: right;
+  }
+}
+
+@include desktop {
+  .hero-description-term {
+    font-size: 46px;
+  }
+
+  .hero-description-detail {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
