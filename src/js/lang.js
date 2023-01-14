@@ -54,6 +54,8 @@ const langArr = {
 
 
 
+
+
     // ----- Footer!-----
 
     "footer__title": {
@@ -72,4 +74,41 @@ const langArr = {
         "en": "&#169; 2022 - IceCream. All Rights Reserved.",
         "ua": "&#169; 2022 - Морозиво. Всі права захищені",
     },
+
+    // ----- Modal Buy now!-----
+
+    "modal_buy_now-title": {
+        "en": "Buy now",
+        "ua": "Купити зараз",
+    },
+    "modal_buy_now-product-1": {        
+        "en": "ice cream",
+        "ua": "морозиво",
+    },
+    "modal_buy_now-product-2": {        
+        "en": "ice-coffee",
+        "ua": "кава холодна",
+    },
+    "modal_buy_now-product-3": {        
+        "en": "milkshake",
+        "ua": "мілкшейк",
+    },
+    "modal_buy_now-label-1": {        
+        "en": "Name",
+        "ua": "Ім'я",
+    },
+    "modal_buy_now-label-2": {        
+        "en": "Phone",
+        "ua": "Телефон",
+    },
+    "modal_buy_now-label-3": {        
+        "en": "Comment",
+        "ua": "Коментарій",
+    },
+    "modal_buy_now-btn": {        
+        "en": "Submit",
+        "ua": "Відправити",
+    },
+
+
 }

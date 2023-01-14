@@ -111,7 +111,7 @@
 .product-modal__list {
   display: flex;
   gap: 82px;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
@@ -220,6 +220,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
+  text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
@@ -228,7 +229,7 @@
 
 .product-modal__form-field {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 
   @include tablet {
     margin-bottom: 16px;
@@ -327,20 +328,28 @@
 
 .product-modal__input:focus + .product-modal__label,
 .product-modal__input:not(:placeholder-shown) + .product-modal__label {
-  transform: translateY(-30px);
+  transform: translateY(-38px);
+  font-weight: 700;
+  
 
   @include tablet {
-    transform: translate(-70px, -10px) color var();
+    transform: translate(-85px, -10px);
+    font-weight: 700;
+    
   }
 }
 
 .product-modal__comment:focus + .product-modal__label-comment,
 .product-modal__comment:not(:placeholder-shown)
   + .product-modal__label-comment {
-  transform: translateY(-22px);
+  transform: translateY(-30px);
+  font-weight: 700;
+  
 
   @include tablet {
-    transform: translate(-95px, -1px);
+    transform: translate(-105px, -1px);
+    font-weight: 700;
+    
   }
 }
 
