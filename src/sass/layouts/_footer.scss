@@ -83,9 +83,16 @@
 
 .footer__item {
     margin-right: 20px;
+    border-radius: 50%;
 
     &:nth-child(3) {
         margin-right: 0px;
+    }
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+        box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+       
     }
 }
 
@@ -102,6 +109,9 @@
     &:hover,
     &:focus {
         color: var(--second-color);
+        transform: scale(1.1);
+        box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+       
     }
 }
 
