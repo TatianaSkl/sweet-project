@@ -65,11 +65,11 @@ const langArr = {
         "ua": "з пристрастю",
     },
     "footer__info": {
-        "en": "Feel free to contact",
-        "ua": "Не соромтеся звертатися",
+        "en": "Feel free to contact +61 (0) 383 766 284",
+        "ua": "Не соромтеся звертатися +61 (0) 383 766 284",
     },
     "footer__copyright": {
-        "en": "IceCream. All Rights Reserved.",
-        "ua": "Морозиво. Всі права захищені",
+        "en": "&#169; 2022 - IceCream. All Rights Reserved.",
+        "ua": "&#169; 2022 - Морозиво. Всі права захищені",
     },
 }
