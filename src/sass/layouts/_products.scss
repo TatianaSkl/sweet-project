@@ -104,7 +104,6 @@
     padding-right: 26px;
 
     width: calc((100% - 16px * 2) / 3);
-    height: 536px;
     
     &:last-child {
         margin-right: 0;
@@ -117,6 +116,7 @@
     padding-right: 62px;
 
     width: calc((100% - 29px * 2) / 3);
+    height: 536px;
     margin-right: 29px;
 
     &:last-child {
@@ -304,4 +304,13 @@
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
+
+    @media screen and (min-width: 1200px) {
+        bottom: 10%;
+    }
+}
+
+.products__button {
+    border: none;
+    background-color: transparent;
 }
