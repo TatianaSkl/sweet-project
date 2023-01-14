@@ -1,23 +1,121 @@
 .about {
+  
   &-title {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.22;
 
+    margin-bottom: 12px;
     text-align: center;
     text-transform: uppercase;
   }
-}
 
-.about-pretitle {
-  font-family: 'Seymour One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 1.26;
-  letter-spacing: 0.04em;
+  &-pretitle {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
 
-  text-align: center;
-  text-transform: uppercase;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto 32px;
+    text-transform: uppercase;
+  }
+
+  &-information-box {
+    position: relative;
+    width: 279px;
+    height: 278px;
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    border-radius: 140px;
+    margin: 0 auto 62px;
+  }
+
+  &-image {
+    position: absolute;
+    top: 7%;
+  }
+
+  &-information-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.9;
+    margin-bottom: 30px;
+
+    letter-spacing: 0.04em;
+  }
+
+  &-information-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.76;
+    width: 220px;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  &-information-btn {
+    display: flex;
+    align-items: center;
+
+    margin: 0 auto 60px;
+    padding: 12px 34px;
+  }
+
+  &-description-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:not(:last-child){
+      margin-bottom: 28px;
+    }
+
+  }
+
+  &-description-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 16px;
+    background-color: var(--accent-link-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  &-description-title {
+    font-style: normal;
+
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.22;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  &-description-text {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+  }
 }
