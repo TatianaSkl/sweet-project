@@ -1,23 +1,44 @@
+// ----- Containers! -----
+
 .page-header {
   position: absolute;
   width: 100%;
   top: 0;
-  left: 0px;
-  padding-top: 8px;
-  padding-left: 16px;
+  left: 0;
+  padding-top: 12px;
+  padding-left: 0px;
 
   display: flex;
 
   justify-content: start;
 
-  background: transparent;
   z-index: 5;
+}
+
+@include tel {
+  .page-header {
+    padding-top: 14px;
+  }
+}
+
+@include tablet {
+  .page-header {
+    padding-top: 20px;
+  }
+}
+
+@include desktop {
+  .page-header {
+    padding-top: 8px;
+  }
 }
 
 .container-header {
   position: relative;
   display: flex;
 }
+
+// ----- Site-nav! -----
 
 .header-site-nav {
   position: absolute;
@@ -29,7 +50,7 @@
   line-height: 1.25;
 }
 
-@media screen and (max-width: 1199.99px) {
+@media screen and (max-width: 1199px) {
   .header-site-nav {
     display: none;
   }
@@ -51,10 +72,30 @@
   cursor: url(./../images/Cursor.png), pointer;
 }
 
+// ----- Language selector! -----
+
 .lang-select {
   position: absolute;
-  right: 180px;
+  right: 75px;
   bottom: 0;
+}
+
+@include tel {
+  .lang-select {
+    right: 85px;
+  }
+}
+
+@include tablet {
+  .lang-select {
+    right: 260px;
+  }
+}
+
+@include desktop {
+  .lang-select {
+    right: 195px;
+  }
 }
 
 .change-lang {
@@ -63,7 +104,7 @@
   font-size: 14px;
   line-height: 1.21;
   text-align: center;
-  color: #000000;
+  color: var(--additional-color);
   background: var(--accent-link-color);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 10px;
@@ -73,53 +114,86 @@
 }
 
 .change-lang-link {
-  padding: 10px 20px;
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 12px;
   line-height: 1.21;
-  text-align: center;
-  color: #000000;
+
+  color: var(--additional-color);
   cursor: pointer;
 }
 
-.change-lang-text {
-  margin: 10px 20px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
-  text-align: center;
-  color: #000000;
-  cursor: pointer;
+// ----- Button Buy now! -----
+
+@media screen and (max-width: 767px) {
+  .btn-header {
+    display: none;
+  }
 }
 
-.btn-header {
+@include tablet {
+  .btn-header {
+    position: absolute;
+    bottom: 0;
+    right: 85px;
+    display: block;
+    height: 42px;
+    width: 152px;
+    justify-content: end;
+
+    padding: 10px 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.16;
+    text-align: center;
+    justify-content: center;
+
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    cursor: url(./../images/Cursor.png), pointer;
+    &:hover {
+      background-color: var(--focus-color);
+    }
+    &:focus {
+      color: var(--second-color);
+      background-color: var(--focus-color);
+    }
+    &:disabled {
+      background-color: var(--disabled-color);
+    }
+  }
+}
+
+@include desktop {
+  .btn-header {
+    right: 16px;
+  }
+}
+
+// ----- Button Mobile menu! -----
+
+.btn-mobmenu-open {
   position: absolute;
-  bottom: 0;
-  right: 16px;
-  display: block;
-  height: 42px;
-  width: 152px;
-  justify-content: end;
+  padding: 0;
+  margin: 0;
+  top: 1px;
+  right: 21px;
 
-  padding: 10px 20px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.16;
-  text-align: center;
-  justify-content: center;
+  background-color: transparent;
+  border: none;
 
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: currentColor;
 
-  cursor: url(./../images/Cursor.png), pointer;
   &:hover {
-    background-color: #0a8817;
+    color: var(--focus-color);
   }
-  &:focus {
-    color: var(--second-color);
-    background-color: #0a8817;
+
+  @include tel {
+    top: 8px;
+    right: 33px;
   }
-  &:disabled {
-    background-color: #ababab;
+
+  @include desktop {
+    display: none;
   }
 }

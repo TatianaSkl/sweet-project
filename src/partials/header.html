@@ -9,14 +9,15 @@
                 sizes="(min-width: 1200px) 60px, 100vw">
             <img src="./images/Mobile/logo-mobile.png" alt="Logo">
         </picture>
+
         <nav class="header-site-nav">
             <a href="#home" class="header-site-nav-text language-site-nav-1">Home</a>
-            <a href="#" class="header-site-nav-text language-site-nav-2">How it’s made?</a>
+            <a href="#about" class="header-site-nav-text language-site-nav-2">How it’s made?</a>
             <a href="#products" class="header-site-nav-text language-site-nav-3">Our products</a>
-            <a href="#" class="header-site-nav-text language-site-nav-4">Contact</a>
+            <a href="#contact" class="header-site-nav-text language-site-nav-4">Contact</a>
         </nav>
-        <div class="lang-select">
 
+        <div class="lang-select">
             <select class="change-lang">
                 <option value="ua" class="change-lang-link">
                     <h5 class="change-lang-text">UA</h5>
@@ -25,10 +26,16 @@
                     <h5 class="change-lang-text">EN</h5>
                 </option>
             </select>
-
         </div>
 
         <button type="button" class="btn btn-header language-btn-header">Buy now &#707;</button>
+
+        <button class="btn-mobmenu-open js-open-menu" aria-expanded="false"
+        aria-controls="open mobile-menu">
+            <svg class="btn-mobmenu-close-icon" width="32" height="32">
+                <use href="./images/icons.svg#icon-Burger"></use>
+            </svg>
+        </button>
 
     </div>
 </header>
