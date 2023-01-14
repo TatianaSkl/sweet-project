@@ -1158,6 +1158,21 @@ img {
   list-style: none;
 }
 
+.advantages-item-1::before {
+  content: url(../images/advantage-cow.png);
+  text-align: center;
+}
+
+.advantages-item-2::before {
+  content: url(../images/advantage-icecream.png);
+  text-align: center;
+}
+
+.advantages-item-3::before {
+  content: url(../images/advantage-weight.png);
+  text-align: center;
+}
+
 .advantages-item_title {
   text-align: center;
   margin-bottom: 12px;
@@ -1169,8 +1184,6 @@ img {
 .advantages-item_text {
   text-align: center;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 176%;
 }
 
 address {
