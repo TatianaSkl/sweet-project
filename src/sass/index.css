@@ -1156,34 +1156,57 @@ img {
 .advantages-list {
   display: flex;
   list-style: none;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    gap: 80px;
+    flex-wrap: nowrap;
+  }
 }
 
 .advantages-item-1::before {
   content: url(../images/advantage-cow.png);
-  text-align: center;
 }
 
 .advantages-item-2::before {
   content: url(../images/advantage-icecream.png);
-  text-align: center;
 }
 
 .advantages-item-3::before {
   content: url(../images/advantage-weight.png);
-  text-align: center;
 }
 
 .advantages-item_title {
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+  margin-top: 16px;
   font-weight: 700;
-  font-size: 58px;
-  line-height: 71px;
+  font-size: 36px;
+  line-height: 44px;
+}
+@media screen and (min-width: 768px) {
+  .advantages-item_title {
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-size: 48px;
+    line-height: 59px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-item_title {
+    margin-top: 40px;
+    font-size: 58px;
+    line-height: 71px;
+  }
 }
 
 .advantages-item_text {
   text-align: center;
   font-weight: 400;
+  font-size: 16px;
 }
 
 address {
