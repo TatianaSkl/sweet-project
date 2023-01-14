@@ -1,13 +1,59 @@
-
+.gallary{
+    /*position: relative;
+    top: 100%;
+    left: 0; */ 
+    transform: translateY(84%);
+    z-index: -1;
+        
+        background-image: url('..//../images/480/bg-480.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 1037px;
+    
+        @include tel {
+            background-image: url('..//..//images/Mobile/Bg_mobile.jpg');
+            height: 1242px;
+           /* top: 790px;
+                left: 0;*/
+        transform: translateY(75%);
+        }
+    
+        @include tablet {
+            background-image: url('..//..//images/Tablet/Bg_tablet.jpg');
+            height: 1017px;
+        };
+    
+        @include desktop {
+            background-image: url('..//..//images/Desctop/Bg_desctop.jpg');
+            height: 1350px;
+            transform: translateY(58%);
+}
+}
 .gallary__wall {
-  
+    transform: translateY(-32px);
+    z-index: 3;
+    overflow: visible;
     margin-bottom: 80px;
+
+    @include tel{
+    bottom: 27px;
+        left: 0;
+    }
     
     @include tablet{
        margin-bottom: 100px;
+    transform: translateY(-144px);
     };
     @include desktop{
     margin-bottom: 140px;
-    };
+    transform: translateY(-98px);
+};
     
+}
+.gallary__wrapper{
+    margin-left: auto;
+    margin-right: auto;
+       
 }
