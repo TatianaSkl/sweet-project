@@ -115,11 +115,10 @@
   cursor: auto;
 }
 
-@media screen and (max-width: 479px ) {
+@media screen and (max-width: 479px) {
   .change-lang {
-  padding: 5px 20px;
+    padding: 5px 20px;
   }
-  
 }
 
 .change-lang-link {
@@ -207,4 +206,5 @@
   }
 }
 
-// ----- Button Mobile menu! -----
+// ----- Backdrop menu! -----
+
