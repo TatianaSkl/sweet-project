@@ -22,26 +22,27 @@
   pointer-events: none;
 
   & .product-modal {
-    transform: translate(-50%, -130%) scale(1);
+    transform: translate(-50%, -10%) scale(1.3);
   }
 }
 
 .product-modal {
-//   position: relative;
+  //   position: relative;
   position: absolute;
   top: 50%;
   left: 50%;
 
+  overflow: auto;
   max-width: 280px;
   width: 100%;
-  height: 991px;
+  //   height: 991px;
+  min-height: 100%;
+  max-height: 100vw;
   padding: 28px;
 
   background-color: var(--second-color);
   border: 2px solid var(--accent-link-color);
   border-radius: 10px;
-
- 
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -49,7 +50,7 @@
   @include tablet {
     padding: 32px;
     max-width: 568px;
-    height: 644px;
+    // height: 644px;
   }
 
   &__title {
@@ -73,14 +74,14 @@
 
 .btn-close {
   position: absolute;
-  top: 24px;
+  top: 15px;
   right: 24px;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 25px;
 
   background-color: var(--second-color);
   border: none;
@@ -329,7 +330,7 @@
   transform: translateY(-30px);
 
   @include tablet {
-    transform: translate(-70px, -10px);
+    transform: translate(-70px, -10px) color var();
   }
 }
 
@@ -362,7 +363,7 @@
 }
 
 .disable-scroll {
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
 }
