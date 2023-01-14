@@ -1,14 +1,25 @@
 .advantages {
     background-color: var(--primary-color);
-}
-.title-advantages-hiden {
+    padding-top: 60px;
+    padding-bottom: 80px;
 }
 .advantages-list {
     display: flex;
+    list-style: none;
 }
 .advantages-item {
 }
 .advantages-item_title {
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 71px;
 }
 .advantages-item_text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 176%;
+    
 }
