@@ -18,6 +18,22 @@ const langArr = {
         "en": "Contact",
         "ua": "Контакти",
     },
+    "site-nav-5": {
+        "en": "Home",
+        "ua": "Головна",
+    },
+    "site-nav-6": {
+        "en": "How it’s made?",
+        "ua": "Як це зроблено?",
+    },
+    "site-nav-7": {
+        "en": "Our products",
+        "ua": "Наші продукти",
+    },
+    "site-nav-8": {
+        "en": "Contact",
+        "ua": "Контакти",
+    },
     "btn-header": {
         "en": "Buy now &#707",
         "ua": "Купити зараз &#707",
@@ -52,9 +68,52 @@ const langArr = {
 
 
 
+    // ----- Contacts!-----
 
-
-
+    "contacts__item-title": {
+        "en": "CAFE",
+        "ua": "КАФЕ",
+    },
+    "contacts__item-title2": {
+        "en": "FOODTRUCK",
+        "ua": "ФУДТРАК",
+    },
+    "contacts__cards-city": {
+        "en": "Chicago",
+        "ua": "Чикаго",
+    },
+    "contacts__cards-city2": {
+        "en": "Los Angeles",
+        "ua": "Лос-Анджелес",
+    },
+    "contacts__cards-city3": {
+        "en": "New York",
+        "ua": "Нью-Йорк",
+    },
+    "day-1": {
+        "en": "Monday - Friday",
+        "ua": "Понеділок- П’ятниця",
+    },
+    "time-1": {
+        "en": "06:00 AM - 10:00 PM",
+        "ua": "06:00 - 22:00",
+    },
+    "day-2": {
+        "en": "Saturday - Sunday",
+        "ua": "Субота - Неділя",
+    },
+    "time-2": {
+        "en": "08:00 AM - 04:00 PM",
+        "ua": "06:00 - 16:00",
+    },
+    "contacts__button": {
+        "en": "Our Locations",
+        "ua": "Наше Розташування",
+    },
+    "contacts__button-2": {
+        "en": "Franchise",
+        "ua": "Франшиза",
+    },
 
     // ----- Footer!-----
 
