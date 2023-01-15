@@ -1,6 +1,15 @@
 address {
   font-style: normal;
 }
+.contacts {
+  padding-bottom: 60px;
+  @include tablet {
+    padding-bottom: 40px;
+  }
+  @include desktop {
+    padding-bottom: 120px;
+  }
+}
 .contacts__list {
   display: flex;
   flex-wrap: wrap;
@@ -9,6 +18,7 @@ address {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    margin-bottom: 40px;
   }
   @include desktop {
     margin-bottom: 60px;
@@ -27,18 +37,23 @@ address {
     width: 224px;
     height: 100%;
     padding: 40px 24px;
+    margin-bottom: 0;
   }
   @include desktop {
     margin-right: 32px;
     width: 368px;
     height: 100%;
     padding: 40px;
+    margin-bottom: 0;
   }
   &:last-child {
     margin-bottom: 20px;
     @include tel {
       margin-bottom: 24px;
       margin-right: 0;
+    }
+    @include tablet {
+      margin-bottom: 0;
     }
   }
   &-title {
@@ -80,6 +95,8 @@ address {
 
   &:last-child {
     border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
     @include tablet {
       margin-bottom: 0;
       padding-bottom: 0;
@@ -101,8 +118,19 @@ address {
     line-height: 183%;
     letter-spacing: 0.04em;
     color: #d6936d;
+    &--narrow {
+      width: 90%;
+    }
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      cursor: url("..//../images/cursor.png"), pointer;
+    }
     @include tablet {
       font-size: 14px;
+      &--narrow {
+        width: 100%;
+      }
     }
     @include desktop {
       font-size: 16px;
@@ -142,7 +170,7 @@ address {
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
-  color: #ababab;
+  color: var(--disabled-color);
   @include tablet {
     font-size: 14px;
     line-height: 186%;
@@ -154,17 +182,53 @@ address {
 }
 .contacts__button-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  @include tablet {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .contacts__button {
   position: relative;
   min-width: 196px;
   padding: 12px 55px 12px 40px;
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--accent-link-color);
   margin-bottom: 16px;
-  &--bcgcolor {
+  &--franchise {
+    background: none;
+  }
+  &:hover,
+  &:focus {
+    cursor: url("..//../images/cursor.png"), pointer;
+  }
+  &:hover {
+    background: var(--focus-color);
+    border: 2px solid var(--focus-color);
+  }
+  &:focus {
+    background: var(--focus-color);
+    color: #ffffff;
+    border: 2px solid var(--focus-color);
+    fill: #ffffff;
+  }
+  &:disabled {
+    background: var(--disabled-color);
+    border: 2px solid var(--disabled-color);
+  }
+  &--franchise:hover {
+    border: 2px solid var(--focus-color);
+    background: none;
+  }
+  &--franchise:focus {
+    color: #ffffff;
+    fill: #ffffff;
+    background: none;
+  }
+  &--franchise:disabled {
+    border: 2px solid var(--disabled-color);
     background: none;
   }
   @include tablet {
@@ -181,6 +245,7 @@ address {
   top: 50%;
   right: 15%;
   transform: translate(-50%, -50%);
+
   &--position {
     right: 23%;
   }
