@@ -270,7 +270,7 @@ const langArr = {
     },
     "franchise__submit": {
         "en": "Submit",
-        "ua": "Надіслати",
+        "ua": "Відправити",
     },
 
     // ----- Modal products!-----
@@ -292,108 +292,108 @@ const langArr = {
         "ua": " ккал", 
     }, 
     "modal-products-item-icecream2": { 
-    "en": " Prote...", 
-    "ua": " Білки", 
+        "en": " Prote...", 
+        "ua": " Білки", 
     },
     "modal-products-item-icecream3": { 
-    "en": " Fats", 
-    "ua": " Жири", 
+        "en": " Fats", 
+        "ua": " Жири", 
     }, 
     "modal-products-item-icecream4": { 
-    "en": " Carbs", 
-    "ua": " Вуглеводи", 
+        "en": " Carbs", 
+        "ua": " Вуглеводи", 
     }, 
      "modal-products-ingradients-title": { 
-    "en": " Ingredients", 
-    "ua": " Iнгрeдієнти"
+        "en": " Ingredients", 
+        "ua": " Iнгрeдієнти"
     },
     "modal-products-ingradients1": { 
-    "en": " Milk", 
-    "ua": " Молоко", 
+        "en": " Milk", 
+        "ua": " Молоко", 
     },
      "modal-products-ingradients2": { 
-    "en": " Belgian chocolate", 
-    "ua": " Бельгійський шоколад", 
+        "en": " Belgian chocolate", 
+        "ua": " Бельгійський шоколад", 
     },
     "modal-products-ingradients3": { 
-    "en": " Cream", 
-    "ua": " Крем", 
+        "en": " Cream", 
+        "ua": " Крем", 
     },
      "modal-products-ingradients4": { 
-    "en": " Cocoa powder", 
-    "ua": " Какао порошок", 
+        "en": " Cocoa powder", 
+        "ua": " Какао порошок", 
     },
     "modal-products-ingradients5": { 
-    "en": " Sugar", 
-    "ua": " Цукор", 
+        "en": " Sugar", 
+        "ua": " Цукор", 
     }, 
     "modal-products-ingradients6": { 
-    "en": " Vanilla sugar", 
-    "ua": " Ванільний цукор", 
+        "en": " Vanilla sugar", 
+        "ua": " Ванільний цукор", 
     }, 
     "modal-products-ingradients7": { 
-    "en": " Coffee", 
-    "ua": " Кава", 
+        "en": " Coffee", 
+        "ua": " Кава", 
     }, 
     "modal-products-ingradients8": { 
-    "en": " Ice", 
-    "ua": " Лід", 
+        "en": " Ice", 
+        "ua": " Лід", 
     },
     "modal-products-ingradients9": { 
-    "en": " Topping", 
-    "ua": " Топпінг", 
+        "en": " Topping", 
+        "ua": " Топпінг", 
     },
     "modal-products-ingradients10": { 
-    "en": " Cinnamon", 
-    "ua": " Кориця", 
+        "en": " Cinnamon", 
+        "ua": " Кориця", 
     }, 
     "modal-products-ingradients11": { 
-    "en": " Berries", 
-    "ua": " Ягоди", 
+        "en": " Berries", 
+        "ua": " Ягоди", 
     }, 
     "modal-products-ingradients12": { 
-    "en": " Banana", 
-    "ua": " Банан", 
+        "en": " Banana", 
+        "ua": " Банан", 
     }, 
     "modal-products-ingradients13": { 
-    "en": " Ice cream", 
-    "ua": " Морозиво", 
+        "en": " Ice cream", 
+        "ua": " Морозиво", 
     }, 
     "modal-products-ingradients1-item": { 
-    "en": " ml", 
-    "ua": " мл", 
+        "en": " ml", 
+        "ua": " мл", 
     }, 
     "modal-products-ingradients2-item": { 
-    "en": " g", 
-    "ua": " г", 
+        "en": " g", 
+        "ua": " г", 
     }, 
     "modal-products-ingradients3-item": { 
-    "en": " pcs", 
-    "ua": " шт", 
+        "en": " pcs", 
+        "ua": " шт", 
     }, 
     "modal-products-input-name": { 
-    "en": " Name", 
-    "ua": " Ім’я", 
+        "en": " Name", 
+        "ua": " Ім’я", 
     }, 
     "modal-products-input-email": { 
-    "en": " Phone", 
-    "ua": " Телефон", 
+        "en": " Phone", 
+        "ua": " Телефон", 
     }, 
     "modal-products-input-comment": { 
-    "en": " Comment", 
-    "ua": " Коментар", 
+        "en": " Comment", 
+        "ua": " Коментар", 
     }, 
     "modal-products-btn": { 
-    "en": " Submit", 
-    "ua": " Відправити", 
+        "en": " Submit", 
+        "ua": " Відправити", 
     }, 
     "modal-products-2-title": { 
-    "en": " Cinnamon icecoffee", 
-    "ua": " Айс кава з корицею", 
+        "en": " Cinnamon icecoffee", 
+        "ua": " Айс кава з корицею", 
     }, 
     "modal-products-3-title": { 
-    "en": " Banana-berry milkshake", 
-    "ua": " Бананово-ягідний мілкшейк", 
+        "en": " Banana-berry milkshake", 
+        "ua": " Бананово-ягідний мілкшейк", 
     },
      
 

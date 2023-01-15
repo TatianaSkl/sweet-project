@@ -428,10 +428,10 @@
 
 .button-mobile-menu-close {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
+  top: 0px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
 
   display: flex;
   justify-content: center;
@@ -442,47 +442,81 @@
   border-radius: 50%;
 }
 
+@include tablet {
+  .button-mobile-menu-close {
+    right: 32px;
+  }
+}
+
 .button-mobile-menu-close__icon {
   fill: currentColor;
-  color: red;
+  color: var(--second-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    color: blue;
+    color: var(--focus-color);
   }
 }
 
 .mobile-site-nav {
   display: block;
+  align-items: center;
+  text-align: center;
+  padding-left: 0;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.22px;
+  letter-spacing: 0.01em;
 }
 
-.mobile-site-nav__item:not(:last-child) {
-  padding-bottom: 32px;
+@include tel {
+  .mobile-site-nav {
+    font-size: 32px;
+  }
 }
 
-.mobile-site-nav__link {
-  color: getColor('title-and-btn');
+@include tablet {
+  .mobile-site-nav {
+    font-size: 48px;
+  }
+}
 
-  font-size: 14px;
-  letter-spacing: 0.02em;
+.mobile-site-nav-item:not(:last-child) {
+  padding-bottom: 64px;
+}
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@include tablet {
+  .mobile-site-nav-item:not(:last-child) {
+    padding-bottom: 99px;
+  }
+}
 
-  &:hover {
-    color: yellowgreen;
+.mobile-site-nav-text {
+  color: var(--second-color);
+  text-decoration: none;
+
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--additional-color);
   }
 }
 
 .btn-buy-mobile {
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
 
-  margin: 100px auto 0;
-  justify-content: center;
   display: block;
   height: 42px;
   width: 152px;
-  
+
+  z-index: 5;
 
   padding: 10px 20px;
   font-style: normal;
@@ -505,6 +539,12 @@
   }
   &:disabled {
     background-color: var(--disabled-color);
+  }
+}
+
+@include tel {
+  .btn-buy-mobile {
+    bottom: 100px;
   }
 }
 
