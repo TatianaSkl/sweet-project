@@ -1,9 +1,8 @@
+
 .gallary{
-    /*position: relative;
-    top: 100%;
-    left: 0; */ 
+    position: relative;
     transform: translateY(84%);
-    z-index: -1;
+    z-index: -5;
         
         background-image: url('..//../images/480/bg-480.jpg');
         background-repeat: no-repeat;
@@ -13,34 +12,34 @@
         height: 1037px;
     
         @include tel {
-            background-image: url('../../images/Mobile/Bg_mobile.jpg');
+            background-image: url('..//../images/Mobile/bg_mob.jpg');
             @include retina {
-                background-image: url('../../images/Mobile/bg_mobile-2x.jpg');
+                background-image: url('..//../images/Mobile/bg_mob-2x.jpg');
             };
-            height: 1242px;
-           /* top: 790px;
-                left: 0;*/
-        transform: translateY(75%);
-        }
+           
+       transform: translateY(75%);
+        };
     
-        @include tablet {
-            background-image: url('../../images/Tablet/Bg_tablet.jpg');
-            @include retina {
-               background-image: url('../../images/Tablet/bg_tablet-2x.jpg');
+       @include tablet {
+            background-image: url('..//../images/Tablet/bg_tab.jpg');
+           @include retina {
+               background-image: url('..//../images/Tablet/bg_tab-2x.jpg');
                 };
             height: 1017px;
         };
     
         @include desktop {
-            background-image: url('../../images/desktop/bg_desktop.jpg');
-            @include retina {
-                    background-image: url('../../images/desktop/bg_desktop-2x.jpg');
+            background-image: url('..//../images/desktop/bg_desktop.jpg');
+           @include retina {
+                    background-image: url('..//../images/desktop/bg_desktop-2x.jpg');
                 };
             height: 1350px;
             transform: translateY(58%);
 };
 }
+
 .gallary__wall {
+    position: relative;
     transform: translateY(-32px);
     z-index: 3;
     overflow: visible;
