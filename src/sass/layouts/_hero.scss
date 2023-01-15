@@ -443,6 +443,12 @@
   margin-top: 10px;
   font-weight: 400;
   font-size: 35px;
+  cursor: url(../images/cursor-ice.png), pointer;
+
+  &:hover {
+    color: var(--focus-color);
+  }
+
 }
 
 // ----- Dish ice creams! -----

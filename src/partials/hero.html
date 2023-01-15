@@ -340,6 +340,48 @@
 
     </div>
 
+    <div class="mobile-menu is-hidden" data-mobile-menu>
+    
+        <div class="container">
+    
+            <picture>
+                <source srcset="./images/mobile/logo-mobile.png 40w" media="(max-width: 477.99px)"
+                    sizes="(max-width: 477.99px) 40px, 100vw">
+                <source srcset="./images/tablet/logo-tab.png 48w" media="(max-width: 1199.99px)"
+                    sizes="(max-width: 1199.99px) 48px, 100vw">
+                <source srcset="./images/desktop/logo-desktop.png 60w" media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 60px, 100vw">
+                <img src="./images/mobile/logo-mobile.png" alt="logo">
+            </picture>
+    
+    
+            <button class="button-mobile-menu-close" data-mobile-menu-close>
+                <svg class="button-mobile-menu-close__icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-modal_close-line"></use>
+                </svg>
+            </button>
+            <ul class="list mobile-site-nav ">
+                <li class="mobile-site-nav__item"><a href="#home" class="header-site-nav-text language-site-nav-5"
+                        data-mobile-menu-close-1>Home</a>
+                </li>
+                <li class="mobile-site-nav__item"><a href="#about" class="header-site-nav-text language-site-nav-6"
+                        data-mobile-menu-close-2>How it’s made?</a>
+                </li>
+                <li class="mobile-site-nav__item"><a href="#products" class="header-site-nav-text language-site-nav-7"
+                        data-mobile-menu-close-3>Our products</a>
+                </li>
+                <li class="mobile-site-nav__item"><a href="#contact" class="header-site-nav-text language-site-nav-8"
+                        data-mobile-menu-close-4>Contact</a>
+                </li>
+            </ul>
+    
+            <button type="button" class="btn btn-buy-mobile language-btn-buy-mobile" data-modal-buy-now-open-1>Buy now
+                &#707;</button>
+    
+        </div>    
+    
+    </div>
+
     <div class="backdrop is-hidden" data-modal-buy-now>
         <div class="product-modal">
             <button type="button" class="btn-close" data-modal-buy-now-close>
@@ -429,48 +471,5 @@
             </form>
         </div>
     </div>
-
-
-
-    <div class="mobile-menu is-hidden" data-mobile-menu>
-
-        <div class="container">
-
-            <picture>
-                <source srcset="./images/mobile/logo-mobile.png 40w" media="(max-width: 477.99px)"
-                    sizes="(max-width: 477.99px) 40px, 100vw">
-                <source srcset="./images/tablet/logo-tab.png 48w" media="(max-width: 1199.99px)"
-                    sizes="(max-width: 1199.99px) 48px, 100vw">
-                <source srcset="./images/desktop/logo-desktop.png 60w" media="(min-width: 1200px)"
-                    sizes="(min-width: 1200px) 60px, 100vw">
-                <img src="./images/mobile/logo-mobile.png" alt="logo">
-            </picture>
-
-
-            <button class="button-mobile-menu-close" data-mobile-menu-close>
-                <svg class="button-mobile-menu-close__icon" width="40" height="40">
-                    <use href="./images/icons.svg#icon-modal_close-line"></use>
-                </svg>
-            </button>
-            <ul class="list mobile-site-nav ">
-                <li class="mobile-site-nav__item"><a href="#home" class="header-site-nav-text language-site-nav-5"
-                        data-mobile-menu-close-1>Home</a>
-                </li>
-                <li class="mobile-site-nav__item"><a href="#about" class="header-site-nav-text language-site-nav-6"
-                        data-mobile-menu-close-2>How it’s made?</a>
-                </li>
-                <li class="mobile-site-nav__item"><a href="#products" class="header-site-nav-text language-site-nav-7"
-                        data-mobile-menu-close-3>Our products</a>
-                </li>
-                <li class="mobile-site-nav__item"><a href="#contact" class="header-site-nav-text language-site-nav-8"
-                        data-mobile-menu-close-4>Contact</a>
-                </li>
-            </ul>
-
-        </div>
-
-
-    </div>
-
 
 </section>
