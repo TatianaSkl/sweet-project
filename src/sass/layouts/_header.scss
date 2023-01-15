@@ -70,7 +70,7 @@
     color: var(--accent-link-color);
   }
 
-  cursor: url(../images/cursor.png), pointer;
+  // cursor: url(../images/cursor.png), pointer;
 
 }
 
@@ -153,7 +153,7 @@
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
-    cursor: url(../images/cursor.png), pointer;
+    // cursor: url(../images/cursor.png), pointer;
 
     &:hover {
       background-color: var(--focus-color);
