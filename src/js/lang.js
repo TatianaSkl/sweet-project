@@ -68,11 +68,11 @@ const langArr = {
     },
     "footer__info": {
         "en": "Feel free to contact +61 (0) 383 766 284",
-        "ua": "Не соромтеся звертатися +61 (0) 383 766 284",
+        "ua": "Звертайтеся вільно +61 (0) 383 766 284",
     },
     "footer__copyright": {
         "en": "&#169; 2022 - IceCream. All Rights Reserved.",
-        "ua": "&#169; 2022 - Морозиво. Всі права захищені",
+        "ua": "&#169; 2022 - IceCream. Всі права захищені",
     },
 
     // ----- Modal Buy now!-----
@@ -83,15 +83,15 @@ const langArr = {
     },
     "modal_buy_now-product-1": {        
         "en": "ice cream",
-        "ua": "морозиво",
+        "ua": "смачне морозиво",
     },
     "modal_buy_now-product-2": {        
-        "en": "ice-coffee",
-        "ua": "кава холодна",
+        "en": "ice coffee",
+        "ua": "холодна кава",
     },
     "modal_buy_now-product-3": {        
         "en": "milkshake",
-        "ua": "мілкшейк",
+        "ua": "молочний коктейль",
     },
     "modal_buy_now-label-1": {        
         "en": "Name",

@@ -1,10 +1,10 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]"),
-    buttonOff: document.querySelector("[data-modal-open]"),
-    buttonOn: document.querySelector("[data-modal-close]"),
+    openModalBtn: document.querySelector("[data-modal-buy-now-open]"),
+    closeModalBtn: document.querySelector("[data-modal-buy-now-close]"),
+    modal: document.querySelector("[data-modal-buy-now]"),
+    buttonOff: document.querySelector("[data-modal-buy-now-open]"),
+    buttonOn: document.querySelector("[data-modal-buy-now-close]"),
     
     body: document.body,
   };
