@@ -1,59 +1,59 @@
 // ----- Containers! -----
 
-.container-hero {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 502px;
-  margin: 0 auto;
-  background: var(--primary-color);
-}
+// .container-hero {
+//   position: relative;
+//   top: 0;
+//   left: 0;
+//   height: 502px;
+//   margin: 0 auto;
+//   background: var(--primary-color);
+// }
 
-@include tel {
-  .container-hero {
-    height: 415px;
-  }
-}
+// @include tel {
+//   .container-hero {
+//     height: 415px;
+//   }
+// }
 
-@include desktop {
-  .container-hero {
-    height: 665px;
-  }
-}
+// @include desktop {
+//   .container-hero {
+//     height: 665px;
+//   }
+// }
 
-@media screen and (min-width: 320px) {
-  .container-hero {
-    .container {
-      background-image: url('./../images/Mobile/points-mobile.png');
-      background-repeat: no-repeat;
-      background-position: bottom 5px right 0;
-    }
-  }
-}
+// @media screen and (min-width: 320px) {
+//   .container-hero {
+//     .container {
+//       background-image: url('./../images/Mobile/points-mobile.png');
+//       background-repeat: no-repeat;
+//       background-position: bottom 5px right 0;
+//     }
+//   }
+// }
 
-@include tel {
-  .container-hero {
-    .container {
-      background-image: url('./../images/480/points-480.png');
-    }
-  }
-}
+// @include tel {
+//   .container-hero {
+//     .container {
+//       background-image: url('./../images/480/points-480.png');
+//     }
+//   }
+// }
 
-@include tablet {
-  .container-hero {
-    .container {
-      background-image: url('./../images/Tablet/points-tablet.png');
-    }
-  }
-}
+// @include tablet {
+//   .container-hero {
+//     .container {
+//       background-image: url('./../images/Tablet/points-tablet.png');
+//     }
+//   }
+// }
 
-@include desktop {
-  .container-hero {
-    .container {
-      background-image: url('./../images/desktop/points-desktop.png');
-    }
-  }
-}
+// @include desktop {
+//   .container-hero {
+//     .container {
+//       background-image: url('./../images/desktop/points-desktop.png');
+//     }
+//   }
+// }
 
 .hero-wrapper {
   position: relative;
