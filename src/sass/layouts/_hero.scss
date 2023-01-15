@@ -1,5 +1,6 @@
 // ----- Containers! -----
 
+
 .container-hero {
   position: relative;
   top: 0;
@@ -24,7 +25,7 @@
 @media screen and (min-width: 320px) {
   .container-hero {
     .container {
-      background-image: url('../images/mobile/points-mobile.png');
+      background-image: url('./../images/mobile/points-mob.png');
       background-repeat: no-repeat;
       background-position: bottom 5px right 0;
     }
@@ -34,7 +35,7 @@
 @include tel {
   .container-hero {
     .container {
-      background-image: url('../images/480/points-480.png');
+      background-image: url('./../images/480/points-480px.png');
     }
   }
 }
@@ -42,7 +43,7 @@
 @include tablet {
   .container-hero {
     .container {
-      background-image: url('../images/tablet/points-tablet.png');
+      background-image: url('./../images/tablet/points-tab.png');
     }
   }
 }
@@ -50,7 +51,7 @@
 @include desktop {
   .container-hero {
     .container {
-      background-image: url('../images/desktop/points-desktop.png');
+      background-image: url('./../images/desktop/points-desktop.png');
     }
   }
 }
