@@ -1,26 +1,27 @@
 <header class="page-header">
     <div class="container container-header">
+      
         <picture>
-            <source srcset="./images/Mobile/logotip-mobile.png 40w" media="(max-width: 477.99px)"
+            <source srcset="./images/mobile/logo-mobile.png 40w" media="(max-width: 477.99px)"
                 sizes="(max-width: 477.99px) 40px, 100vw">
-            <source srcset="./images/Tablet/logo-tablet.png 48w" media="(max-width: 1199.99px)"
+                <source srcset="./images/tablet/logo-tab.png 48w" media="(max-width: 1199.99px)"
                 sizes="(max-width: 1199.99px) 48px, 100vw">
-            <source srcset="./images/desktop/logo-desktop.png 60w" media="(min-width: 1200px)"
+                <source srcset="./images/desktop/logo-desktop.png 60w" media="(min-width: 1200px)"
                 sizes="(min-width: 1200px) 60px, 100vw">
-            <img src="./images/Mobile/logotip-mobile.png" alt="Logo">
+                <img src="./images/mobile/logo-mobile.png" alt="logo">
         </picture>
 
         <nav class="header-site-nav">
-            <a href="#home" class="header-site-nav-text language-site-nav-1">Home</a>
-            <a href="#about" class="header-site-nav-text language-site-nav-2">How it’s made?</a>
-            <a href="#products" class="header-site-nav-text language-site-nav-3">Our products</a>
-            <a href="#contact" class="header-site-nav-text language-site-nav-4">Contact</a>
+            <a href="#home" class="header-site-nav-text language-site-nav-5">Home</a>
+            <a href="#about" class="header-site-nav-text language-site-nav-6">How it’s made?</a>
+            <a href="#products" class="header-site-nav-text language-site-nav-7">Our products</a>
+            <a href="#contact" class="header-site-nav-text language-site-nav-8">Contact</a>
         </nav>
 
         <div class="lang-select">
             <select class="change-lang">
                 <option value="ua" class="change-lang-link">
-                    <h5 class="change-lang-text">UA</h5>
+                    <h5 class="change-lang-text">UA </h5>
                 </option>
                 <option value="en" class="change-lang-link" selected>
                     <h5 class="change-lang-text">EN</h5>
@@ -28,13 +29,20 @@
             </select>
         </div>
 
-        <button type="button" class="btn btn-header language-btn-header">Buy now &#707;</button>
+        <button type="button" class="btn btn-header language-btn-header" data-modal-buy-now-open>Buy now &#707;</button>
 
-        <button class="btn-mobmenu-open js-open-menu" aria-expanded="false" aria-controls="open mobile-menu">
+
+        <button class="btn-mobmenu-open" aria-expanded="false" aria-controls="open mobile-menu" data-mobile-menu-open>
+
             <svg class="btn-mobmenu-close-icon" width="32" height="32">
                 <use href="./images/icons.svg#icon-Burger"></use>
             </svg>
         </button>
 
+        <!-- Backdrop -->
+
+
+
     </div>
+
 </header>

@@ -1,0 +1,219 @@
+.about {
+
+  &-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+
+    margin-bottom: 12px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &-pretitle {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+
+    text-align: center;
+    width: 200px;
+    margin: 0 auto 32px;
+    text-transform: uppercase;
+
+    @include tablet {
+      width: 100%;
+      margin-bottom: 72px;
+    }
+  }
+
+  &-box {
+    @include tablet {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &-info-box{
+    @include desktop{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &-information-box {
+    position: relative;
+    background: linear-gradient(
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+
+    @media screen and (max-width:1199px) {
+      margin: 0 auto 62px;
+    }
+
+    @media screen and (max-width:767px) {
+      width: 279px;
+      height: 278px;
+      border-radius: 140px;
+    }
+
+
+    @include tablet {
+      width: 330px;
+      height: 330px;
+      border-radius: 165px;
+      margin-right: 38px;
+    }
+    @include desktop {
+      width: 490px;
+      height: 490px;
+      border-radius: 250px;
+      margin-right: 109px;
+      margin-bottom: 90px;
+    }
+  }
+
+  &-image{
+    position: absolute;
+
+    @media screen and (max-width:767px) {
+      top: 20px;
+    }
+
+    @include tablet {
+      top: 20px;
+    }
+
+    @include desktop {
+      top: 20px;
+    }
+  }
+
+  &-information-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.9;
+    margin-bottom: 30px;
+
+    letter-spacing: 0.04em;
+
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  &-information-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.76;
+    width: 220px;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+
+    @media screen and (max-width: 767px) {
+      &:last-child {
+        display: none;
+      }
+    }
+
+    @include tablet {
+      width: 334px;
+      text-align: start;
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+
+    @include desktop{
+      width: 463px;
+      font-size: 14px;
+
+      &:first-child{
+        font-size: 16px;
+      }
+    }
+  }
+
+  &-information-btn {
+    display: flex;
+    align-items: center;
+
+    margin: 0 auto 60px;
+    padding: 12px 34px;
+  }
+
+  &-information-icon{
+    margin-left: 8px;
+  }
+
+  &-description-list{
+    @include tablet{
+      display: flex;
+      justify-content: center;
+    }
+
+  @include desktop {
+    justify-content: space-around;
+  }
+  }
+
+  &-description-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 28px;
+    }
+  }
+
+  &-description-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 16px;
+    background-color: var(--accent-link-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  &-description-title {
+    font-style: normal;
+
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.22;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  &-description-text {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    width: 230px;
+  }
+}
