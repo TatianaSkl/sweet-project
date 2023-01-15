@@ -1,10 +1,10 @@
 <section class="container-hero">
-    <div class="container">
+    <div class="container container-bgd">
         <div class="hero-wrapper">
             <div class="hero-container">
                 <h1 id="home" class="hero-title language-hero">Ice cream made with passion</h1>
-                <button type="button" class="btn btn-hero language-hero-btn" id="">Products </button>
-                <a href="#" class="hero-container-link language-hero-link">How it’s made?</a>
+                <button onclick="window.location.href = '#products'" class="btn btn-hero language-hero-btn">Products </button>
+                <a href="#about" class="hero-container-link language-hero-link">How it’s made?</a>
             </div>
             <div class="hero-bubbles-wrapper">
                 <div class="bubbles">
@@ -315,7 +315,6 @@
                 <picture>
 
                     <source srcset="./images/mobile/eyes-mob.png 37w" media="(max-width: 479px)"
-
                         sizes="(max-width: 479.99px) 37px, 100vw">
                     <source srcset="./images/480/eyes-480px.png 42w" media="(max-width: 767px)"
                         sizes="(max-width: 767.99px) 42px, 100vw">
@@ -431,28 +430,47 @@
         </div>
     </div>
 
-    
 
-        <div class="mobile-menu is-hidden" data-mobile-menu>
+
+    <div class="mobile-menu is-hidden" data-mobile-menu>
+
+        <div class="container">
+
+            <picture>
+                <source srcset="./images/mobile/logo-mobile.png 40w" media="(max-width: 477.99px)"
+                    sizes="(max-width: 477.99px) 40px, 100vw">
+                <source srcset="./images/tablet/logo-tab.png 48w" media="(max-width: 1199.99px)"
+                    sizes="(max-width: 1199.99px) 48px, 100vw">
+                <source srcset="./images/desktop/logo-desktop.png 60w" media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 60px, 100vw">
+                <img src="./images/mobile/logo-mobile.png" alt="logo">
+            </picture>
+
 
             <button class="button-mobile-menu-close" data-mobile-menu-close>
                 <svg class="button-mobile-menu-close__icon" width="40" height="40">
                     <use href="./images/icons.svg#icon-modal_close-line"></use>
                 </svg>
             </button>
-            <ul class="mobile-site-nav">
-                <li class="mobile-site-nav__item"><a href="#home" class="header-site-nav-text language-site-nav-5" data-mobile-menu-close-1>Home</a>
+            <ul class="list mobile-site-nav ">
+                <li class="mobile-site-nav__item"><a href="#home" class="header-site-nav-text language-site-nav-5"
+                        data-mobile-menu-close-1>Home</a>
                 </li>
-                <li class="mobile-site-nav__item"><a href="#about" class="header-site-nav-text language-site-nav-6" data-mobile-menu-close-2>How it’s made?</a>
+                <li class="mobile-site-nav__item"><a href="#about" class="header-site-nav-text language-site-nav-6"
+                        data-mobile-menu-close-2>How it’s made?</a>
                 </li>
-                <li class="mobile-site-nav__item"><a href="#products" class="header-site-nav-text language-site-nav-7" data-mobile-menu-close-3>Our products</a>
+                <li class="mobile-site-nav__item"><a href="#products" class="header-site-nav-text language-site-nav-7"
+                        data-mobile-menu-close-3>Our products</a>
                 </li>
-                <li class="mobile-site-nav__item"><a href="#contact" class="header-site-nav-text language-site-nav-8" data-mobile-menu-close-4>Contact</a>
+                <li class="mobile-site-nav__item"><a href="#contact" class="header-site-nav-text language-site-nav-8"
+                        data-mobile-menu-close-4>Contact</a>
                 </li>
             </ul>
 
-
         </div>
-    
+
+
+    </div>
+
 
 </section>
