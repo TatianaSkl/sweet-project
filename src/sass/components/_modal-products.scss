@@ -1,0 +1,265 @@
+.modal__products-icecream,
+.modal__products-icecoffee,
+.modal__products-milkshake {
+  width: 280px;
+  min-height: 968px;
+  background: var(--second-color);
+  border: 2px solid var(--accent-link-color);
+  border-radius: 10px;
+  padding: 28px 20px;
+
+  margin-left: 400px;
+  position: relative;
+  @include tel;
+  @include tablet;
+  @include desktop;
+  @include retina;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.modal__products-title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--additional-color);
+}
+
+.modal__products-buttons {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.modal__products-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__products-image-main {
+  z-index: 1;
+  margin-bottom: 29px;
+}
+
+.modal__products-image-background {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 113px;
+  left: 72px;
+}
+
+.icecream-green {
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.icecoffee-yellow {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+}
+
+.milkshake-chocolate {
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+}
+
+.modal__products-item {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 2, 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  margin-bottom: 68px;
+
+  color: var(--additional-color);
+  font-family: var(--main-font);
+}
+
+.icecream {
+  background: #9cbe8f;
+}
+
+.icecoffee {
+  background: #efd478;
+}
+
+.milkshake {
+  background: #d6936d;
+}
+
+.modal__products-item-icecream,
+.modal__products-item-icecoffee,
+.modal__products-item-milkshake {
+  position: absolute;
+  top: 264px;
+
+  border-radius: 40px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+
+  width: 53px;
+  height: 72px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1, 2;
+  padding-bottom: 8px;
+
+  color: var(--additional-color);
+  font-family: var(--main-font);
+}
+
+.modal__products-item-icecream {
+  border: 2px solid #9cbe8f;
+}
+
+.modal__products-item-icecoffee {
+  border: 2px solid #efd478;
+}
+
+.modal__products-item-milkshake {
+  border: 2px solid #d6936d;
+}
+
+.first {
+  left: 24.5px;
+}
+
+.second {
+  left: 82.5px;
+}
+
+.third {
+  left: 140.5px;
+}
+
+.fourth {
+  left: 198.5px;
+}
+
+.modal__products-ingradients-title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 24px;
+  color: var(--additional-color);
+  font-family: var(--main-font);
+}
+
+.modal__products-item-ingradients {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+  margin-bottom: 40px;
+}
+
+.modal__products-item-ingradients:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+.modal__products-input {
+  background: rgba(248, 210, 78, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  height: 42px;
+  margin-bottom: 16px;
+  padding-left: 11px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--additional-color);
+  font-family: var(--main-font);
+}
+
+.modal__products-text {
+  background: rgba(248, 210, 78, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  height: 84px;
+  margin-bottom: 24px;
+  padding: 11px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--additional-color);
+  font-family: var(--main-font);
+}
+
+.green {
+  border: 1px solid #9cbe8f;
+}
+
+.yellow {
+  border: 1px solid #efd478;
+}
+
+.chocolate {
+  border: 1px solid #d6936d;
+}
+
+.modal__products-btn {
+  width: 132px;
+  height: 42px;
+  border: 0;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  background-color: var(--accent-link-color);
+  color: var(--additional-color);
+  font-family: var(--main-font);
+}
