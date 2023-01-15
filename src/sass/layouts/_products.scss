@@ -4,16 +4,31 @@
 
 
     background-image: url(../images/480/bg-480.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/mobile/bg_mob-2x.jpg);
+        }
+
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         background-image: url(../images/tablet/bg_tab.jpg);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/tablet/bg_tab-2x.jpg);
+            }
     }
 
     @media screen and (min-width: 1200px) {
         background-image: url(../images/desktop/bg_desktop.jpg);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/desktop/bg_desktop-2x.jpg);
+            }
     }
 
 }
@@ -174,7 +189,7 @@
     @media screen and (min-width: 1200px) {
         top: -50%;
         left: 50%;
-        transform: translate(-50%, 10%);
+        transform: translate(-50%, 27%);
         background-image: url(../images/desktop/icecream-desktop.png);
         border-radius: 150px;
         width: 302px;
@@ -211,7 +226,7 @@
     @media screen and (min-width: 1200px) {
         top: -50%;
         left: 50%;
-        transform: translate(-50%, 10%);
+        transform: translate(-50%, 27%);
         background-image: url(../images/desktop/icecoffee-desktop.png);
         border-radius: 150px;
         width: 302px;
@@ -250,7 +265,7 @@
     @media screen and (min-width: 1200px) {
         top: -50%;
         left: 50%;
-        transform: translate(-50%, 10%);
+        transform: translate(-50%, 27%);
         background-image: url(../images/desktop/milkshakes-desktop.png);
         border-radius: 150px;
         width: 302px;
