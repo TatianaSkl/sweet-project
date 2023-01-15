@@ -13,7 +13,10 @@
         height: 1037px;
     
         @include tel {
-            background-image: url('..//..//images/Mobile/Bg_mobile.jpg');
+            background-image: url('../../images/Mobile/Bg_mobile.jpg');
+            @include retina {
+                background-image: url('../../images/Mobile/bg_mobile-2x.jpg');
+            };
             height: 1242px;
            /* top: 790px;
                 left: 0;*/
@@ -21,15 +24,21 @@
         }
     
         @include tablet {
-            background-image: url('..//..//images/Tablet/Bg_tablet.jpg');
+            background-image: url('../../images/Tablet/Bg_tablet.jpg');
+            @include retina {
+               background-image: url('../../images/Tablet/bg_tablet-2x.jpg');
+                };
             height: 1017px;
         };
     
         @include desktop {
-            background-image: url('..//..//images/Desctop/Bg_desctop.jpg');
+            background-image: url('../../images/desktop/bg_desktop.jpg');
+            @include retina {
+                    background-image: url('../../images/desktop/bg_desktop-2x.jpg');
+                };
             height: 1350px;
             transform: translateY(58%);
-}
+};
 }
 .gallary__wall {
     transform: translateY(-32px);
