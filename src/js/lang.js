@@ -52,35 +52,35 @@ const langArr = {
 
 // Products
     
-     "language-label": {
+     "label": {
         "en": "100% natural",
         "ua": "100% натуральні",
     },
-    "language-title": {
+    "title": {
         "en": "products",
         "ua": "продукти",
     },
-    "language-name-1": {
+    "name-1": {
         "en": "ice cream",
         "ua": "морозиво",
     },
-    "language-description-1": {
+    "description-1": {
         "en": "Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer",
         "ua": "М'яке морозиво з ніжним смаком. Зроблено з молока, вершків, цукру та натуральних стабілізаторів",
     },
-    "language-name-2": {
+    "name-2": {
         "en": "ice coffee",
         "ua": "холодна кава",
     },
-    "language-description-2": {
+    "description-2": {
         "en": "Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers",
         "ua": "Ароматний підбадьорливий напій створений зі 100% натуральних інгредієнтів без використання консервантів і підсилювачів смаку",
     },
-    "language-name-3": {
+    "name-3": {
         "en": "milkshakes",
-        "ua": "морозиво",
+        "ua": "мілкшейки",
     },
-    "language-description-3": {
+    "description-3": {
         "en": "Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice",
         "ua": "Солодкі напої на основі молока та морозива, доповнені сиропами, фруктами, ягодами та іншими солодощами на ваш вибір",
     },
