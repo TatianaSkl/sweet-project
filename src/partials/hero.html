@@ -272,15 +272,15 @@
             </div>
 
             <div class="hero-ice-creams">
-                <!-- <picture>
-                    <source srcset="./images/tablet/many-icecreames-tablet.png 152w, 
-                                    ./images/tablet/many-icecreames-tablet-2x.png 304w" media="( max-width: 1199px)"
+                <picture>
+                    <source srcset="./images/tablet/many-icecreames-tab.png 152w, 
+                                    ./images/tablet/many-icecreames-tab-2x.png 304w" media="( max-width: 1199px)"
                         sizes="(max-width: 1199px) 152px, 100vw">
                     <source srcset="./images/desktop/many-icecreames-desktop.png 225w, 
                                     ./images/desktop/many-icecreames-desktop-2x.png 450w" media="(min-width: 1200px)"
                         sizes="(min-width: 1200px) 225px, 100vw">
-                    <img src="./images/tablet/many-icecreames-tablet-2x.png" alt="Ice creams">
-                </picture> -->
+                    <img src="./images/tablet/many-icecreames-tab-2x.png" alt="Ice creams">
+                </picture>
             </div>
 
             <div class="hero-readmore">
@@ -294,35 +294,37 @@
             </div>
 
             <div class="hero-ice-cream">
-                <!-- <picture>
-                    <source srcset="./images/mobile/cornout-mobile.png 177w, 
-                                    ./images/mobile/cornout-mobile-2x.png 354w" media="(max-width: 477.99px)"
+                <picture>
+                    <source srcset="./images/mobile/cornout-mob.png 177w, 
+                                    ./images/mobile/cornout-mob-2x.png 354w" media="(max-width: 477.99px)"
                         sizes="(max-width: 477.99px) 177px, 100vw">
-                    <source srcset="./images/480/cornout-480.png 218w, 
+                    <source srcset="./images/480/cornout-480px.png 218w, 
                                     ./images/480/cornout-480-2x.png 436w" media="(max-width: 767px)"
                         sizes="(max-width: 767px) 218px, 100vw">
-                    <source srcset="./images/tablet/cornout-tablet.png 268w, 
-                                    ./images/tablet/cornout-tablet-2x.png 536w" media="(max-width: 1199px)"
+                    <source srcset="./images/tablet/cornout-tab.png 268w, 
+                                    ./images/tablet/cornout-tab-2x.png 536w" media="(max-width: 1199px)"
                         sizes="(max-width: 1199px) 268px, 100vw">
                     <source srcset="./images/desktop/cornout-desktop.png 456w, 
                                     ./images/desktop/cornout-desktop-2x.png 912w" media="(min-width: 1200px)"
                         sizes="(min-width: 1200px) 456px, 100vw">
-                    <img src="./images/mobile/cornout-mobile-2x.png" alt="Ice cream">
-                </picture> -->
+                    <img src="./images/mobile/cornout-mob-2x.png" alt="Ice cream">
+                </picture>
             </div>
 
             <div class="hero-ice-cream-eyes">
-                <!-- <picture>
-                    <source srcset="./images/mobile/eyes-mobile.png 37w" media="(max-width: 479px)"
+                <picture>
+
+                    <source srcset="./images/mobile/eyes-mob.png 37w" media="(max-width: 479px)"
+
                         sizes="(max-width: 479.99px) 37px, 100vw">
-                    <source srcset="./images/480/eyes-480.png 42w" media="(max-width: 767px)"
+                    <source srcset="./images/480/eyes-480px.png 42w" media="(max-width: 767px)"
                         sizes="(max-width: 767.99px) 42px, 100vw">
-                    <source srcset="./images/tablet/eyes-tablet.png 51w" media="(max-width: 1199px)"
+                    <source srcset="./images/tablet/eyes-tab.png 51w" media="(max-width: 1199px)"
                         sizes="(max-width: 1199px) 51px, 100vw">
                     <source srcset="./images/desktop/eyes.png 91w" media="(min-width: 1200px)"
                         sizes="(min-width: 1200px) 91px, 100vw">
-                    <img src="./images/mobile/eyes-mobile.png" alt="Ice cream eyes">
-                </picture> -->
+                    <img src="./images/mobile/eyes-mob.png" alt="Ice cream eyes">
+                </picture>
             </div>
 
             <div class="hero-franchise">
@@ -336,5 +338,121 @@
             </div>
         </div>
 
+
     </div>
+
+    <div class="backdrop is-hidden" data-modal-buy-now>
+        <div class="product-modal">
+            <button type="button" class="btn-close" data-modal-buy-now-close>
+                <svg class="btn-close__icon">
+                    <use href="./images/icons.svg#icon-modal_close-line"></use>
+                </svg>
+            </button>
+
+            <h2 class="product-modal__title language-modal_buy_now-title">Buy now</h2>
+
+            <form class="product-modal__form form" autocomplete="off" action="javascript:void(0);">
+                <ul class="product-modal__list list">
+                    <li class="product-modal__item product-modal__item--green">
+                        <div class="product-modal__gradient product-modal__gradient--green">
+                            <div class="product-modal__picture">
+                                <img srcset="
+                                                    ./images/Modal_img/modal_icecream.png    1x, 
+                                                    ./images/Modal_img/modal_icecream-2x.png 2x"
+                                    src="./images/Modal_img/modal_icecream.png" alt="ice cream" width="132" />
+                            </div>
+                        </div>
+
+                        <input class="product-modal__checkbox visually-hidden" type="checkbox" name="product"
+                            value="ice-cream" id="check" />
+                        <label for="check" class="product-modal__form-checkbox product-modal__form-checkbox--green">
+                            <span class="product-modal__text language-modal_buy_now-product-1">ice cream</span>
+                        </label>
+                    </li>
+
+                    <li class="product-modal__item product-modal__item--yellow">
+                        <div class="product-modal__gradient product-modal__gradient--yellow">
+                            <div class="product-modal__picture">
+                                <img srcset="
+                                                    ./images/Modal_img/modal_icecoffee.png    1x,
+                                                    ./images/Modal_img/modal_icecoffee-2x.png 2x "
+                                    src="./images/Modal_img/modal_icecoffee.png" alt="ice coffee" width="132" />
+                            </div>
+                        </div>
+
+                        <input class="product-modal__checkbox visually-hidden" type="checkbox" name="product"
+                            value="ice-coffee" id="check-yellow" />
+                        <label for="check-yellow"
+                            class="product-modal__form-checkbox product-modal__form-checkbox--yellow">
+                            <span class="product-modal__text language-modal_buy_now-product-2">ice-coffee</span>
+                        </label>
+                    </li>
+
+                    <li class="product-modal__item product-modal__item--brown">
+                        <div class="product-modal__gradient product-modal__gradient--brown">
+                            <div class="product-modal__picture">
+                                <img srcset="
+                                                    ./images/Modal_img/modal_milkshake.png    1x,
+                                                    ./images/Modal_img/modal_milkshake-2x.png 2x "
+                                    src="./images/Modal_img/modal_milkshake.png" alt="milkshake" width="132" />
+                            </div>
+                        </div>
+
+                        <input class="product-modal__checkbox visually-hidden" type="checkbox" name="product"
+                            value="milkshake" id="check-brown" />
+                        <label for="check-brown"
+                            class="product-modal__form-checkbox product-modal__form-checkbox--brown">
+                            <span class="product-modal__text language-modal_buy_now-product-3">milkshake</span>
+                        </label>
+                    </li>
+                </ul>
+
+                <div class="product-modal__form-field">
+                    <input class="product-modal__input" type="text" name="username" id="username"
+                        pattern="^[a-zA-Zа-яА-Я]+\s[a-zA-Zа-яА-Я]+$" title="First Name and Last Name" placeholder=" "
+                        required />
+                    <label for="username" class="product-modal__label language-modal_buy_now-label-1">Name</label>
+                </div>
+
+                <div class="product-modal__form-field">
+                    <input class="product-modal__input" type="tel" name="tel" id="tel"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="0xx-xxx-xx-xx" placeholder=" " required />
+                    <label for="tel" class="product-modal__label language-modal_buy_now-label-2">Phone</label>
+                </div>
+
+                <div class="product-modal__form-comment">
+                    <textarea class="product-modal__comment" name="comment" id="comment" placeholder=" "></textarea>
+                    <label for="comment"
+                        class="product-modal__label-comment language-modal_buy_now-label-3">Comment</label>
+                </div>
+
+                <button type="submit" class="product-modal__btn btn language-modal_buy_now-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    
+
+        <div class="mobile-menu is-hidden" data-mobile-menu>
+
+            <button class="button-mobile-menu-close" data-mobile-menu-close>
+                <svg class="button-mobile-menu-close__icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-modal_close-line"></use>
+                </svg>
+            </button>
+            <ul class="mobile-site-nav">
+                <li class="mobile-site-nav__item"><a href="#home" class="header-site-nav-text language-site-nav-1" data-mobile-menu-close>Home</a>
+                </li>
+                <li class="mobile-site-nav__item"><a href="#about" class="header-site-nav-text language-site-nav-2">How it’s made?</a>
+                </li>
+                <li class="mobile-site-nav__item"><a href="#products" class="header-site-nav-text language-site-nav-3">Our products</a>
+                </li>
+                <li class="mobile-site-nav__item"><a href="#contact" class="header-site-nav-text language-site-nav-4">Contact</a>
+                </li>
+            </ul>
+
+
+        </div>
+    
+
 </section>

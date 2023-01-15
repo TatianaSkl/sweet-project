@@ -57,6 +57,8 @@
 }
 
 .header-site-nav-text {
+  padding-top: 30px;
+  padding-bottom: 10px;
   color: var(--second-color);
   text-decoration: none;
 
@@ -70,7 +72,7 @@
     color: var(--accent-link-color);
   }
 
-  // cursor: url(../images/cursor.png), pointer;
+  cursor: url(../images/cursor-vector.png), pointer;
 
 }
 
@@ -101,7 +103,7 @@
 }
 
 .change-lang {
-  padding: 10px 20px;
+  padding: 11px 20px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -113,6 +115,12 @@
   border: 0px;
   font-family: inherit;
   cursor: auto;
+}
+
+@media screen and (max-width: 479px) {
+  .change-lang {
+    padding: 5px 20px;
+  }
 }
 
 .change-lang-link {
@@ -153,7 +161,7 @@
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
-    // cursor: url(../images/cursor.png), pointer;
+    cursor: url(../images/cursor-vector.png), pointer;
 
     &:hover {
       background-color: var(--focus-color);
@@ -180,7 +188,7 @@
   position: absolute;
   padding: 0;
   margin: 0;
-  top: 1px;
+  top: 6px;
   right: 21px;
 
   background-color: transparent;
@@ -201,3 +209,4 @@
     display: none;
   }
 }
+
