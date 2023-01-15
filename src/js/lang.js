@@ -78,7 +78,7 @@ const langArr = {
     },
     "language-name-1": {
         "en": "ice cream",
-        "ua": "морозиво",
+        "ua": "смачне морозиво",
     },
     "language-description-1": {
         "en": "Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer",
@@ -94,7 +94,7 @@ const langArr = {
     },
     "language-name-3": {
         "en": "milkshakes",
-        "ua": "морозиво",
+        "ua": "молочні коктейлі",
     },
     "language-description-3": {
         "en": "Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice",
