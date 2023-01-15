@@ -124,7 +124,7 @@ address {
     &:hover,
     &:focus {
       text-decoration: underline;
-      cursor: url("..//../images/cursor.png"), pointer;
+      cursor: url(../images/cursor-ice.png), pointer;
     }
     @include tablet {
       font-size: 14px;
@@ -202,7 +202,7 @@ address {
   }
   &:hover,
   &:focus {
-    cursor: url("..//../images/cursor.png"), pointer;
+    cursor: url(../images/cursor-ice.png), pointer;
   }
   &:hover {
     background: var(--focus-color);
