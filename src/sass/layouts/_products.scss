@@ -316,19 +316,21 @@
 .products__icon {
     fill: var(--additional-color);
     cursor: pointer;
-    height: 40px;
+    height: 20px;
 
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
     left: 50%;
     transform: translate(-50%);
-
-    @media screen and (min-width: 1200px) {
-        bottom: 10%;
-    }
 }
 
 .products__button {
     border: none;
     background-color: transparent;
+    padding: 0;
+
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
 }
