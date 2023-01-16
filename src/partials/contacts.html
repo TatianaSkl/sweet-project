@@ -128,7 +128,7 @@
         </li>
         <li class="contacts-button">
 
-          <button class="contacts__button language-contacts__button-2 contacts__button--franchise btn">
+          <button class="contacts__button language-contacts__button-2 contacts__button--franchise btn"  data-modal-franchise-open>
 
             Franchise
             <svg
@@ -144,3 +144,38 @@
     </address>
   </div>
 </section>
+
+<!--franchise-modal-->
+<div class="backdrop is-hidden"data-modal-franchise>
+  <div class="franchise-modal">
+    <button type="button" class="button-close" data-modal-franchise-close>
+      <svg class="button-close__icon" width="20" height="20">
+        <use href="./images/icons.svg#icon-modal_close-line"></use>
+      </svg>
+    </button>
+    <Div class="franchise-modal__list">
+      <h2 class="franchise-modal__title language-franchise-modal__title ">Thank you for your interest in owning an Ice Cream shop</h2>
+      <p class="franchise-modal__info language-franchise-modal__info">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</p>
+      <form action=" " class="franchise__form">
+        <div class="franchise-modal__form">
+          <label class="franchise-modal__field">           
+            <input type="text" class="franchise-modal__text" name="name" id="name" pattern="^[a-zA-Z]+\s[a-zA-Z]+$"  placeholder="Name" required/>
+            <span class="franchise-modal__label language-franchise__name" title="First Name and Last Name"></span>
+          </label>
+          <label class="franchise-modal__field">        
+            <input type="tel" class="franchise-modal__text" name="tel" id="tel"
+              pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" title="0xx-xxx-xx-xx" placeholder="Phone" required/>
+              <span class="franchise-modal__label language-franchise__phone"></span>
+            </label>
+          <label class="franchise-modal__field"> 
+            <input type="email" class="franchise-modal__text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email" required/>
+            <span class="franchise-modal__label language-franchise__email"></span>
+          </label>
+          <label class="franchise-modal__field franchise-modal__field--comment ">
+            <textarea name="comment" id="comment" cols="30" rows="10" class="franchise-modal__comment modal-form__label--comment" placeholder="Comment"></textarea>
+            <span class="franchise-modal__label franchise-modal__label--comment language-franchise__comment"></span>
+          </label>
+        </div>
+        <button type="submit" class="franchise-modal__submit language-franchise__submit">Submit</button>
+      </form>
+    </Div>
