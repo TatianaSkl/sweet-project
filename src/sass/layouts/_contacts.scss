@@ -244,9 +244,14 @@ address {
 }
 .contacts__icon {
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: 15%;
   transform: translate(-50%, -50%);
+  @include tablet {
+    top: 50%;
+    right: 15%;
+    transform: translate(-50%, -50%);
+  }
 
   &--position {
     right: 23%;
