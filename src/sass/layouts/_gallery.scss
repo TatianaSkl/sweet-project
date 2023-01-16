@@ -1,72 +1,25 @@
 .gallary {
-    position: relative;
-    transform: translateY(84%);
-    z-index: -5;
-
-    background-image: url('..//../images/480/bg-480.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 1037px;
-
-    @include tel {
-        background-image: url('..//../images/mobile/bg_mob.jpg');
-
-        @include retina {
-            background-image: url('..//../images/mobile/bg_mob-2x.jpg');
-        };
-
-        transform: translateY(75%);
-    };
-
-    @include tablet {
-        background-image: url('..//../images/tablet/bg_tab.jpg');
-
-        @include retina {
-            background-image: url('..//../images/tablet/bg_tab-2x.jpg');
-        };
-        height: 1017px;
-    };
-
-    @include desktop {
-        background-image: url('..//../images/desktop/bg_desktop.jpg');
-
-        @include retina {
-            background-image: url('..//../images/desktop/bg_desktop-2x.jpg');
-        };
-        height: 1350px;
-        
-        transform: translateY(58%);
-    };
+  
 }
-
 .gallary__wall {
-    position: relative;
-    transform: translateY(-32px);
-    z-index: 3;
-    overflow: visible;
-    margin-bottom: 80px;
+  
+  
 
-    @include tel {
-        bottom: 27px;
-        left: 0;
-    };
+  @include tel {
+   
+  }
 
-    @include tablet {
-        margin-bottom: 100px;
-        transform: translateY(-144px);
-    };
+  @include tablet {
+    
+   
+  }
 
-    @include desktop {
-        margin-bottom: 140px;
-        transform: translateY(-98px);
-    };
-
+  @include desktop {
+   
+    
+  }
 }
 
 .gallary__wrapper {
-    margin-left: auto;
-    margin-right: auto;
 
 }
