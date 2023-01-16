@@ -55,23 +55,33 @@
   }
 }
 
-.about-modal-video {
+.about-modal-video iframe{
   width: 224px;
-  height: 205px;
-  outline: 1px solid black;
+  height: 199px;
   margin-bottom: 20px;
   color: black;
   text-align: center;
+  border-radius: 10px;
+  object-fit: cover;
 
   @include tel{
     width: 350px;
+    height: 199px;
   }
 
   @include tablet {
+    top: 0;
     width: 448px;
+    height: 205px;
     margin-bottom: 32px;
   }
 }
+ 
+//  iframe{
+//   width: 300px;
+//   height: 300px;
+// }
+
 
 .about-modal-video-text {
   font-size: 14px;
