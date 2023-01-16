@@ -38,7 +38,11 @@ const langArr = {
         "en": "Buy now &#707",
         "ua": "Купити зараз &#707",
     },
-       
+    "btn-buy-mobile": {
+        "en": "Buy now &#707",
+        "ua": "Купити зараз &#707",
+    },
+    
     // ----- Hero!-----
 
     "hero": {
@@ -66,7 +70,7 @@ const langArr = {
         "ua": "Еней був парубок моторний і хлопець хоть куди козак, удавсь на всеє зле проворний, завзятіший од всіх бурлак. Но греки, як спаливши Трою, зробили з неї скирту гною, він, взявши торбу, тягу дав; забравши деяких троянців, осмалених, як гиря, ланців, п'ятами з Трої накивав.",
     },
 
-// Products
+    // ----- Products!-----
     
      "label": {
         "en": "100% natural",
@@ -86,7 +90,7 @@ const langArr = {
     },
     "name-2": {
         "en": "ice coffee",
-        "ua": "холодна кава",
+        "ua": "айс кава",
     },
     "description-2": {
         "en": "Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers",
@@ -110,6 +114,10 @@ const langArr = {
     "contacts__item-title2": {
         "en": "FOODTRUCK",
         "ua": "ФУДТРАК",
+    },
+     "contacts__item-title3": {
+        "en": "CAFE",
+        "ua": "КАФЕ",
     },
     "contacts__cards-city": {
         "en": "Chicago",
@@ -136,6 +144,38 @@ const langArr = {
         "ua": "Субота - Неділя",
     },
     "time-2": {
+        "en": "08:00 AM - 04:00 PM",
+        "ua": "06:00 - 16:00",
+    },
+    "day-3": {
+        "en": "Monday - Friday",
+        "ua": "Понеділок- П’ятниця",
+    },
+    "time-3": {
+        "en": "06:00 AM - 10:00 PM",
+        "ua": "06:00 - 22:00",
+    },
+    "day-4": {
+        "en": "Saturday - Sunday",
+        "ua": "Субота - Неділя",
+    },
+    "time-4": {
+        "en": "08:00 AM - 04:00 PM",
+        "ua": "06:00 - 16:00",
+    },
+    "day-5": {
+        "en": "Monday - Friday",
+        "ua": "Понеділок- П’ятниця",
+    },
+    "time-5": {
+        "en": "06:00 AM - 10:00 PM",
+        "ua": "06:00 - 22:00",
+    },
+    "day-6": {
+        "en": "Saturday - Sunday",
+        "ua": "Субота - Неділя",
+    },
+    "time-6": {
         "en": "08:00 AM - 04:00 PM",
         "ua": "06:00 - 16:00",
     },
@@ -202,5 +242,159 @@ const langArr = {
         "ua": "Відправити",
     },
 
+    // ----- Franchise modal!-----
+
+    "franchise-modal__title": {
+        "en": "Thank you for your interest in owning an Ice Cream shop",
+        "ua": "Дякуємо за ваш інтерес до володіння магазином морозива",
+    },
+    "franchise-modal__info": {
+        "en": "Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.",
+        "ua": "Через величезну кількість запитів на франшизу ми наразі не приймаємо заявки від нових франчайзів. Після відновлення процесу подання заявок ми зв’яжемося з вами для отримання додаткової інформації. Будь ласка, заповніть контактну інформацію нижче і ми зв’яжемося для отримання додаткової інформації. Ми цінуємо ваше терпіння.",
+    },
+    "franchise__name": {
+        "en": "Name",
+        "ua": "Ім'я",
+    },
+    "franchise__phone": {
+        "en": "Phone",
+        "ua": "Телефон",
+    },
+    "franchise__email": {
+        "en": "Email",
+        "ua": "Пошта",
+    },
+    "franchise__comment": {
+        "en": "Comment",
+        "ua": "Коментар",
+    },
+    "franchise__submit": {
+        "en": "Submit",
+        "ua": "Відправити",
+    },
+
+    // ----- Modal products!-----
+
+    "modal-products-1-title": {
+        "en": "Chocolate icecream",
+        "ua": "Шоколадне морозиво",
+    },
+    "modal-products-item2": {
+        "en": "g",
+        "ua": "г",
+    },
+    "modal-products-item-icecream1": {
+        "en": "kcal",
+        "ua": "ккал",
+    },
+    "modal-products-item-icecream1": {
+        "en": " kcal", 
+        "ua": " ккал", 
+    }, 
+    "modal-products-item-icecream2": { 
+        "en": " Prote...", 
+        "ua": " Білки", 
+    },
+    "modal-products-item-icecream3": { 
+        "en": " Fats", 
+        "ua": " Жири", 
+    }, 
+    "modal-products-item-icecream4": { 
+        "en": " Carbs", 
+        "ua": " Вуглеводи", 
+    }, 
+     "modal-products-ingradients-title": { 
+        "en": " Ingredients", 
+        "ua": " Iнгрeдієнти"
+    },
+    "modal-products-ingradients1": { 
+        "en": " Milk", 
+        "ua": " Молоко", 
+    },
+     "modal-products-ingradients2": { 
+        "en": " Belgian chocolate", 
+        "ua": " Бельгійський шоколад", 
+    },
+    "modal-products-ingradients3": { 
+        "en": " Cream", 
+        "ua": " Крем", 
+    },
+     "modal-products-ingradients4": { 
+        "en": " Cocoa powder", 
+        "ua": " Какао порошок", 
+    },
+    "modal-products-ingradients5": { 
+        "en": " Sugar", 
+        "ua": " Цукор", 
+    }, 
+    "modal-products-ingradients6": { 
+        "en": " Vanilla sugar", 
+        "ua": " Ванільний цукор", 
+    }, 
+    "modal-products-ingradients7": { 
+        "en": " Coffee", 
+        "ua": " Кава", 
+    }, 
+    "modal-products-ingradients8": { 
+        "en": " Ice", 
+        "ua": " Лід", 
+    },
+    "modal-products-ingradients9": { 
+        "en": " Topping", 
+        "ua": " Топпінг", 
+    },
+    "modal-products-ingradients10": { 
+        "en": " Cinnamon", 
+        "ua": " Кориця", 
+    }, 
+    "modal-products-ingradients11": { 
+        "en": " Berries", 
+        "ua": " Ягоди", 
+    }, 
+    "modal-products-ingradients12": { 
+        "en": " Banana", 
+        "ua": " Банан", 
+    }, 
+    "modal-products-ingradients13": { 
+        "en": " Ice cream", 
+        "ua": " Морозиво", 
+    }, 
+    "modal-products-ingradients1-item": { 
+        "en": " ml", 
+        "ua": " мл", 
+    }, 
+    "modal-products-ingradients2-item": { 
+        "en": " g", 
+        "ua": " г", 
+    }, 
+    "modal-products-ingradients3-item": { 
+        "en": " pcs", 
+        "ua": " шт", 
+    }, 
+    "modal-products-input-name": { 
+        "en": " Name", 
+        "ua": " Ім’я", 
+    }, 
+    "modal-products-input-email": { 
+        "en": " Phone", 
+        "ua": " Телефон", 
+    }, 
+    "modal-products-input-comment": { 
+        "en": " Comment", 
+        "ua": " Коментар", 
+    }, 
+    "modal-products-btn": { 
+        "en": " Submit", 
+        "ua": " Відправити", 
+    }, 
+    "modal-products-2-title": { 
+        "en": " Cinnamon icecoffee", 
+        "ua": " Айс кава з корицею", 
+    }, 
+    "modal-products-3-title": { 
+        "en": " Banana-berry milkshake", 
+        "ua": " Бананово-ягідний мілкшейк", 
+    },
+     
 
 }

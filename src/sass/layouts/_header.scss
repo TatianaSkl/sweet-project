@@ -72,8 +72,7 @@
     color: var(--accent-link-color);
   }
 
-  cursor: url(../images/cursor-vector.png), pointer;
-
+  cursor: url(../images/cursor-ice.png), pointer;
 }
 
 // ----- Language selector! -----
@@ -160,11 +159,10 @@
 
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
-    cursor: url(../images/cursor-vector.png), pointer;
+    cursor: url(../images/cursor-ice.png), pointer;
 
     &:hover {
-      background-color: var(--focus-color);
+      background-color: var(--focus-color);      
     }
     &:focus {
       color: var(--second-color);
@@ -179,6 +177,21 @@
 @include desktop {
   .btn-header {
     right: 16px;
+    &:hover {
+      background-color: var(--focus-color);
+      animation: blink 0.25s infinite;
+    }
+  }
+}
+
+@keyframes blink {
+  25%,
+  75% {
+    color: transparent;
+  }
+  40%,
+  60% {
+    color: var(--second-color);
   }
 }
 
@@ -209,4 +222,3 @@
     display: none;
   }
 }
-
