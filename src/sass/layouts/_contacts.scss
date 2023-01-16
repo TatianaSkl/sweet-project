@@ -81,7 +81,8 @@ address {
 
 .contacts__cards {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
+  flex-direction: column;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 12px;
@@ -190,13 +191,15 @@ address {
     flex-direction: row;
   }
 }
-
-.contacts__button {
+.contacts-button__item {
   position: relative;
+}
+.contacts__button {
   min-width: 196px;
   padding: 12px 55px 12px 40px;
   border: 2px solid var(--accent-link-color);
   margin-bottom: 16px;
+
   &--franchise {
     background: none;
   }
