@@ -119,6 +119,33 @@ const langArr = {
         "en": "Aliquam ac dui vel dui vulputate consectetur. Mauris massa.",
         "ua": "Зевес тогді кружав сивуху і оселедцем заїдав;",
     },
+    
+    // ----- Customer Reviews!-----
+
+    "reviews-text1": {
+        "en": "I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In addition, you have beautiful serving, cozy atmosphere and polite staff.",
+        "ua": "Я люблю відвідувати ваше кафе. Ви готуєте  найсмачніше морозиво в Лос Анджелесі! Окрім того, у вас гарне обслуговування, затишна атмосфера та ввічливий персонал.",
+    },
+    "reviews-text2": {
+        "en": "Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!",
+        "ua": "Кожен день ми приходимо до вас з друзями після занять в коледжі. Ми любимо ваше морозиво та невимушену атмосферу.",
+    },
+    "reviews-text3": {
+        "en": "Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the excellent service - always served politely and quickly!",
+        "ua": "Морозиво - моя пристрасть! Я люблю ваше  шоколадно-горіхове морозиво! I мені дуже подобається відмінний сервіс - завжди обслуговували ввічливо та швидко!",
+    },
+    "reviews-name1": {
+        "en": "Emily, Los Angeles",
+        "ua": "Емілі, Лос Анджелеси",
+    },
+    "reviews-name2": {
+        "en": "Bryan, New-York",
+        "ua": "Браян, Нью-Йорк",
+    },
+    "reviews-name3": {
+        "en": "Diana, Chicago",
+        "ua": "Діана, Чикаго",
+    },
 
     // ----- Contacts!-----
 
@@ -290,126 +317,306 @@ const langArr = {
 
     // ----- Modal products!-----
 
-    "modal-products-1-title": {
-        "en": "Chocolate icecream",
-        "ua": "Шоколадне морозиво",
-    },
-    "modal-products-item2": {
-        "en": "g",
-        "ua": "г",
-    },
-    "modal-products-item-icecream1": {
-        "en": "kcal",
-        "ua": "ккал",
-    },
-    "modal-products-item-icecream1": {
-        "en": " kcal", 
-        "ua": " ккал", 
+   "modal-products-1-title": { 
+    "en": " Chocolate icecream", 
+    "ua": " Шоколадне морозиво", 
+  }, 
+  "modal-products-item1": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+  "modal-products-item2": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+  "modal-products-item3": { 
+    "en": " g", 
+    "ua": " г", 
+  },   
+  "modal-products-item4": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+  "modal-products-item5": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+  "modal-products-item6": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+  "modal-products-item7": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+    "modal-products-item8": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+  "modal-products-item9": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+  "modal-products-ingradients-title1": { 
+    "en": " Ingredients", 
+    "ua": " Інградієнти", 
+  }, 
+  "modal-products-ingradients-title2": { 
+    "en": " Ingredients", 
+    "ua": " Інградієнти", 
+  }, 
+  "modal-products-ingradients-title3": { 
+    "en": " Ingredients", 
+    "ua": " Інградієнти", 
+  }, 
+  "modal-products-item-icecream1": { 
+    "en": " kcal", 
+    "ua": " ккал", 
+  }, 
+  "modal-products-item-icecream2": { 
+    "en": "Prote...", 
+    "ua": "Білки", 
+  }, 
+  "modal-products-item-icecream3": { 
+    "en": "Fats", 
+    "ua": "Жири", 
+  }, 
+  "modal-products-item-icecream4": { 
+    "en": "Carbs", 
+    "ua":  "Вуглеводи", 
+  }, 
+  "modal-products-item-icecream5": { 
+    "en": "kcal", 
+    "ua": "ккал", 
+  }, 
+  "modal-products-item-icecream6": { 
+    "en": "Prote...", 
+    "ua": "Білки", 
+  }, 
+  "modal-products-item-icecream7": { 
+    "en": "Fats", 
+    "ua":  "Жири", 
+  }, 
+  "modal-products-item-icecream8": { 
+    "en": "Carbs", 
+    "ua": "Вуглеводи", 
+  }, 
+  "modal-products-item-icecream9": { 
+    "en": "kcal", 
+    "ua":  "ккал", 
+  }, 
+  "modal-products-item-icecream10": { 
+    "en": "Prote...", 
+    "ua": "Білки", 
+  }, 
+  "modal-products-item-icecream11": { 
+    "en": " Fats", 
+    "ua": " Жири", 
+  }, 
+  "modal-products-item-icecream12": { 
+    "en": " Carbs", 
+    "ua": " Вуглеводи", 
+  }, 
+  "modal-products-ingradients1": { 
+    "en": " Milk", 
+    "ua": " Молоко", 
+  }, 
+  "modal-products-ingradients2": { 
+    "en": " Belgian chocolate", 
+    "ua": " Бельгійський шоколад", 
+  }, 
+  "modal-products-ingradients3": { 
+    "en": " Cream", 
+    "ua": " Крем", 
+  }, 
+  "modal-products-ingradients4": { 
+    "en": " Cocoa powder", 
+    "ua": " Какао порошок", 
+  }, 
+  "modal-products-ingradients5": { 
+    "en": " Sugar", 
+    "ua": " Цукор", 
+  }, 
+  "modal-products-ingradients6": { 
+    "en": " Vanilla sugar", 
+    "ua": " Ванільний цукор", 
     }, 
-    "modal-products-item-icecream2": { 
-        "en": " Prote...", 
-        "ua": " Білки", 
-    },
-    "modal-products-item-icecream3": { 
-        "en": " Fats", 
-        "ua": " Жири", 
+  "modal-products-ingradients7": { 
+    "en": " Coffee", 
+    "ua": " Кава", 
+  }, 
+  "modal-products-ingradients8": { 
+    "en": " Milk", 
+    "ua": " Молоко", 
+  }, 
+  "modal-products-ingradients9": { 
+    "en": " Ice", 
+    "ua": " Лід", 
+  }, 
+  "modal-products-ingradients10": { 
+    "en": " Topping", 
+    "ua": " Топпінг", 
+  }, 
+  "modal-products-ingradients11": { 
+    "en": " Sugar", 
+    "ua": " Цукор", 
+  }, 
+  "modal-products-ingradients12": { 
+    "en": " Cinnamon", 
+    "ua": " Кориця", 
     }, 
-    "modal-products-item-icecream4": { 
-        "en": " Carbs", 
-        "ua": " Вуглеводи", 
+  "modal-products-ingradients13": { 
+    "en": " Berries", 
+    "ua": " Ягоди", 
+  }, 
+  "modal-products-ingradients14": { 
+    "en": " Banana", 
+    "ua": " Банан", 
+  }, 
+  "modal-products-ingradients15": { 
+    "en": " Milk", 
+    "ua": " Молоко", 
+  }, 
+  "modal-products-ingradients16": { 
+    "en": " Topping", 
+    "ua": " Топпінг", 
+  }, 
+  "modal-products-ingradients17": { 
+    "en": " Sugar", 
+    "ua": " Цукор", 
+  }, 
+  "modal-products-ingradients18": { 
+    "en": " Ice cream", 
+    "ua": " Морозиво", 
+  }, 
+  "modal-products-ingradients1-item": { 
+    "en": " ml", 
+    "ua": " мл", 
+  }, 
+  "modal-products-ingradients2-item": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+  "modal-products-ingradients3-item": { 
+    "en": " ml", 
+    "ua": " мл", 
+  }, 
+  "modal-products-ingradients4-item": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+  "modal-products-ingradients5-item": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+  "modal-products-ingradients6-item": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+  "modal-products-ingradients7-item": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+"modal-products-ingradients8-item": {
+    "en": " ml", 
+    "ua": " мл", 
+  }, 
+  "modal-products-ingradients9-item": { 
+    "en": " pcs", 
+    "ua": " шт", 
+  }, 
+  "modal-products-ingradients10-item": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+  "modal-products-ingradients11-item": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+  "modal-products-ingradients12-item": { 
+    "en": " pcs", 
+    "ua": " шт", 
+  }, 
+    "modal-products-ingradients13-item": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+  "modal-products-ingradients14-item": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+  "modal-products-ingradients15-item": { 
+    "en": " ml", 
+    "ua": " мл", 
+  }, 
+  "modal-products-ingradients16-item": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+  "modal-products-ingradients17-item": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+  "modal-products-ingradients18-item": { 
+    "en": " g", 
+    "ua": " г", 
+  }, 
+  "modal-products-input-name-icecream": { 
+    "en": " Name", 
+    "ua": " Ім’я", 
+  }, 
+  "modal-products-input-email-icecream": { 
+    "en": " Phone", 
+    "ua": " Телефон", 
+  }, 
+  "modal-products-input-comment-icecream": { 
+    "en": " Comment", 
+    "ua": " Коментар", 
+  }, 
+  "modal-products-btn-icecream": { 
+    "en": " Submit", 
+    "ua": " Відправити", 
+  }, 
+  "modal-products-input-name-icecoffee": { 
+    "en": " Name", 
+    "ua": " Ім’я", 
+  }, 
+  "modal-products-input-email-icecoffee": { 
+    "en": " Phone", 
+    "ua": " Телефон", 
+  }, 
+  "modal-products-input-comment-icecoffee": { 
+    "en": " Comment", 
+    "ua": " Коментар", 
+  }, 
+  "modal-products-btn-icecoffee": { 
+    "en": " Submit", 
+    "ua": " Відправити", 
+  }, 
+  "modal-products-input-name-milkshke": { 
+    "en": " Name", 
+    "ua": " Ім’я", 
+  }, 
+  "modal-products-input-email-milkshke": { 
+    "en": " Phone", 
+    "ua": " Телефон", 
+  }, 
+  "modal-products-input-comment-milkshke": { 
+    "en": " Comment", 
+    "ua": " Коментар", 
+  }, 
+  "modal-products-btn-milkshke": { 
+    "en": " Submit", 
+    "ua": " Відправити", 
+  }, 
+  "modal-products-2-title": { 
+    "en": " Cinnamon icecoffee", 
+    "ua": " Айс кава з корицею", 
     }, 
-     "modal-products-ingradients-title": { 
-        "en": " Ingredients", 
-        "ua": " Iнгрeдієнти"
-    },
-    "modal-products-ingradients1": { 
-        "en": " Milk", 
-        "ua": " Молоко", 
-    },
-     "modal-products-ingradients2": { 
-        "en": " Belgian chocolate", 
-        "ua": " Бельгійський шоколад", 
-    },
-    "modal-products-ingradients3": { 
-        "en": " Cream", 
-        "ua": " Крем", 
-    },
-     "modal-products-ingradients4": { 
-        "en": " Cocoa powder", 
-        "ua": " Какао порошок", 
-    },
-    "modal-products-ingradients5": { 
-        "en": " Sugar", 
-        "ua": " Цукор", 
-    }, 
-    "modal-products-ingradients6": { 
-        "en": " Vanilla sugar", 
-        "ua": " Ванільний цукор", 
-    }, 
-    "modal-products-ingradients7": { 
-        "en": " Coffee", 
-        "ua": " Кава", 
-    }, 
-    "modal-products-ingradients8": { 
-        "en": " Ice", 
-        "ua": " Лід", 
-    },
-    "modal-products-ingradients9": { 
-        "en": " Topping", 
-        "ua": " Топпінг", 
-    },
-    "modal-products-ingradients10": { 
-        "en": " Cinnamon", 
-        "ua": " Кориця", 
-    }, 
-    "modal-products-ingradients11": { 
-        "en": " Berries", 
-        "ua": " Ягоди", 
-    }, 
-    "modal-products-ingradients12": { 
-        "en": " Banana", 
-        "ua": " Банан", 
-    }, 
-    "modal-products-ingradients13": { 
-        "en": " Ice cream", 
-        "ua": " Морозиво", 
-    }, 
-    "modal-products-ingradients1-item": { 
-        "en": " ml", 
-        "ua": " мл", 
-    }, 
-    "modal-products-ingradients2-item": { 
-        "en": " g", 
-        "ua": " г", 
-    }, 
-    "modal-products-ingradients3-item": { 
-        "en": " pcs", 
-        "ua": " шт", 
-    }, 
-    "modal-products-input-name": { 
-        "en": " Name", 
-        "ua": " Ім’я", 
-    }, 
-    "modal-products-input-email": { 
-        "en": " Phone", 
-        "ua": " Телефон", 
-    }, 
-    "modal-products-input-comment": { 
-        "en": " Comment", 
-        "ua": " Коментар", 
-    }, 
-    "modal-products-btn": { 
-        "en": " Submit", 
-        "ua": " Відправити", 
-    }, 
-    "modal-products-2-title": { 
-        "en": " Cinnamon icecoffee", 
-        "ua": " Айс кава з корицею", 
-    }, 
-    "modal-products-3-title": { 
-        "en": " Banana-berry milkshake", 
-        "ua": " Бананово-ягідний мілкшейк", 
-    },
+  "modal-products-3-title": { 
+    "en": " Banana-berry milkshake", 
+    "ua": " Бананово-ягідний мілкшейк", 
+  },
      
 
 }
