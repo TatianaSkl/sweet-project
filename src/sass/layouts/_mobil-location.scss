@@ -62,6 +62,11 @@
   line-height: 1.5;
   color: var(--additional-color);
   margin-top: 0;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .modal-location-close {
