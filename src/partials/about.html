@@ -6,7 +6,7 @@
       <picture class="about-image">
         <source
           srcset="
-            ./images/desktop/cow-desktop.png   1x,
+            ./images/desktop/cow-desktop.png    1x,
             ./images/desktop/cow-desktop-2x.png 2x
           "
           media="(min-width:1200px)"
@@ -20,17 +20,14 @@
         />
         <source
           srcset="
-            ./images/mobile/cow-mob.png     1x,
+            ./images/mobile/cow-mob.png    1x,
             ./images/mobile/cow-mob-2x.png 2x
           "
           media="(max-width:767px)"
         />
-        <img
-          src="./images/mobile/cow-mob.png"
-          alt="cow is eating grass"
-        />
+        <img src="./images/mobile/cow-mob.png" alt="cow is eating grass" />
       </picture>
-      </div>
+    </div>
     <div class="about-info-box">
       <ul class="about-information-list list">
         <li class="about-information-item language-about-information-1">
@@ -48,7 +45,11 @@
           This is enough to choose ice cream and coffee for any mood!
         </li>
       </ul>
-      <button type="button" class="about-information-btn btn" data-modal-about-open>
+      <button
+        type="button"
+        class="about-information-btn language-about-btn btn"
+        data-modal-about-open
+      >
         Read more
         <svg class="about-information-icon" width="12" height="12">
           <use href="./images/icons.svg#icon-buy_now"></use>
@@ -58,17 +59,29 @@
   </div>
 
   <div class="about-backdrop is-hidden" data-modal-about>
-      <div class="about-modal">
-        <h2 class="about-modal-title">How it’s made?</h2>
-        <div class="about-modal-video">продам гараж</div>
-        <p class="about-modal-video-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-        
-        <button type="button" class="about-modal-close" data-modal-about-close>
-          <svg width="20" height="20" class="about-modal-close-icon">
-            <use href="./images/icons.svg#icon-modal_close-line"></use>
-          </svg>
-        </button>
+    <div class="about-modal">
+      <h2 class="about-modal-title">How it’s made?</h2>
+      <div class="about-modal-video">
+        <iframe
+          src="https://www.youtube.com/embed/LLcR9DAq7mA"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
+          allowfullscreen
+        ></iframe>
       </div>
+      <p class="about-modal-video-text language-about-modal-video">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      </p>
+
+      <button type="button" class="about-modal-close" data-modal-about-close>
+        <svg width="20" height="20" class="about-modal-close-icon">
+          <use href="./images/icons.svg#icon-modal_close-line"></use>
+        </svg>
+      </button>
     </div>
-    <script src="./js/modal-about.js"></script>
+  </div>
+  <script src="./js/modal-about.js"></script>
 </section>
