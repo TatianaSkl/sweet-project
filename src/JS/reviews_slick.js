@@ -4,8 +4,8 @@ $('.one-time').slick({
   speed: 500,
   slidesToShow: 1,
   adaptiveHeight: true,
-  arrows: false/*,
-  autoplay: true*/
+  arrows: false,
+  autoplay: true
 });
 $('.reviews-slick').slick({
   dots: true,
