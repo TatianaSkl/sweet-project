@@ -105,6 +105,21 @@ const langArr = {
         "ua": "Солодкі напої на основі молока та морозива, доповнені сиропами, фруктами, ягодами та іншими солодощами на ваш вибір",
     },
 
+    // ----- Advantages!-----
+
+    "advantages-1": {
+        "en": "Aliquam ac dui vel dui vulputate consectetur. Mauris massa.",
+        "ua": "Зевес тогді кружав сивуху і оселедцем заїдав;",
+    },
+    "advantages-2": {
+        "en": "Aliquam ac dui vel dui vulputate consectetur. Mauris massa.",
+        "ua": "Зевес тогді кружав сивуху і оселедцем заїдав;",
+    },
+    "advantages-3": {
+        "en": "Aliquam ac dui vel dui vulputate consectetur. Mauris massa.",
+        "ua": "Зевес тогді кружав сивуху і оселедцем заїдав;",
+    },
+
     // ----- Contacts!-----
 
     "contacts__item-title": {
