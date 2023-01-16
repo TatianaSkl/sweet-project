@@ -11,20 +11,20 @@
     height: 1037px;
 
     @include tel {
-        background-image: url('..//../images/Mobile/bg_mob.jpg');
+        background-image: url('..//../images/mobile/bg_mob.jpg');
 
         @include retina {
-            background-image: url('..//../images/Mobile/bg_mob-2x.jpg');
+            background-image: url('..//../images/mobile/bg_mob-2x.jpg');
         };
 
         transform: translateY(75%);
     };
 
     @include tablet {
-        background-image: url('..//../images/Tablet/bg_tab.jpg');
+        background-image: url('..//../images/tablet/bg_tab.jpg');
 
         @include retina {
-            background-image: url('..//../images/Tablet/bg_tab-2x.jpg');
+            background-image: url('..//../images/tablet/bg_tab-2x.jpg');
         };
         height: 1017px;
     };
