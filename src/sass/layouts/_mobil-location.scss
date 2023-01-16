@@ -92,6 +92,9 @@ button.modal-location-close {
   margin-bottom: 20px;
   margin-top: 20px;
 
+  border-radius: 10px;
+  border: none;
+
   @include tablet {
     width: 448px;
     height: 260px;
@@ -100,9 +103,9 @@ button.modal-location-close {
   }
 }
 
-button.location-map {
+.location-map {
   font-family: inherit;
-  font-style: 600;
+  font-weight: 600;
   font-size: 12px;
   line-height: 15px;
   color: var(--additional-color);
