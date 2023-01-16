@@ -9,7 +9,7 @@
           Soft ice cream with a delicate taste. Made with milk, cream, sugar and
           natural stabilizer
         </p>
-        <button type="button" class="products__button">
+        <button type="button" class="products__button js-open-modal" data-modal="1">
           <svg class="products__icon" width="40px">
             <use href="./images/icons.svg#icon-arrow"></use>
           </svg>
@@ -21,7 +21,7 @@
           Fragrant invigorating drink created from 100% natural ingredients
           without the use of preservatives and flavor enhancers
         </p>
-        <button type="button" class="products__button">
+        <button type="button" class="products__button js-open-modal" data-modal="2">
           <svg class="products__icon" width="40px">
             <use href="./images/icons.svg#icon-arrow"></use>
           </svg>
@@ -33,12 +33,219 @@
           Sweet drinks based on milk and ice cream, supplemented with syrups,
           fruits, berries and other sweets of your choice
         </p>
-        <button type="button" class="products__button">
+        <button type="button" class="products__button js-open-modal" data-modal="3">
           <svg class="products__icon" width="40px">
             <use href="./images/icons.svg#icon-arrow"></use>
           </svg>
         </button>
       </li>
     </ul>
+  </div>
+  <div class="overlay js-overlay-modal">
+    <div class="modal__products-icecream" data-modal="1">
+      <button type="button" class="modal__close js-modal-close" data-modal-close>
+        <svg class="modal-close-btn" width="20" height="20">
+          <use href="./images/icons.svg#icon-modal_close-line"></use>
+        </svg>
+      </button>
+      <h2 class="modal__products-title language-modal-products-1-title">Chocolate icecream</h2>
+      <ul class="modal__products-image">
+        <li class="modal__products-image-main">
+          <picture>
+            <source srcset="./images/desktop/icecream-desktop.png 1x, ./images/desktop/icecream-desktop-2x.png 2x"
+              media="(min-width: 1200px)" />
+            <source srcset="./images/mobile/icecream-tablet-480-mob.png 1x, ./images/mobile/icecream-tablet-480-mobile-2x.png.png 2x"
+              media="(min-width: 768px)" />
+            <source srcset="./images/modal/modal_icecream.png 1x, ./images/modal/modal_icecream-2x.png 2x"
+              media="(max-width: 767px)" />
+            <img src="./images/modal/modal_icecream.png" alt="chocolate ice cream" width="132"
+              height="132">
+          </picture>
+        </li>
+        <li class="modal__products-image-background icecream-green"></li>
+      </ul>
+      <div>
+        <ul class="modal__products-buttons">
+          <li>
+            <p class="modal__products-item icecream">320</p>
+            <p class="modal__products-item-icecream language-modal-products-item-icecream1 first">kcal</p>
+          </li>
+          <li>
+            <p class="modal__products-item language-modal-products-item1 icecream">4g</p>
+            <p class="modal__products-item-icecream language-modal-products-item-icecream2 second">Prote...
+            </p>
+          </li>
+          <li>
+            <p class="modal__products-item language-modal-products-item2 icecream">8,2g</p>
+            <p class="modal__products-item-icecream language-modal-products-item-icecream3 third">Fats</p>
+          </li>
+          <li>
+            <p class="modal__products-item language-modal-products-item3 icecream">40,4g</p>
+            <p class="modal__products-item-icecream language-modal-products-item-icecream4 fourth">Carbs</p>
+          </li>
+        </ul>
+      </div>
+      <h4 class="modal__products-ingradients-title language-modal-products-ingradients-title1">Ingredients</h4>
+      <ul class="modal__products-list">
+        <li class="modal__products-item-ingradients language-modal-products-ingradients1">Milk<span class="language-modal-products-ingradients1-item">100ml</span></li>
+        <li class="modal__products-item-ingradients language-modal-products-ingradients2">Belgian chocolate<span class="language-modal-products-ingradients2-item">20g</span></li>
+        <li class="modal__products-item-ingradients language-modal-products-ingradients3">Cream<span class="language-modal-products-ingradients3-item">150 ml</span></li>
+        <li class="modal__products-item-ingradients language-modal-products-ingradients4">Cocoa powder<span class="language-modal-products-ingradients4-item">30g</span></li>
+        <li class="modal__products-item-ingradients language-modal-products-ingradients5">Sugar<span class="language-modal-products-ingradients5-item">40g</span></li>
+        <li class="modal__products-item-ingradients language-modal-products-ingradients6">Vanilla sugar<span class="language-modal-products-ingradients6-item">10g</span></li>
+      </ul>
+      <form action="">
+        <label for="name" class="modal__products-label"></label>
+        <input type="text" class="modal__products-input language-modal-products-input-name-icecream green" name="name"
+          id="name" placeholder="Name" />
+        <label for="email" class="modal__products-label"></label>
+        <input type="email" class="modal__products-input language-modal-products-input-email-icecream green" name="email"
+          id="email" placeholder="Phone" />
+        <label for="comment" class="modal__products-label"></label>
+        <textarea name="comment" id="comment"
+          class="modal__products-text language-modal-products-input-comment-icecream green" placeholder="Comment"></textarea>
+        <button type="submit" class="modal__products-btn language-modal-products-btn-icecream">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+  <div class="overlay js-overlay-modal">
+    <div class="modal__products-icecoffee" data-modal="2">
+      <button type="button" class="modal__close js-modal-close" data-modal-close>
+        <svg class="modal-close-btn" width="20" height="20">
+          <use href="./images/icons.svg#icon-modal_close-line"></use>
+        </svg>
+      </button>
+      <h2 class="modal__products-title language-modal-products-2-title">Cinnamon icecoffee</h2>
+      <ul class="modal__products-image">
+        <li class="modal__products-image-main">
+          <picture>
+            <source srcset="./images/desktop/icecoffee-desktop.png 1x, ./images/desktop/icecoffee-desktop-2x.png 2x"
+              media="(min-width: 1200px)" />
+            <source
+              srcset="./images/mobile/icecoffee-tablet-480-mob.png 1x, ./images/mobile/icecoffee-tablet-480-mob-2x.png.png 2x"
+              media="(min-width: 768px)" />
+            <source srcset="./images/modal/modal_icecoffee.png 1x, ./images/modal/modal_icecoffee-2x.png 2x"
+              media="(max-width: 767px)" />
+            <img src="./images/modal/modal_icecoffee.png" alt="ice coffee" width="132" height="132">
+          </picture>
+        </li>
+        <li class="modal__products-image-background icecoffee-yellow"></li>
+      </ul>
+      <div>
+        <ul class="modal__products-buttons">
+          <li>
+            <p class="modal__products-item icecoffee">180</p>
+            <p class="modal__products-item-icecoffee language-modal-products-item-icecream5 first">kcal</p>
+          </li>
+          <li>
+            <p class="modal__products-item icecoffee language-modal-products-item4">4g</p>
+            <p class="modal__products-item-icecoffee language-modal-products-item-icecream6 second">Prote...
+            </p>
+          </li>
+          <li>
+            <p class="modal__products-item icecoffee language-modal-products-item5">6,4g</p>
+            <p class="modal__products-item-icecoffee language-modal-products-item-icecream7 third">Fats</p>
+          </li>
+          <li>
+            <p class="modal__products-item icecoffee language-modal-products-item6">30,6g</p>
+            <p class="modal__products-item-icecoffee language-modal-products-item-icecream8 fourth">Carbs
+            </p>
+          </li>
+        </ul>
+      </div>
+      <h4 class="modal__products-ingradients-title language-modal-products-ingradients-title2">Ingredients</h4>
+      <ul class="modal__products-list">
+        <li class="modal__products-item-ingradients language-modal-products-ingradients7">Coffee<span class="language-modal-products-ingradients7-item">16g</span></li>
+        <li class="modal__products-item-ingradients language-modal-products-ingradients8">Milk<span class="language-modal-products-ingradients8-item">80ml</span></li>
+        <li class="modal__products-item-ingradients language-modal-products-ingradients9">Ice<span class="language-modal-products-ingradients9-item">5pcs</span></li>
+        <li class="modal__products-item-ingradients language-modal-products-ingradients10">Topping<span class="language-modal-products-ingradients10-item">30g</span></li>
+        <li class="modal__products-item-ingradients language-modal-products-ingradients11">Sugar<span class="language-modal-products-ingradients11-item">20g</span></li>
+        <li class="modal__products-item-ingradients language-modal-products-ingradients12">Cinnamon<span class="language-modal-products-ingradients12-item">1pcs</span></li>
+      </ul>
+      <form action="">
+        <label for="name" class="modal__products-label"></label>
+        <input type="text" class="modal__products-input language-modal-products-input-name-icecoffee yellow" name="name"
+          id="name" placeholder="Name" />
+        <label for="email" class="modal__products-label"></label>
+        <input type="email" class="modal__products-input language-modal-products-input-email-icecoffee yellow" name="email"
+          id="email" placeholder="Phone" />
+        <label for="comment" class="modal__products-label"></label>
+        <textarea name="comment" id="comment"
+          class="modal__products-text language-modal-products-input-comment-icecoffee yellow"
+          placeholder="Comment"></textarea>
+        <button type="submit" class="modal__products-btn language-modal-products-btn-icecoffee">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+  <div class="overlay js-overlay-modal">
+    <div class="modal__products-milkshake" data-modal="3">
+      <button type="button" class="modal__close js-modal-close" data-modal-close>
+        <svg class="modal-close-btn" width="20" height="20">
+          <use href="./images/icons.svg#icon-modal_close-line"></use>
+        </svg>
+      </button>
+      <h2 class="modal__products-title language-modal-products-3-title">Banana-berry milkshake</h2>
+      <ul class="modal__products-image">
+        <li class="modal__products-image-main">
+          <picture>
+            <source srcset="./images/desktop/milkshakes-desktop.png 1x, ./images/desktop/milkshakes-desktop-2x.png 2x"
+              media="(min-width: 1200px)" />
+            <source
+              srcset="./images/mobile/milkshakes-tablet-480-mob.png 1x, ./images/mobile/milkshakes-tablet-480-mob-2x.png.png 2x"
+              media="(min-width: 768px)" />
+            <source srcset="./images/modal/modal_milkshake.png 1x, ./images/modal/modal_milkshake-2x.png 2x"
+              media="(max-width: 767px)" />
+            <img src="./images/modal/modal_milkshake.png" alt="milkshake" width="132" height="132">
+          </picture>
+        </li>
+        <li class="modal__products-image-background milkshake-chocolate"></li>
+      </ul>
+      <div>
+        <ul class="modal__products-buttons">
+          <li>
+            <p class="modal__products-item milkshake">220</p>
+            <p class="modal__products-item-milkshake language-modal-products-item-icecream9 first">kcal</p>
+          </li>
+          <li>
+            <p class="modal__products-item milkshake language-modal-products-item7">6g</p>
+            <p class="modal__products-item-milkshake language-modal-products-item-icecream10 second">Prote...
+            </p>
+          </li>
+          <li>
+            <p class="modal__products-item milkshake language-modal-products-item8">9,5g</p>
+            <p class="modal__products-item-milkshake language-modal-products-item-icecream11 third">Fats</p>
+          </li>
+          <li>
+            <p class="modal__products-item milkshake language-modal-products-item9">35,5g</p>
+            <p class="modal__products-item-milkshake language-modal-products-item-icecream12 fourth">Carbs
+            </p>
+          </li>
+        </ul>
+      </div>
+      <h4 class="modal__products-ingradients-title language-modal-products-ingradients-title3">Ingredients</h4>
+      <ul class="modal__products-list">
+        <li class="modal__products-item-ingradients language-modal-products-ingradients13">Berries<span class="language-modal-products-ingradients13-item">30g</span></li>
+        <li class="modal__products-item-ingradients language-modal-products-ingradients14">Banana<span class="language-modal-products-ingradients12-item">50g</span></li>
+        <li class="modal__products-item-ingradients language-modal-products-ingradients15">Milk<span class="language-modal-products-ingradients15-item">150ml</span></li>
+        <li class="modal__products-item-ingradients language-modal-products-ingradients16">Topping<span class="language-modal-products-ingradients16-item">30g</span></li>
+        <li class="modal__products-item-ingradients language-modal-products-ingradients17">Sugar<span class="language-modal-products-ingradients17-item">20g</span></li>
+        <li class="modal__products-item-ingradients language-modal-products-ingradients18">Ice cream<span class="language-modal-products-ingradients18-item">90g</span></li>
+      </ul>
+      <form action="">
+        <label for="name" class="modal__products-label"></label>
+        <input type="text" class="modal__products-input language-modal-products-input-name-milkshke chocolate" name="name"
+          id="name" placeholder="Name" />
+        <label for="email" class="modal__products-label"></label>
+        <input type="email" class="modal__products-input language-modal-products-input-email-milkshke chocolate" name="email"
+          id="email" placeholder="Phone" />
+        <label for="comment" class="modal__products-label"></label>
+        <textarea name="comment" id="comment"
+          class="modal__products-text language-modal-products-input-comment-milkshke chocolate"
+          placeholder="Comment"></textarea>
+        <button type="submit" class="modal__products-btn language-modal-products-btn-milkshke">Submit</button>
+      </form>
+    </div>
   </div>
 </section>
