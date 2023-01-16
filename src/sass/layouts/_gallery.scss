@@ -1,25 +1,61 @@
 .gallary {
-  
+  position: relative;
+  z-index: 1;
+  &__container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -32px;
+    background-color: transparent;
+      
+      @include tel{
+
+      }
+      @include tablet{
+        top: -144px;
+          max-width: 704px;
+      }
+      @include desktop{
+        max-width: 1013px;
+        top: -100px;
+      }
+  }
 }
 .gallary__wall {
-  
-  
+  height: 130px;
+  border-radius: 8px;
 
   @include tel {
-   
+   height: 100%;
   }
 
   @include tablet {
-    
-   
+    height: 327px;
+    border-radius: 18px;   
   }
 
   @include desktop {
-   
-    
+  height: 422px;
+  border-radius: 24px;    
   }
 }
 
 .gallary__wrapper {
+  width: calc(100% - 40px);
+  left: 0;
+  right: 0;
+  
+  @include tel{
+
+  }
+  @include tablet{
+    max-width: 704px;
+  }
+  @include desktop{
+    max-width: 1013px;
+  }
+
+
+  
 
 }
