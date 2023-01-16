@@ -42,13 +42,14 @@
     height: 1350px;
   }
 }
-.reviews__person {
+.reviews__img {
   margin: 0 auto;
   border-radius: 50%;
   margin-bottom: 32px;
+  
 }
 
-.reviews__description {
+.reviews__text {
   font-size: 12px;
   line-height: 2.55;
   text-align: center;
@@ -81,7 +82,7 @@
   }
 }
 
-.reviews__after--title {
+.reviews__name {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 20px;
