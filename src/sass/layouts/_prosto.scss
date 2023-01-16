@@ -1,0 +1,111 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  overflow-y: scroll;
+  opacity: 1;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  z-index: 10;
+
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+
+}
+
+.modal-location {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+
+  overflow: auto;
+  max-width: 280px;
+  width: 100%;
+  height: 365px;
+  max-height: 100%;
+  padding: 28px;
+
+  background-color: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    max-width: 568px;
+    height: 458px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.location-title {
+  position: relative;
+  font-family: "Seymour One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #131313;
+  margin-top: 0;
+}
+
+.modal-location-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.modal-location-close {
+  padding: 0;
+}
+
+.location-img {
+  width: 224px;
+  height: 195px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  @include tablet {
+    width: 448px;
+    height: 260px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
+}
+
+button.location-map {
+  font-family: "Montserrat";
+  font-style: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #131313;
+  width: 134px;
+  height: 42px;
+  background-color: #f8d24e;
+  border-radius: 10px;
+}
