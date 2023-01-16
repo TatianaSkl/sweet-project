@@ -1,0 +1,65 @@
+.back-to-top {
+  background: hsla(73, 79%, 82%, 0.932);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: 0.3s all;
+  opacity: 0;
+  color: var(--placeholder-color);
+
+  width: 50px;
+  height: 60px;
+  background-image: url(..//../images/scroll-to-top.png);
+  background-repeat: no-repeat;
+  background-position: -5px -10px;
+  background-size: 60px 60px;
+
+  @include tablet {
+    bottom: 30px;
+    right: 30px;
+
+    width: 60px;
+    height: 70px;
+    background-size: 70px 70px;
+  }
+
+  @include desktop {
+    bottom: 50px;
+    right: 50px;
+
+    width: 70px;
+    height: 80px;
+    background-size: 80px 80px;
+  }
+}
+
+.back-to-top.active {
+  opacity: 1;
+  bottom: 50px;
+  transition: 0.3s all;
+}
+
+.back-to-top-text {
+  position: absolute;
+  bottom: 5px;
+  left: 12px;
+  display: block;
+
+  font-weight: 600;
+  color: var(--additional-color);
+
+  @include tablet {
+    bottom: 5px;
+    left: 16px;
+    font-weight: 600;
+  }
+
+  @include desktop {
+    bottom: 5px;
+    left: 21px;
+    font-weight: 600;
+  }
+}
