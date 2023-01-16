@@ -1,3 +1,16 @@
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: opacity 300ms linear, visibility 300ms linear;
+}
 .modal__products-icecream,
 .modal__products-icecoffee,
 .modal__products-milkshake {
@@ -8,15 +21,29 @@
   border-radius: 10px;
   padding: 28px 20px;
 
-  margin-left: 400px;
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  transition: opacity 300ms linear, visibility 300ms linear;
+
   @include tel;
   @include tablet;
   @include desktop;
   @include retina;
 }
 
-.modal-close {
+.modal__close {
   position: absolute;
   top: 12px;
   right: 12px;
