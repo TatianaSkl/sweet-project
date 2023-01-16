@@ -36,7 +36,7 @@
   padding: 28px;
 
   background-color: #fcfcfc;
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--accent-link-color);
   border-radius: 10px;
 
   transform: translate(-50%, -50%) scale(1);
@@ -51,9 +51,6 @@
     height: 458px;
   }
 
-  @include desktop {
-    display: none;
-  }
 }
 
 .location-title {
@@ -63,7 +60,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #131313;
+  color: var(--additional-color);
   margin-top: 0;
 }
 
@@ -99,13 +96,13 @@ button.modal-location-close {
 }
 
 button.location-map {
-  font-family: "Montserrat";
+  font-family: inherit;
   font-style: 600;
   font-size: 12px;
   line-height: 15px;
-  color: #131313;
+  color: var(--additional-color);
   width: 134px;
   height: 42px;
-  background-color: #f8d24e;
+  background-color: var(--accent-link-color);
   border-radius: 10px;
 }
