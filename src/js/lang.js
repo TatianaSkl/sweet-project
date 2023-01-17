@@ -241,8 +241,8 @@ const langArr = {
         "ua": "з пристрастю",
     },
     "footer__info": {
-        "en": "Feel free to contact +61 (0) 383 766 284",
-        "ua": "Звертайтеся вільно +61 (0) 383 766 284",
+        "en": "Feel free to contact",
+        "ua": "Звертайтеся вільно",
     },
     "footer__copyright": {
         "en": "&#169; 2022 - IceCream. All Rights Reserved.",
