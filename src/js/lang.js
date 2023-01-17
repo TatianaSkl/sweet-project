@@ -103,11 +103,42 @@ const langArr = {
     "description-3": {
         "en": "Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice",
         "ua": "Солодкі напої на основі молока та морозива, доповнені сиропами, фруктами, ягодами та іншими солодощами на ваш вибір",
-  },
+    },
     
     // ----- About!-----
 
-    
+    "about-pretitle": {
+        "en": "tradition and love",
+        "ua": "традиціі та любов",
+    },
+    "about-title": {
+        "en": "how it’s made?",
+        "ua": "як це зроблено?",
+    },
+    "about-information-1": {
+        "en": "Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts.",
+        "ua": "Лід - це місце, де ви станете не тільки трішки щасливішими, але й здоровішими. Головна цінність для нас - здоров'я і ​​ми керуємося нею, створюючи десерти ручної роботи.",
+    },
+    "about-information-2": {
+        "en": "We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.",
+        "ua": "Ми використовуємо традиційні рецепти та стовідсотково натуральні інгредієнти. Наша продукція натуральна, її можна давати дітям з трьох років. На поціновувачів солодощів чекає 55 видів морозива, 15 видів кави та 23 види молочних коктейлів.",
+    }, 
+    "about-information-3": {
+        "en": "This is enough to choose ice cream and coffee for any mood!",
+        "ua": "Обирай морозиво та каву під будь-який настрій!",
+    },
+    "about-btn": {
+        "en": "Read more",
+        "ua": "Детальніше",
+    },
+    "about-modal-title": {
+        "en": "How it’s made?",
+        "ua": "Як це зроблено?",
+    },
+    "about-modal-video": {
+        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+        "ua": "Еней був парубок моторний і хлопець хоть куди козак, удавсь на всеє зле проворний, завзятіший од всіх бурлак. Но греки, як спаливши Трою, зробили з неї скирту гною, він, взявши торбу, тягу дав;",
+    },    
 
     // ----- Advantages!-----
 
