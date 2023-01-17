@@ -315,23 +315,14 @@
 
 .products__icon {
     fill: var(--additional-color);
-    cursor: pointer;
     height: 20px;
-
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-
-    @media screen and (min-width: 1200px) {
-        bottom: 10%;
-    }
 }
 
 .products__button {
     border: none;
     background-color: transparent;
-    padding: 0;
+    padding: 20;
+    cursor: pointer;
 
     position: absolute;
     bottom: 0;
@@ -339,6 +330,6 @@
     transform: translate(-50%);
     
     @media screen and (min-width: 1200px) {
-        bottom: 10%;
+        bottom: 5%;
     }
 }
