@@ -45,9 +45,9 @@
     padding: 28px;
 
     @include tablet {
-        padding: 32px;
+        padding: 32px 60px;
         max-width: 568px;
-        height: 668px;
+        min-height: 668px;
     }
 }
 
@@ -114,6 +114,9 @@
 }
 
 .franchise-modal__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-bottom: 24px;
     align-items: center;
     padding: 0px;
@@ -123,23 +126,23 @@
         margin-bottom: 32px;
     }
     @include desktop  {
-        margin-left: 15px;
+        // margin-left: 15px;
     }
 }
 
 .franchise-modal__field {
     display: inline-block;
     position: relative;
-    width: 224px;
-    height: 28px;
+    // width: 224px;
+    // height: 32px;
 
     &:not(:last-child) {
-        margin-bottom: 14px;
+        margin-bottom: 12px;
     }
     
     @include tablet {
         width: 368px;
-        height: 42px;
+        // height: 42px;
 
         &:not(:last-child) {
             margin-bottom: 16px;
@@ -156,8 +159,8 @@
 
 .franchise-modal__text {
     display: block;
-    width: 100%;
-    height: 100%;
+    min-width: 224px;
+    height: 32px;
 
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid var(--primary-color);
@@ -172,7 +175,8 @@
     line-height: calc(16.8/12);
 
     @include tablet {
-        margin-left: 16px;
+        min-width: 368px;
+        height: 42px;
         font-size: 14px;
         line-height: calc(19.6/14);
     }
@@ -181,7 +185,7 @@
 
 .franchise-modal__comment {
     display: block;
-    width: 100%;
+    min-width: 224px;
     height: 64px;
     resize: none;
     outline: none;
@@ -197,7 +201,8 @@
     line-height: calc(16.8/12);
 
     @include tablet {
-        margin-left: 16px;
+        min-width: 368px;
+        height: 84px;
         font-size: 14px;
         line-height: calc(19.6/14);
     }
@@ -209,7 +214,7 @@
 }
 
 .franchise-modal__submit {
-    display: block;
+    // display: block;
     width: 114px;
     height: 42px;
     border: none;
@@ -225,10 +230,11 @@
     line-height: calc(15/12);
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    // text-align: center;
     color: var(--additional-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
