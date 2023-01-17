@@ -1,7 +1,7 @@
 $('.one-time').slick({
   dots: false,
   infinite: true,
-  speed: 400,
+  speed: 500,
   slidesToShow: 1,
   adaptiveHeight: true,
   arrows: false,

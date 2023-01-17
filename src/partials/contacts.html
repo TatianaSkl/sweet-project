@@ -9,16 +9,15 @@
           >
           <ul class="contacts__cards list">
             <li class="contacts__cards">
-
               <p class="contacts__cards-city language-contacts__cards-city">
                 Chicago
               </p>
               <a
-                href="https://goo.gl/maps/9Ze7EkK1HeeVNBnd8"
+                href="https://goo.gl/maps/KaYhKkZCW5JJKKd88"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                class="contacts__cards-address contacts__cards-address--narrow link">
-
+                class="contacts__cards-address contacts__cards-address--narrow link"
+              >
                 10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
               </a>
             </li>
@@ -31,7 +30,7 @@
             <li class="contacts__cards">
               <a href="tel:+610383766284" class="contacts__cards-link link"
                 >+61(0) 383 766 284</a
-              ><br />
+              >
               <a
                 href="mailto:noreply@envato.com"
                 class="contacts__cards-link link"
@@ -46,13 +45,11 @@
           >
           <ul class="contacts__cards list">
             <li class="contacts__cards">
-
               <p class="contacts__cards-city language-contacts__cards-city2">
                 Los Angeles
               </p>
               <a
-                href="https://goo.gl/maps/9Ze7EkK1HeeVNBnd8"
-
+                href="https://goo.gl/maps/DZi9dogYLW6cciNk6"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 class="contacts__cards-address link"
@@ -69,7 +66,7 @@
             <li class="contacts__cards">
               <a href="tel:+610383766284" class="contacts__cards-link link"
                 >+61(0) 383 766 284</a
-              ><br />
+              >
               <a
                 href="mailto:noreply@envato.com"
                 class="contacts__cards-link link"
@@ -79,18 +76,16 @@
           </ul>
         </li>
         <li class="contacts__item">
-          <span class="contacts__item-title language-contacts__item-title"
+          <span class="contacts__item-title language-contacts__item-title3"
             >CAFE</span
           >
           <ul class="contacts__cards list">
             <li class="contacts__cards">
-
               <p class="contacts__cards-city language-contacts__cards-city3">
                 New York
               </p>
               <a
-                href="https://goo.gl/maps/9Ze7EkK1HeeVNBnd8"
-
+                href="https://goo.gl/maps/7oJx2KGG5YSDAReo8"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 class="contacts__cards-address link"
@@ -107,7 +102,7 @@
             <li class="contacts__cards">
               <a href="tel:+610383766284" class="contacts__cards-link link"
                 >+61(0) 383 766 284</a
-              ><br />
+              >
               <a
                 href="mailto:noreply@envato.com"
                 class="contacts__cards-link link"
@@ -118,27 +113,28 @@
         </li>
       </ul>
       <ul class="contacts__button-list list">
-        <li class="contacts-button">
-          <button class="contacts__button language-contacts__button btn">
+        <li class="contacts-button__item">
+          <button class="contacts__button language-contacts__button btn" data-modal-map-open>
             Our Locations
-            <svg class="contacts__icon" width="12px" height="12px">
-              <use href="./images/icons.svg#icon-buy_now"></use>
-            </svg>
           </button>
+          <svg class="contacts__icon" width="12px" height="12px">
+            <use href="./images/icons.svg#icon-buy_now"></use>
+          </svg>
         </li>
-        <li class="contacts-button">
-
-          <button class="contacts__button language-contacts__button-2 contacts__button--franchise btn"  data-modal-franchise-open>
-
+        <li class="contacts-button__item">
+          <button
+            class="contacts__button language-contacts__button-2 contacts__button--franchise btn"
+            data-modal-franchise-open
+          >
             Franchise
-            <svg
-              class="contacts__icon contacts__icon--position"
-              width="12px"
-              height="12px"
-            >
-              <use href="./images/icons.svg#icon-buy_now"></use>
-            </svg>
           </button>
+          <svg
+            class="contacts__icon contacts__icon--position"
+            width="12px"
+            height="12px"
+          >
+            <use href="./images/icons.svg#icon-buy_now"></use>
+          </svg>
         </li>
       </ul>
     </address>
@@ -146,36 +142,125 @@
 </section>
 
 <!--franchise-modal-->
-<div class="backdrop is-hidden"data-modal-franchise>
+<div class="backdrop is-hidden" data-modal-franchise>
   <div class="franchise-modal">
     <button type="button" class="button-close" data-modal-franchise-close>
       <svg class="button-close__icon" width="20" height="20">
         <use href="./images/icons.svg#icon-modal_close-line"></use>
       </svg>
     </button>
-    <Div class="franchise-modal__list">
-      <h2 class="franchise-modal__title language-franchise-modal__title ">Thank you for your interest in owning an Ice Cream shop</h2>
-      <p class="franchise-modal__info language-franchise-modal__info">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</p>
+    <div class="franchise-modal__list">
+      <h2 class="franchise-modal__title language-franchise-modal__title">
+        Thank you for your interest in owning an Ice Cream shop
+      </h2>
+      <p class="franchise-modal__info language-franchise-modal__info">
+        Due to the overwhelming volume of franchise requests we are not
+        accepting new franchisee applications at this time. Once the application
+        process resumes, we will contact you for further information. Please
+        fill out the contact information below and we will reach out for
+        additional information. We appreciate your patience.
+      </p>
       <form action=" " class="franchise__form">
         <div class="franchise-modal__form">
-          <label class="franchise-modal__field">           
-            <input type="text" class="franchise-modal__text" name="name" id="name" pattern="^[a-zA-Z]+\s[a-zA-Z]+$"  placeholder="Name" required/>
-            <span class="franchise-modal__label language-franchise__name" title="First Name and Last Name"></span>
+          <label class="franchise-modal__field">
+            <input
+              type="text"
+              class="franchise-modal__text"
+              name="name"
+              id="name"
+              pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+              placeholder="Name"
+              required
+            />
+            <span
+              class="franchise-modal__label language-franchise__name"
+              title="First Name and Last Name"
+            ></span>
           </label>
-          <label class="franchise-modal__field">        
-            <input type="tel" class="franchise-modal__text" name="tel" id="tel"
-              pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" title="0xx-xxx-xx-xx" placeholder="Phone" required/>
-              <span class="franchise-modal__label language-franchise__phone"></span>
-            </label>
-          <label class="franchise-modal__field"> 
-            <input type="email" class="franchise-modal__text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email" required/>
-            <span class="franchise-modal__label language-franchise__email"></span>
+          <label class="franchise-modal__field">
+            <input
+              type="tel"
+              class="franchise-modal__text"
+              name="tel"
+              id="tel"
+              pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+              title="0xx-xxx-xx-xx"
+              placeholder="Phone"
+              required
+            />
+            <span
+              class="franchise-modal__label language-franchise__phone"
+            ></span>
           </label>
-          <label class="franchise-modal__field franchise-modal__field--comment ">
-            <textarea name="comment" id="comment" cols="30" rows="10" class="franchise-modal__comment modal-form__label--comment" placeholder="Comment"></textarea>
-            <span class="franchise-modal__label franchise-modal__label--comment language-franchise__comment"></span>
+          <label class="franchise-modal__field">
+            <input
+              type="email"
+              class="franchise-modal__text"
+              name="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              placeholder="Email"
+              required
+            />
+            <span
+              class="franchise-modal__label language-franchise__email"
+            ></span>
+          </label>
+          <label class="franchise-modal__field franchise-modal__field--comment">
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              class="franchise-modal__comment modal-form__label--comment"
+              placeholder="Comment"
+            ></textarea>
+            <span
+              class="franchise-modal__label franchise-modal__label--comment language-franchise__comment"
+            ></span>
           </label>
         </div>
-        <button type="submit" class="franchise-modal__submit language-franchise__submit">Submit</button>
+        <button
+          type="submit"
+          class="franchise-modal__submit language-franchise__submit"
+        >
+          Submit
+        </button>
       </form>
-    </Div>
+    </div>
+  </div>
+</div>
+
+<!-- Locations-modal -->
+
+<div class="overlay-map is-hidden" data-modal-map>
+  <div class="modal">
+    <button class="modal-map__btn" type="button" data-modal-map-close>
+      <svg class="modal-map__icon" width="24" height="24">
+        <use href="./images/icons.svg#icon-modal_close-line"></use>
+      </svg>
+    </button>
+
+    <h2 class="modal-map__title">Our Locations</h2>
+
+    <div class="modal-map__wrap">
+      <iframe
+        class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.237903703297!2d-118.4103286!3d33.8835263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b3eca6743829%3A0x98448969b9b4373d!2s1003%20Manhattan%20Ave%2C%20Manhattan%20Beach%2C%20CA%2090266%2C%20%D0%A1%D0%A8%D0%90!5e0!3m2!1sru!2sru!4v1673783960883!5m2!1sru!2sru"
+        width="450"
+        height="260"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <a
+      class="modal-map__link btn link"
+      href="https://goo.gl/maps/98rL2qZWzdEiio2j7"
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+      >Open map</a
+    >
+  </div>
+</div>

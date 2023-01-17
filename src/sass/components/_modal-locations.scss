@@ -1,0 +1,149 @@
+.overlay-map {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-map.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+
+  & .modal {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  max-height: calc(100% - 20px);
+  max-width: 75vw;
+  width: 100%;
+
+  min-width: 280px;
+  height: 365px;
+  padding: 28px;
+
+  background-color: var(--second-color);
+  border: 2px solid var(--accent-link-color);
+  border-radius: 10px;
+
+  @include tablet {
+    max-width: 568px;
+    height: 100%;
+    max-height: 458px;
+    padding: 32px 60px;
+  }
+}
+
+.modal-map__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+
+  color: var(--additional-color);
+  background-color: var(--second-color);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-map__btn:hover,
+.modal-map__btn:focus {
+  color: var(--accent-link-color);
+}
+
+.modal-map__icon {
+  fill: currentColor;
+}
+
+.modal-map__title {
+  margin-bottom: 20px;
+
+  font-family: 'Seymour One', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  text-align: center;
+
+  color: var(--additional-color);
+
+  @include tablet {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.modal-map__wrap {
+  margin-bottom: 24px;
+  width: 100%;
+  height: 199px;
+  // overflow: auto;
+
+  @include tablet {
+    margin-bottom: 32px;
+    height: 260px;
+  }
+}
+
+// Карта
+.map {
+  min-height: 200px;
+  height: 100%;
+  width: 100%;
+}
+
+.modal-map__link {
+  margin-left: auto;
+  margin-right: auto;
+  width: 134px;
+  height: 42px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--additional-color);
+  background-color: var(--accent-link-color);
+  border-radius: 10px;
+
+  @include tablet {
+    width: 145px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  &:hover {
+    background-color: var(--focus-color);
+  }
+
+  &:focus {
+    outline: none;
+    color: #ffffff;
+    background-color: var(--focus-color);
+  }
+}

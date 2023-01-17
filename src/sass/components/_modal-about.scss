@@ -28,6 +28,7 @@
   background-color: var(--second-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--accent-link-color);
   border-radius: 10px;
 
   @media screen and (min-width: 480px) {
@@ -55,23 +56,33 @@
   }
 }
 
-.about-modal-video {
+.about-modal-video iframe{
   width: 224px;
-  height: 205px;
-  outline: 1px solid black;
+  height: 199px;
   margin-bottom: 20px;
   color: black;
   text-align: center;
+  border-radius: 10px;
+  object-fit: cover;
 
   @include tel{
     width: 350px;
+    height: 199px;
   }
 
   @include tablet {
+    top: 0;
     width: 448px;
+    height: 205px;
     margin-bottom: 32px;
   }
 }
+ 
+//  iframe{
+//   width: 300px;
+//   height: 300px;
+// }
+
 
 .about-modal-video-text {
   font-size: 14px;

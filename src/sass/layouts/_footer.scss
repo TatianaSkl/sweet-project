@@ -50,7 +50,7 @@
   }
 
   @include desktop {
-    min-width: 550px;
+    min-width: 540px;
     margin-bottom: 60px;
     font-size: 58px;
     line-height: calc(71 / 58);
@@ -89,7 +89,6 @@
   &:nth-child(3) {
     margin-right: 0px;
   }
-  
 }
 
 .footer__link {
@@ -109,8 +108,7 @@
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
   }
-  }
-
+}
 
 .footer__info {
   display: flex;
@@ -144,9 +142,9 @@
   font-weight: 700;
   font-size: 12px;
   line-height: calc(22.32 / 12);
-  // text-decoration: none;
+  text-decoration: none;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 
   @include tablet {
     font-size: 14px;
@@ -155,7 +153,6 @@
   @include desktop {
     font-size: 16px;
     line-height: calc(29.76 / 16);
-   
   }
 }
 

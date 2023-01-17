@@ -1,69 +1,94 @@
 .advantages {
-    padding-top: 50px;
-    padding-bottom: 32px;
-    @include tel{
-        padding-top: 60px;
-    }
-    @include tablet{
-        padding-bottom: 60px;
-    }
-    @include desktop{
-        padding-bottom: 80px;
-    }
+  padding-top: 50px;
+  padding-bottom: 64px;
+  @include tel {
+    padding-top: 60px;
+    padding-bottom: 64px;
+  }
+  @include tablet {
+    padding-bottom: 204px;
+  }
+  @include desktop {
+    padding-bottom: 178px;
+  }
 }
-.advantages-list {
-    display: flex;
-    list-style: none;
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 32px;
-    @include tablet{
-        gap: 80px;
-        flex-wrap: nowrap;
-    }
-   
+.advantages__list {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  @include tablet {
+    flex-wrap: nowrap;
+  }
+}
+.advantages__item {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.advantages-item-1 {
+  margin-bottom: 28px;
+  @include tel {
+    margin-bottom: 32px;
+  }
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+.advantages-item-2 {
+  margin-bottom: 22px;
+  @include tel {
+    margin-bottom: 32px;
+  }
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 .advantages-item-1::before {
-    content: url(../images/cow.svg);
+  content: url(../images/cow.svg);
 }
 .advantages-item-2::before {
-    content: url(../images/weight.svg);
+  content: url(../images/weight.svg);
 }
 .advantages-item-3::before {
-    content: url(../images/icecrema.svg);
+  content: url(../images/icecrema.svg);
 }
-.advantages-list__title {
-    text-align: center;
-    margin-bottom: 16px;
-    margin-top: 16px;
-    font-size: 36px;
-    line-height: 1.22;
-    @include tablet{
-        margin-top: 32px;
-        margin-bottom: 12px;
-        font-size: 48px;
-    }
-    @include desktop{
-        margin-top: 40px;
-        font-size: 58px;
-    }
+.advantages__title {
+  text-align: center;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  font-size: 36px;
+  line-height: 1.22;
+  @include tablet {
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-size: 48px;
+  }
+  @include desktop {
+    margin-top: 40px;
+    font-size: 58px;
+    letter-spacing: 0.04em;
+  }
 }
-.advantages-list__text {
-    width: 230px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.67;
-    @include tablet{
-        width: 152px;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-    }
-    @include desktop{
-        width: 368px;
-        font-size: 16px;
-        line-height: 1.75;
-    }
+.advantages__text {
+  width: 230px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.67;
+  @include tablet {
+    width: 152px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  @include desktop {
+    width: 368px;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+  }
 }
