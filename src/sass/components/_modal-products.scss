@@ -22,6 +22,7 @@
   border-radius: 10px;
   padding: 28px 20px;
 
+  position: relative;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -38,17 +39,11 @@
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   transition: opacity 300ms linear, visibility 300ms linear;
 
-  @include tel;
-  @include tablet;
-  @include desktop;
-  @include retina;
-}
-.modal__products-icecream.active,
-.modal__products-icecoffee.active,
-.modal__products-milkshake.active,
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
+  @media screen and(min-width: 767.98px) {
+    width: 568px;
+    min-height: 996px;
+    padding: 32px 40px;
+  }
 }
 
 .modal__close {
@@ -60,6 +55,18 @@
   height: 20px;
   border: none;
   background-color: transparent;
+
+  @media screen and(min-width: 767.98px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.modal-close-btn {
+  @media screen and(min-width: 767.98px) {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .modal__products-title {
@@ -71,6 +78,10 @@
   text-align: center;
   margin-bottom: 20px;
   color: var(--additional-color);
+
+  @media screen and(min-width: 767.98px) {
+    margin-bottom: 24px;
+  }
 }
 
 .modal__products-buttons {
@@ -79,6 +90,10 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
+
+  @media screen and(min-width: 767.98px) {
+    gap: 20px;
+  }
 }
 
 .modal__products-image {
@@ -100,28 +115,39 @@
   position: absolute;
   top: 113px;
   left: 72px;
+
+  @media screen and(min-width: 767.98px) {
+    left: 218px;
+    top: 92px;
+  }
 }
 
 .icecream-green {
-  background: linear-gradient(0deg,
+  background: linear-gradient(
+      0deg,
       rgba(156, 190, 143, 0.7),
-      rgba(156, 190, 143, 0.7)),
+      rgba(156, 190, 143, 0.7)
+    ),
     #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
 
 .icecoffee-yellow {
-  background: linear-gradient(0deg,
+  background: linear-gradient(
+      0deg,
       rgba(248, 210, 78, 0.7),
-      rgba(248, 210, 78, 0.7)),
+      rgba(248, 210, 78, 0.7)
+    ),
     #d9d9d9;
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
 
 .milkshake-chocolate {
-  background: linear-gradient(0deg,
+  background: linear-gradient(
+      0deg,
       rgba(213, 117, 63, 0.7),
-      rgba(213, 117, 63, 0.7)),
+      rgba(213, 117, 63, 0.7)
+    ),
     #d9d9d9;
   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
@@ -129,7 +155,7 @@
 .modal__products-item {
   font-weight: 500;
   font-size: 10px;
-  line-height: 2, 8;
+  line-height: 2.8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,10 +164,18 @@
   height: 43px;
   border-radius: 50%;
   margin-bottom: 68px;
-  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
 
   color: var(--additional-color);
   font-family: var(--main-font);
+
+  @media screen and(min-width: 767.98px) {
+    margin-bottom: 84px;
+    font-size: 12px;
+    line-height: 2.33;
+    width: 53px;
+    height: 53px;
+  }
 }
 
 .icecream {
@@ -171,11 +205,19 @@
   height: 72px;
   font-weight: 400;
   font-size: 10px;
-  line-height: 1, 2;
+  line-height: 1.2;
   padding-bottom: 8px;
 
   color: var(--additional-color);
   font-family: var(--main-font);
+
+  @media screen and(min-width: 767.98px) {
+    top: 244px;
+    width: 65px;
+    height: 90px;
+    font-size: 12px;
+    line-height: 1.25;
+  }
 }
 
 .modal__products-item-icecream {
@@ -191,19 +233,35 @@
 }
 
 .first {
-  left: 24.5px;
+  left: 26.5px;
+
+  @media screen and(min-width: 767.98px) {
+    left: 141.5px;
+  }
 }
 
 .second {
-  left: 82.5px;
+  left: 84.5px;
+
+  @media screen and(min-width: 767.98px) {
+    left: 214.5px;
+  }
 }
 
 .third {
-  left: 140.5px;
+  left: 142.5px;
+
+  @media screen and(min-width: 767.98px) {
+    left: 287.5px;
+  }
 }
 
 .fourth {
-  left: 198.5px;
+  left: 200.5px;
+
+  @media screen and(min-width: 767.98px) {
+    left: 360.5px;
+  }
 }
 
 .modal__products-ingradients-title {
@@ -228,6 +286,10 @@
   line-height: 1.76;
   letter-spacing: 0.04em;
   margin-bottom: 40px;
+
+  @media screen and(min-width: 767.98px) {
+    margin-bottom: 48px;
+  }
 }
 
 .modal__products-item-ingradients:not(:last-child) {
@@ -262,6 +324,10 @@
   line-height: 140%;
   color: var(--additional-color);
   font-family: var(--main-font);
+
+  @media screen and(min-width: 767.98px) {
+    margin-bottom: 32px;
+  }
 }
 
 .green {
@@ -292,4 +358,8 @@
   background-color: var(--accent-link-color);
   color: var(--additional-color);
   font-family: var(--main-font);
+
+  @media screen and(min-width: 767.98px) {
+    width: 121px;
+  }
 }
