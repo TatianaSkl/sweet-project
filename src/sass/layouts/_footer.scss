@@ -107,6 +107,7 @@
     color: var(--second-color);
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+    cursor: url(../images/cursor-ice.png), pointer;
   }
 }
 
@@ -153,6 +154,10 @@
   @include desktop {
     font-size: 16px;
     line-height: calc(29.76 / 16);
+  }
+  &:hover,
+  &:focus {
+    cursor: url(../images/cursor-ice.png), pointer;
   }
 }
 

@@ -20,6 +20,8 @@ address {
 .contacts__list {
   position: absolute;
   top: -32%;
+  left: 50%;
+  transform: translate(-50%);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -44,9 +46,6 @@ address {
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   margin-bottom: 16px;
-  @include tel {
-    margin-right: 22px;
-  }
   @include tablet {
     margin-right: 16px;
     width: 224px;
