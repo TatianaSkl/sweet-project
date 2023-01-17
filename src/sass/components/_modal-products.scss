@@ -55,6 +55,7 @@
   height: 20px;
   border: none;
   background-color: transparent;
+<<<<<<< Updated upstream
 
   @media screen and(min-width: 767.98px) {
     width: 24px;
@@ -66,8 +67,14 @@
   @media screen and(min-width: 767.98px) {
     width: 24px;
     height: 24px;
+=======
+  &:hover,
+  &:focus {
+    color: #efd478;
+>>>>>>> Stashed changes
   }
 }
+
 
 .modal__products-title {
   font-family: 'Seymour One';
