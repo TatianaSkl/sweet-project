@@ -653,5 +653,15 @@ const langArr = {
     "ua": " Бананово-ягідний мілкшейк", 
   },
      
+  // ----- Location modal!-----
+
+  "franchise-mobile-title": { 
+    "en": "Our Locations", 
+    "ua": "Наші локації", 
+  },
+  "franchise-mobile-btn": { 
+    "en": "Open map", 
+    "ua": "Карта", 
+  },
 
 }
