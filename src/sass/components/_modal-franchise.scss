@@ -139,7 +139,7 @@
     &:not(:last-child) {
         margin-bottom: 12px;
     }
-
+    
     @include tablet {
         width: 368px;
         // height: 42px;
@@ -208,7 +208,7 @@
     }
 }
 
-.franchise-modal__field:invalid:not(:focus):not(:placeholder-shown) {
+.franchise-modal__text:invalid:not(:focus):not(:placeholder-shown) {
     outline: none;
     border: 1px solid red;
 }
