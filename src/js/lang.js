@@ -103,7 +103,11 @@ const langArr = {
     "description-3": {
         "en": "Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice",
         "ua": "Солодкі напої на основі молока та морозива, доповнені сиропами, фруктами, ягодами та іншими солодощами на ваш вибір",
-    },
+  },
+    
+    // ----- About!-----
+
+    
 
     // ----- Advantages!-----
 

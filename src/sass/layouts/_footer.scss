@@ -23,7 +23,7 @@
   }
 
   @include desktop {
-    width: 504px;
+    width: 550px;
     margin-bottom: 14px;
     font-weight: 400;
     font-size: 30px;
@@ -50,7 +50,7 @@
   }
 
   @include desktop {
-    min-width: 504px;
+    min-width: 550px;
     margin-bottom: 60px;
     font-size: 58px;
     line-height: calc(71 / 58);
