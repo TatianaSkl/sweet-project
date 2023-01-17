@@ -2,26 +2,40 @@ address {
   font-style: normal;
 }
 .contacts {
+  position: relative;
+  padding-top: 935px;
   padding-bottom: 60px;
+  @include tel {
+    padding-top: 943px;
+  }
   @include tablet {
+    padding-top: 278px;
     padding-bottom: 40px;
   }
   @include desktop {
+    padding-top: 474px;
     padding-bottom: 120px;
   }
 }
 .contacts__list {
+  position: absolute;
+  top: -32%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  @include tel {
+    top: -349px;
+  }
   @include tablet {
+    top: -299px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    margin-bottom: 40px;
   }
   @include desktop {
-    margin-bottom: 60px;
+    top: -128px;
   }
 }
 .contacts__item {
@@ -44,16 +58,11 @@ address {
     width: 368px;
     height: 100%;
     padding: 40px;
-    margin-bottom: 0;
   }
   &:last-child {
-    margin-bottom: 20px;
-    @include tel {
-      margin-bottom: 24px;
-      margin-right: 0;
-    }
+    margin-bottom: 0;
     @include tablet {
-      margin-bottom: 0;
+      margin-right: 0;
     }
   }
   &-title {
@@ -70,6 +79,7 @@ address {
     margin-bottom: 20px;
     text-transform: uppercase;
     @include tablet {
+      margin-bottom: 32px;
       font-size: 16px;
       line-height: 140%;
     }
@@ -90,8 +100,9 @@ address {
   padding-bottom: 24px;
   margin-bottom: 24px;
   width: 100%;
-  @include desktop {
+  @include tablet {
     padding-bottom: 32px;
+    margin-bottom: 32px;
   }
 
   &:last-child {
@@ -109,6 +120,7 @@ address {
     color: var(--additional-color);
     margin-bottom: 8px;
     @include tablet {
+      margin-bottom: 12px;
       font-size: 14px;
     }
     @include desktop {
