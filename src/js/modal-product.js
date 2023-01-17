@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
    /* Записываем в переменные массив элементов-кнопок и подложку.
       Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
-   var modalButtons = document.querySelectorAll('.js-open-modal'),
-       overlay      = document.querySelector('.js-overlay-modal'),
-       closeButtons = document.querySelectorAll('.js-modal-close');
+   var modalButtonsProd = document.querySelectorAll('.js-open-modal-prod'),
+       overlayProd     = document.querySelector('.js-overlay-modal-prod'),
+       closeButtonsProd = document.querySelectorAll('.js-modal-close-prod');
 
 
    /* Перебираем массив кнопок */
-   modalButtons.forEach(function(item){
+   modalButtonsProd.forEach(function(item){
 
       /* Назначаем каждой кнопке обработчик клика */
       item.addEventListener('click', function(e) {
@@ -23,26 +23,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
          /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
             и будем искать модальное окно с таким же атрибутом. */
-         var modalId = this.getAttribute('data-modal'),
-             modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
+         var modalIdProd = this.getAttribute('data-modal-prod'),
+             modalElemProd = document.querySelector('.modal[data-modal-prod="' + modalIdProd + '"]');
 
 
          /* После того как нашли нужное модальное окно, добавим классы
             подложке и окну чтобы показать их. */
-         modalElem.classList.add('active');
-         overlay.classList.add('active');
+         modalElemProd.classList.add('active');
+         overlayProd.classList.add('active');
       }); // end click
 
    }); // end foreach
 
 
-   closeButtons.forEach(function(item){
+   closeButtonsProd.forEach(function(item){
 
       item.addEventListener('click', function(e) {
-         var parentModal = this.closest('.modal');
+         var parentModalProd = this.closest('.modal');
 
-         parentModal.classList.remove('active');
-         overlay.classList.remove('active');
+         parentModalProd.classList.remove('active');
+         overlayProd.classList.remove('active');
       });
 
    }); // end foreach
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, false);
 
 
-    overlay.addEventListener('click', function() {
+    overlayProd.addEventListener('click', function() {
         document.querySelector('.modal.active').classList.remove('active');
         this.classList.remove('active');
     });

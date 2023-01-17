@@ -128,16 +128,16 @@ const langArr = {
         "ua": "Обирай морозиво та каву під будь-який настрій!",
     },
     "about-btn": {
-        "en": "Read more",
-        "ua": "Детальніше",
+        "en": "Read more &#707",
+        "ua": "Детальніше &#707",
     },
     "about-modal-title": {
-        "en": "How it’s made?",
-        "ua": "Як це зроблено?",
+      "en": "How\nit’s\nmade?",
+      "ua": "Як\nце\nзроблено?",
     },
     "about-modal-video": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
-        "ua": "Еней був парубок моторний і хлопець хоть куди козак, удавсь на всеє зле проворний, завзятіший од всіх бурлак. Но греки, як спаливши Трою, зробили з неї скирту гною, він, взявши торбу, тягу дав;",
+      "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+      "ua": "Еней був парубок моторний і хлопець хоть куди козак, удавсь на всеє зле проворний, завзятіший од всіх бурлак. Но греки, як спаливши Трою, зробили з неї скирту гною, він, взявши торбу, тягу дав;",
     },    
 
     // ----- Advantages!-----
@@ -159,7 +159,7 @@ const langArr = {
 
     "reviews-text1": {
         "en": "I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In addition, you have beautiful serving, cozy atmosphere and polite staff.",
-        "ua": "Я люблю відвідувати ваше кафе. Ви готуєте  найсмачніше морозиво в Лос Анджелесі! У вас гарне обслуговування, затишна атмосфера та ввічливий персонал.",
+        "ua": "Обожнюю ваше кафе. Ви готуєте  найсмачніше морозиво в Лос Анджелесі! У вас гарне обслуговування, затишна атмосфера та ввічливий персонал.",
     },
     "reviews-text2": {
         "en": "Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!",
