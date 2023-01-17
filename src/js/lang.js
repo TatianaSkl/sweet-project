@@ -124,7 +124,7 @@ const langArr = {
 
     "reviews-text1": {
         "en": "I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In addition, you have beautiful serving, cozy atmosphere and polite staff.",
-        "ua": "Я люблю відвідувати ваше кафе. Ви готуєте  найсмачніше морозиво в Лос Анджелесі! Окрім того, у вас гарне обслуговування, затишна атмосфера та ввічливий персонал.",
+        "ua": "Я люблю відвідувати ваше кафе. Ви готуєте  найсмачніше морозиво в Лос Анджелесі! У вас гарне обслуговування, затишна атмосфера та ввічливий персонал.",
     },
     "reviews-text2": {
         "en": "Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!",
@@ -241,8 +241,8 @@ const langArr = {
         "ua": "з пристрастю",
     },
     "footer__info": {
-        "en": "Feel free to contact +61 (0) 383 766 284",
-        "ua": "Звертайтеся вільно +61 (0) 383 766 284",
+        "en": "Feel free to contact",
+        "ua": "Звертайтеся вільно",
     },
     "footer__copyright": {
         "en": "&#169; 2022 - IceCream. All Rights Reserved.",
