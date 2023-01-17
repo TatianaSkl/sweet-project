@@ -22,6 +22,7 @@
     @include retina {
       background-image: url('..//../images/mobile/bg_mob-2x.jpg');
     }
+    height: 1131px;
   }
 
   @include tablet {
@@ -39,14 +40,13 @@
     @include retina {
       background-image: url('..//../images/desktop/bg_desktop-2x.jpg');
     }
-    height: 1350px;
+    height: 1053px;
   }
 }
 .reviews__img {
   margin: 0 auto;
   border-radius: 50%;
   margin-bottom: 32px;
-  
 }
 
 .reviews__text {
@@ -59,7 +59,7 @@
   padding: 35px 39px;
   background-color: var(--primary-color);
   border-radius: 10px;
-  
+
   margin-bottom: 32px;
   margin-left: auto;
   margin-right: auto;
