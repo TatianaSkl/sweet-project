@@ -271,9 +271,53 @@ const langArr = {
         "en": "homemade ice cream made",
         "ua": "домашнє морозиво, зроблене",
     },
-    "footer__text": {
-        "en": "with passion",
-        "ua": "з пристрастю",
+    "text-span-1": {
+        "en": "w",
+        "ua": "з",
+    },
+    "text-span-2": {
+        "en": "i",
+        "ua": "&#32; ",
+    },
+    "text-span-3": {
+        "en": "t",
+        "ua": "п",
+    },
+    "text-span-4": {
+        "en": "h",
+        "ua": "р",
+    },
+    "text-span-5": {
+        "en": "&#32; ",
+        "ua": "и",
+    },
+    "text-span-6": {
+        "en": "p",
+        "ua": "с",
+    },
+    "text-span-7": {
+        "en": "a",
+        "ua": "т",
+    },
+    "text-span-8": {
+        "en": "s",
+        "ua": "р",
+    },
+    "text-span-9": {
+        "en": "s",
+        "ua": "а",
+    },
+    "text-span-10": {
+        "en": "i",
+        "ua": "с",
+    },
+    "text-span-11": {
+        "en": "o",
+        "ua": "т",
+    },
+    "text-span-12": {
+        "en": "n",
+        "ua": "ю",
     },
     "footer__info": {
         "en": "Feel free to contact",
@@ -357,52 +401,52 @@ const langArr = {
     "ua": " Шоколадне морозиво", 
   }, 
   "modal-products-item1": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": "4g", 
+    "ua": "4г", 
   }, 
   "modal-products-item2": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": "8.2g", 
+    "ua": "8.2г", 
   }, 
   "modal-products-item3": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": "40.4g", 
+    "ua": "40.4г", 
   },   
   "modal-products-item4": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": "12g", 
+    "ua": "12г", 
   }, 
   "modal-products-item5": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": "6.8g", 
+    "ua": "6.8г", 
   }, 
   "modal-products-item6": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": "30.6g", 
+    "ua": "30.6г", 
   }, 
   "modal-products-item7": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": "6g", 
+    "ua": "6г", 
   }, 
     "modal-products-item8": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": "9.5g", 
+    "ua": "9.5г", 
   }, 
   "modal-products-item9": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": "14.9g", 
+    "ua": "14.9г", 
   }, 
   "modal-products-ingradients-title1": { 
     "en": " Ingredients", 
-    "ua": " Інградієнти", 
+    "ua": " Інгредієнти", 
   }, 
   "modal-products-ingradients-title2": { 
     "en": " Ingredients", 
-    "ua": " Інградієнти", 
+    "ua": " Інгредієнти", 
   }, 
   "modal-products-ingradients-title3": { 
     "en": " Ingredients", 
-    "ua": " Інградієнти", 
+    "ua": " Інгредієнти", 
   }, 
   "modal-products-item-icecream1": { 
     "en": " kcal", 
@@ -418,7 +462,7 @@ const langArr = {
   }, 
   "modal-products-item-icecream4": { 
     "en": "Carbs", 
-    "ua":  "Вуглеводи", 
+    "ua":  "Вугл.", 
   }, 
   "modal-products-item-icecream5": { 
     "en": "kcal", 
@@ -430,15 +474,15 @@ const langArr = {
   }, 
   "modal-products-item-icecream7": { 
     "en": "Fats", 
-    "ua":  "Жири", 
+    "ua": "Жири", 
   }, 
   "modal-products-item-icecream8": { 
     "en": "Carbs", 
-    "ua": "Вуглеводи", 
+    "ua": "Вугл.", 
   }, 
   "modal-products-item-icecream9": { 
     "en": "kcal", 
-    "ua":  "ккал", 
+    "ua": "ккал", 
   }, 
   "modal-products-item-icecream10": { 
     "en": "Prote...", 
@@ -449,8 +493,8 @@ const langArr = {
     "ua": " Жири", 
   }, 
   "modal-products-item-icecream12": { 
-    "en": " Carbs", 
-    "ua": " Вуглеводи", 
+    "en": "Carbs", 
+    "ua": "Вугл.", 
   }, 
   "modal-products-ingradients1": { 
     "en": " Milk", 
@@ -525,76 +569,76 @@ const langArr = {
     "ua": " Морозиво", 
   }, 
   "modal-products-ingradients1-item": { 
-    "en": " ml", 
-    "ua": " мл", 
+    "en": " 100ml", 
+    "ua": " 100мл", 
   }, 
   "modal-products-ingradients2-item": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": " 20g", 
+    "ua": " 20г", 
   }, 
   "modal-products-ingradients3-item": { 
-    "en": " ml", 
-    "ua": " мл", 
+    "en": " 150ml", 
+    "ua": " 150мл", 
   }, 
   "modal-products-ingradients4-item": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": " 30g", 
+    "ua": " 30г", 
   }, 
   "modal-products-ingradients5-item": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": " 40g", 
+    "ua": " 40г", 
   }, 
   "modal-products-ingradients6-item": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": " 10g", 
+    "ua": " 10г", 
   }, 
   "modal-products-ingradients7-item": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": " 16g", 
+    "ua": " 16г", 
   }, 
 "modal-products-ingradients8-item": {
-    "en": " ml", 
-    "ua": " мл", 
+    "en": " 80ml", 
+    "ua": " 80мл", 
   }, 
   "modal-products-ingradients9-item": { 
-    "en": " pcs", 
-    "ua": " шт", 
+    "en": " 5pcs", 
+    "ua": " 5шт", 
   }, 
   "modal-products-ingradients10-item": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": " 30g", 
+    "ua": " 30г", 
   }, 
   "modal-products-ingradients11-item": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": " 20g", 
+    "ua": " 20г", 
   }, 
   "modal-products-ingradients12-item": { 
-    "en": " pcs", 
-    "ua": " шт", 
+    "en": " 1pcs", 
+    "ua": " 1шт", 
   }, 
     "modal-products-ingradients13-item": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": "30g", 
+    "ua": "30г", 
   }, 
   "modal-products-ingradients14-item": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": "50g", 
+    "ua": "50г", 
   }, 
   "modal-products-ingradients15-item": { 
-    "en": " ml", 
-    "ua": " мл", 
+    "en": "150ml", 
+    "ua": "150мл", 
   }, 
   "modal-products-ingradients16-item": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": "30g", 
+    "ua": "30г", 
   }, 
   "modal-products-ingradients17-item": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": "20g", 
+    "ua": "20г", 
   }, 
   "modal-products-ingradients18-item": { 
-    "en": " g", 
-    "ua": " г", 
+    "en": "90g", 
+    "ua": "90г", 
   }, 
   "modal-products-input-name-icecream": { 
     "en": " Name", 
