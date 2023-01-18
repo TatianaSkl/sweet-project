@@ -1,3 +1,9 @@
+@property --num {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
+}
+
 // ----- Containers! -----
 
 .container-hero {
@@ -448,7 +454,6 @@
   &:hover {
     color: var(--focus-color);
   }
-
 }
 
 // ----- Dish ice creams! -----
@@ -617,6 +622,10 @@
     text-align: right;
 
     color: var(--additional-color);
+
+    &::after {
+      content: counter(num);
+    }
   }
 
   .hero-description-detail {
@@ -627,6 +636,44 @@
     margin: 0;
     margin-bottom: 20px;
     text-align: right;
+  }
+
+  .hero-description-first {
+    animation: des-first 3s cubic-bezier(0.4, 0, 0.2, 1) 500ms forwards;
+    counter-reset: num var(--num);
+    opacity: 0;
+
+    @keyframes des-first {
+      0% {
+        opacity: 0.05;
+        scale: 0.5;
+        --num: 0;
+      }
+      100% {
+        opacity: 1;
+        scale: 1;
+        --num: 16;
+      }
+    }
+  }
+
+  .hero-description-second {
+    animation: des-second 3s cubic-bezier(0.4, 0, 0.2, 1) 500ms forwards;
+    counter-reset: num var(--num);
+    opacity: 0;
+
+    @keyframes des-second {
+      0% {
+        opacity: 0.05;
+        scale: 0.5;
+        --num: 0;
+      }
+      100% {
+        opacity: 1;
+        scale: 1;
+        --num: 23;
+      }
+    }
   }
 }
 
