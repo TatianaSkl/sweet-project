@@ -122,8 +122,12 @@ const langArr = {
     "about-information-2": {
         "en": "We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.",
         "ua": "Ми використовуємо традиційні рецепти та стовідсотково натуральні інгредієнти. Наша продукція натуральна, її можна давати дітям з трьох років. На поціновувачів солодощів чекає 55 видів морозива, 15 видів кави та 23 види молочних коктейлів.",
+    },
+     "about-information-3": {
+        "en": "There are recipes for ice cream connoisseurs and novices alike. For the creatures of habit, there are recipes for chocolate ice cream and vanilla ice cream—and flavors like prune-Armagnac and coffee-cardamom for the thrill seekers. Our product is made in select flavors with liberal amounts of cream and milk that give it &#65282;the good old-fashioned taste&#65282;.",
+        "ua": "Є рецепти морозива як для гурманів, так і для новачків. Для поціновувачів традиційних смаків є рецепти шоколадного та ванільного морозива, а для любителів гострих відчуттів — такі смаки, як арманьяк із чорносливом і кава з кардамоном. Наш продукт виготовляється з вибраними смаками з великою кількістю вершків і молока, що надає йому 	&#65282;старого доброго смаку&#65282;.",
     }, 
-    "about-information-3": {
+    "about-information-4": {
         "en": "This is enough to choose ice cream and coffee for any mood!",
         "ua": "Обирай морозиво та каву під будь-який настрій!",
     },
