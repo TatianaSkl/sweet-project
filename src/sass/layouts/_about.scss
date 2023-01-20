@@ -95,10 +95,20 @@
     border-radius: 50%;
 
     object-fit: cover;
-    mix-blend-mode: screen;
+    // mix-blend-mode: screen;
 
     @include desktop {
       top: 70px;
+    }
+  }
+
+  &-image__wrap {
+    position: absolute;
+
+    mix-blend-mode: screen;
+
+    @include desktop {
+      bottom: -14px;
     }
   }
 
@@ -139,7 +149,7 @@
     }
 
     @include desktop {
-      margin-top: 5px;
+      margin-top: 100px;
       margin-bottom: 54px;
     }
   }
@@ -181,6 +191,10 @@
       width: 480px;
       font-size: 16px;
       line-height: 1.92;
+
+      &:nth-last-child(-n + 2) {
+        display: none;
+      }
 
       &:first-child {
         font-size: 16px;
