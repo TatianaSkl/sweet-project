@@ -95,8 +95,7 @@
     border-radius: 50%;
 
     object-fit: cover;
-    // mix-blend-mode: screen;
-
+    
     @include desktop {
       top: 70px;
     }
@@ -192,7 +191,7 @@
       font-size: 16px;
       line-height: 1.92;
 
-      &:nth-last-child(-n + 2) {
+      &:nth-last-child(2) {
         display: none;
       }
 

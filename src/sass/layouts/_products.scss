@@ -314,15 +314,20 @@
 }
 
 .products__icon {
-    fill: var(--additional-color);
+    fill: currentColor;
     height: 20px;
+    color: var(--additional-color);
+
+    &:hover {
+        color: var(--focus-color);
+    }
 }
 
 .products__button {
     border: none;
     background-color: transparent;
     padding: 20;
-    cursor: pointer;
+    cursor: url(../images/cursor-ice.png), pointer;
 
     position: absolute;
     bottom: 0;
