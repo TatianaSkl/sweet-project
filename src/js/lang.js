@@ -94,7 +94,7 @@ const langArr = {
     },
     "description-2": {
         "en": "Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers",
-        "ua": "Ароматний підбадьорливий напій створений зі 100% натуральних інгредієнтів без використання консервантів і підсилювачів смаку",
+        "ua": "Ароматний підбадьорливий напій створений зі 100% натуральних інгредієнтів без консервантів і підсилювачів смаку",
     },
     "name-3": {
         "en": "milkshakes",
